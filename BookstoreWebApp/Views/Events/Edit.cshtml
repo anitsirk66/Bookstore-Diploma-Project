@@ -1,5 +1,5 @@
-﻿@using BookstoreWebApp.Models.Events;
-@model EventsIndexViewModel
+﻿@using BookstoreProjectCore.Models.Events;
+@model EventsEditViewModel
 
 <h1 style="font-family: Arial;">Change event details *only possible for administrator*</h1>
 <form asp-action="Edit" method="post">
@@ -9,7 +9,7 @@
     </div>
     <div class="mb-3">
         <label asp-for="DateAndTime" class="form-label">Date and time</label>
-        <input asp-for="DateAndTime" class="form-control" required />
+        <input asp-for="DateAndTime" type="datetime-local" class="form-control" required />
     </div>
     <div class="mb-3">
         <label asp-for="AuthorId" class="form-label">Author's name</label>

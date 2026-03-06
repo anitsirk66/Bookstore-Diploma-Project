@@ -32,6 +32,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Books</a>
                         </li>
+                        @if (User.IsInRole("Admin"))
+                        {
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Authors" asp-action="Index">Authors</a>
+                            </li>
+
+                        }
                     </ul>
                     <span class="navbar-text"> <partial name="_LoginPartial" /> </span>
                 </div>
@@ -43,7 +51,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BookstoreWebApp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -76,7 +84,7 @@
                                 <img src="~/img/booklogo.png" alt="Logo" class="tm-site-logo" width="50" height="50">
                             </a>
 
-                            
+
                             <h1 class="tm-site-name tm-handwriting-font">Pink Sunrise</h1>
                         </div>
                         <div class="mobile-menu-icon">
@@ -112,22 +120,31 @@
             </div>
         </div>
     }
-    @if (TempData["ErrorMessage"] != null)
+
+    @if(!ViewData.ModelState.IsValid)
     {
         <div>
-            <div class="alert alert-danger alert-dismissible fade show">
-                @TempData["ErrorMessage"]
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-        </div>
-    }
-    @if (TempData["WarningMessage"] != null)
-    {
-        <div>
-            <div class="alert alert-warning alert-dismissible fade show">
-                @TempData["WarningMessage"]
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
+            @foreach(var item in ViewData.ModelState)
+            {
+                if (item.Value.Errors.Any())
+                {
+                    <div class="alert alert-danger alert-dismissible fade show">
+                        <p>
+                            <b>Field:</b> 
+                            <span class="fst-italic">@item.Key</span>
+                        </p>
+                        <p>
+                            <b>Your value:</b>
+                            <span class="fst-italic">@((item.Value == null || item.Value.RawValue == null) ? "<null>" : item.Value.RawValue)</span>
+                        </p>
+                        <p>
+                            <b>Error:</b>
+                            <span class="fst-italic">@(String.Join("; ", item.Value.Errors.Select(x => x.ErrorMessage)))</span>
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                }
+            }
         </div>
     }
 
@@ -137,7 +154,7 @@
         </main>
     </div>
 
-    <footer>
+    <footer style="display:none;">
         <div class="tm-black-bg">
             <div class="container">
                 <div class="row margin-bottom-60">

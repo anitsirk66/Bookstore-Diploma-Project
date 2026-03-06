@@ -1,8 +1,10 @@
 ﻿//using AspNetCore;
+using BookstoreProjectCore.Contracts;
+using BookstoreProjectCore.DTOs.Events;
 using BookstoreProjectData;
 using BookstoreProjectData.Entities;
-using BookstoreWebApp.Models.Books;
-using BookstoreWebApp.Models.Events;
+using BookstoreProjectCore.Models.Books;
+using BookstoreProjectCore.Models.Events;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -14,23 +16,17 @@ namespace BookstoreWebApp.Controllers
 {
     public class EventsController : Controller
     {
-        private readonly BookstoreContext context;
-        public EventsController(BookstoreContext _context)
+        private readonly IEventService service;
+        public EventsController(IEventService _service)
         {
-            context = _context;
+            service = _service;
         }
 
         [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var events = await context.Events.Select(o => new EventsIndexViewModel
-            {
-                Id = o.Id,
-                Name = o.Name,
-                DateAndTime = o.DateAndTime,
-                AuthorId = o.AuthorId
-            }).ToListAsync();
+            var events = await service.Index();
             
             return View(events);
         }
@@ -39,10 +35,10 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var authors = await context.Authors.OrderBy(a=>a.Id).ToListAsync();
+            var authors = await service.GetAuthors();
             ViewBag.Authors = new SelectList(authors, "Id", "FullName");
 
-            return View(new EventsCreateViewModel()); //or authors?
+            return View(); 
         }
 
         [Authorize(Roles = "Admin")]
@@ -51,94 +47,66 @@ namespace BookstoreWebApp.Controllers
         {
             if(!ModelState.IsValid)
             {
+                var authors = await service.GetAuthors();
+                ViewBag.Authors = new SelectList(authors, "Id", "FullName");
+
+                //var errors = ModelState.Values
+                //    .SelectMany(v => v.Errors)
+                //    .Select(e => e.ErrorMessage)
+                //    .ToList();
+
                 return View(model);
             }
 
-            var eventt = new Event
-            {
-                Id = Guid.NewGuid(),
-                Name = model.Name,
-                DateAndTime = model.DateAndTime,
-                AuthorId = model.AuthorId
-            };
-
-            await context.Events.AddAsync(eventt);
-            await context.SaveChangesAsync();
+            await service.CreateAsync(model);
             return RedirectToAction("Index");
-        }
-
-        [Authorize(Roles = "Admin")]
-        [HttpGet]
-        public async Task<IActionResult> Delete(Guid id)
-        {
-            var model = await context.Events
-                .Where(e => e.Id == id)
-                .Select(b => new EventsDeleteViewModel
-                {
-                    Id = b.Id
-                })
-                .FirstOrDefaultAsync();
-
-            if (model == null)
-            {
-                return NotFound();
-            }
-            return View(model);
-        }
-        [Authorize(Roles = "Admin")]
-        [HttpPost]
-        public async Task<IActionResult> Delete(EventsDeleteViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var eventt = await context.Events.FindAsync(model.Id);
-            if(eventt == null) { return NotFound(); }
-            
-            context.Events.Remove(eventt);
-            await context.SaveChangesAsync();
-            return RedirectToAction("Index"); 
         }
 
         [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
         {
-            var eventt = await context.Events.FindAsync(id);
+            var eventt = await service.GetEditById(id);
             if (eventt == null) { return NotFound(); }
 
-            var model = new EventsIndexViewModel
-            {
-                Id = eventt.Id,
-                Name = eventt.Name,
-                DateAndTime = eventt.DateAndTime,
-                AuthorId = eventt.AuthorId
-            };
+            var authors = await service.GetAuthors();
+            ViewBag.Authors = new SelectList(authors, "Id", "FullName");
 
-            return View(model); 
+
+            return View(eventt); 
         }
 
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public async Task<IActionResult>Edit(EventsIndexViewModel model)
+        public async Task<IActionResult> Edit(EventsEditViewModel model)
         {
             if (!ModelState.IsValid)
             {
+                var authors = await service.GetAuthors();
+                ViewBag.Authors = new SelectList(authors, "Id", "FullName");
                 return View(model);
             }
 
-            var eventt = await context.Events.FindAsync(model.Id);
-            if (eventt == null) { return NotFound(); }
-
-            eventt.Name = model.Name;
-            eventt.DateAndTime = model.DateAndTime;
-            eventt.AuthorId = model.AuthorId;
-
-            await context.SaveChangesAsync();
+            await service.EditAsync(model);
             return RedirectToAction("Index");
         }
+
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            await service.DeleteAsync(id);
+            return RedirectToAction("Index");
+        }
+
+        //[Authorize(Roles = "Admin")]
+        //[HttpPost]
+        //public async Task<IActionResult> DeletePost (Guid id)
+        //{
+        //    await service.DeleteAsync(id);
+        //    return RedirectToAction("Index");
+        //}
     }
 
 } 

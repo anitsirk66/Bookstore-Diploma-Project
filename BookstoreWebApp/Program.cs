@@ -3,6 +3,9 @@ using BookstoreProjectData.Entities;
 using BookstoreWebApp.Seed;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
+using BookstoreProjectCore.Contracts;
+using BookstoreProjectCore.Services;
 
 namespace BookstoreWebApp
 {
@@ -12,11 +15,14 @@ namespace BookstoreWebApp
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            var cultureInfo = new CultureInfo("en-US");
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<BookstoreContext>(options =>
                 options.UseSqlServer(connectionString));
-                                                      builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             //builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
             //    .AddEntityFrameworkStores<BookstoreContext>();
@@ -29,16 +35,13 @@ namespace BookstoreWebApp
                 options.Password.RequiredLength = 6;
                 options.Password.RequireUppercase = false;
                 options.Password.RequireNonAlphanumeric = false;
-            })
-                .AddEntityFrameworkStores<BookstoreContext>()
-                .AddDefaultTokenProviders().
-                AddDefaultUI();
+            }).AddEntityFrameworkStores<BookstoreContext>()
+              .AddDefaultTokenProviders()
+              .AddDefaultUI();
             
-
-
             builder.Services.AddControllersWithViews();
            
-            builder.Services.AddRazorPages(); 
+            builder.Services.AddRazorPages();
 
             //builder.Services.AddDefaultIdentity<User>(options =>
             //{
@@ -47,21 +50,27 @@ namespace BookstoreWebApp
             //}).AddRoles<IdentityRole>()
             //.AddEntityFrameworkStores<BookstoreContext>();
 
+            builder.Services.AddScoped<IBookService, BookService>();
+            builder.Services.AddScoped<IAuthorService, AuthorService>();
+            builder.Services.AddScoped<IEventService, EventService>();
+            builder.Services.AddScoped<IReviewService, ReviewService>();
+
             var app = builder.Build();
 
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
                 var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+                var userManager = services.GetRequiredService<UserManager<User>>();
+                //throws System.InvalidOperationException: 'No service for type 'Microsoft.AspNetCore.Identity.UserManager`1[Microsoft.AspNetCore.Identity.IdentityUser]' has been registered.'
+                await AdminSeeder.SeedAdmin(roleManager, userManager);
+
+                var context = services.GetRequiredService<BookstoreContext>();
+
+                await EntitySeeder.SeedAsync(context);
                 await IdentitySeeder.SeedRolesAsync(roleManager);
             }
-            using (var scope = app.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-                //var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
-                //await AdminSeeder.SeedAdmin(roleManager, userManager);
-            }
+            
 
             if (app.Environment.IsDevelopment())
             {

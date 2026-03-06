@@ -1,0 +1,48 @@
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.deps.json
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.pdb
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.AssemblyReference.cache
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfoInputs.cache
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfo.cs
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.sourcelink.json
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\Bookstor.E4D36913.Up2Date
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\refint\BookstoreProjectCore.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt changes from monday\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\ref\BookstoreProjectCore.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.deps.json
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.pdb
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.AssemblyReference.cache
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfoInputs.cache
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfo.cs
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.sourcelink.json
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\Bookstor.E4D36913.Up2Date
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\refint\BookstoreProjectCore.dll
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\Student17\Documents\Student17_12B\Diplomen-proekt 25.02\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\ref\BookstoreProjectCore.dll
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.deps.json
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.dll
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.pdb
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.AssemblyReference.cache
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfoInputs.cache
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfo.cs
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.sourcelink.json
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\Bookstor.E4D36913.Up2Date
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\refint\BookstoreProjectCore.dll
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\ref\BookstoreProjectCore.dll

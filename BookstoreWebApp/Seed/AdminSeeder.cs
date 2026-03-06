@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using BookstoreProjectData.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace BookstoreWebApp.Seed
 {
@@ -6,7 +7,7 @@ namespace BookstoreWebApp.Seed
     {
         public static async Task SeedAdmin(
             RoleManager<IdentityRole> roleManager,
-                UserManager<IdentityUser> userManager)
+                UserManager<User> userManager)
         {
             string email = "kristina@gmail.com";
 
@@ -19,7 +20,7 @@ namespace BookstoreWebApp.Seed
 
             if (user == null)
             {
-                var adminUser = new IdentityUser
+                var adminUser = new User
                 {
                     UserName = "Admin",
                     Email = email,

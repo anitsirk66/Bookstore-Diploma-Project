@@ -27,4 +27,5 @@ namespace BookstoreProjectData.Entities
 
         //+ adress
     }
+
 }

@@ -1,7 +1,47 @@
-﻿@using BookstoreWebApp.Models.Books;
+﻿@using BookstoreProjectCore.Models.Books;
 @model IEnumerable<BooksIndexViewModel>
 
-<h1></h1>
-@{/*
- *  for each genre there is a different bubble. after clicking each one, it redirects to a new webpage only with the books of that genre
- * */}
+<h1 class="page-title">Books</h1>
+@if(User.IsInRole("Admin"))
+{
+    <div class="create-button">
+        <a asp-controller="Books" asp-action="Create" class="btn btn-outline-primary">Add book</a>
+    </div>
+}
+
+<div class="books-grid">
+    @foreach(var book in Model)
+    {
+            <div class="book-card">
+        <a asp-action="Details" asp-controller="Books" asp-route-id="@book.Id" class="book-click">
+                <div class="book-cover">
+                   <img src="@book.CoverImageUrl" alt="couldn't load cover" width="200" height="200" style="text-align:center;"/>
+                </div>
+                <div class="card-body">
+                    <h5 class="book-title">@book.Title</h5>​
+                    <p class="book-author">@book.AuthorName
+                    </p>​
+                    <p class="book-price" style="color: red;">@book.Price €</p>
+
+                    @if(User.IsInRole("Admin"))
+                    {
+                        <div class="book-actions">
+                            <a asp-controller="Books" asp-action="Edit" class="btn btn-warning" asp-route-id="@book.Id">Edit</a>
+                            <form asp-action="Delete" asp-controller="Books" method="get">
+                                <input type="hidden" name="id" value="@book.Id" />
+                                  <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="user-actions">
+                            <a asp-action="Order" class="btn btn-outline-danger">Add to cart</a>
+                        </div>
+                    }
+                    
+                </div>
+        </a>
+            </div>
+    }
+</div>

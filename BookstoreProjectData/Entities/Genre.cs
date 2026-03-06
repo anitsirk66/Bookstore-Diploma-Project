@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookstoreProjectData.Entities
 {
+
     public class Genre
     {
         [Key]
@@ -17,7 +18,7 @@ namespace BookstoreProjectData.Entities
         public string Name { get; set; } = null!;
 
         [Required]
-        [StringLength(100)]
+        [StringLength(300)]
         public string Desciption { get; set; } = null!;
 
         public List<Book> Books { get; set; } = new List<Book>();

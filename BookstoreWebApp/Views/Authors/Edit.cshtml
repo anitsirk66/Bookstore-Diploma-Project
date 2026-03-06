@@ -1,9 +1,9 @@
-﻿@using BookstoreWebApp.Models.Authors;
-@model AuthorsIndexViewModel
+﻿@using BookstoreProjectCore.Models.Authors;
+@model AuthorsEditViewModel
 
 <h1>Edit Author</h1>
 
-<form asp-action="Create" method="post">
+<form asp-action="Edit" method="post">
     <div class="mb-3">
         <label asp-for="FullName" class="form-label">New name</label>
         <input asp-for="FullName" class="form-control" required />

@@ -1,6 +1,7 @@
 ﻿using BookstoreProjectData.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 namespace BookstoreProjectData
 {
@@ -39,7 +40,7 @@ namespace BookstoreProjectData
                 entity.HasOne(b => b.Author)
                       .WithMany(a => a.Books)
                       .HasForeignKey(b => b.AuthorId)
-                      .OnDelete(DeleteBehavior.Restrict);
+                      .OnDelete(DeleteBehavior.Restrict); //cascade
 
                 entity.HasOne(b => b.Genre)
                       .WithMany(g => g.Books)
@@ -118,9 +119,8 @@ namespace BookstoreProjectData
                 entity.HasOne(pb => pb.Book)
                       .WithMany(b => b.Publishers_Books)
                       .HasForeignKey(pb => pb.BookId)
-                      .OnDelete(DeleteBehavior.Restrict);
+                      .OnDelete(DeleteBehavior.Cascade);
             });
-
 
             modelBuilder.Entity<Review>(entity =>
             {
@@ -173,14 +173,9 @@ namespace BookstoreProjectData
 
             });
 
-            //    modelBuilder.Entity<Author>().HasData(
-            //        new Author
-            //        {
-            //            FullName = "Anna Dodd",
-            //            Nationality = "american",
-            //            Biography = "dddddddddddddddddddddddddddd"
-            //        }
-            //        );
+
+           
+            
         }
 
     }

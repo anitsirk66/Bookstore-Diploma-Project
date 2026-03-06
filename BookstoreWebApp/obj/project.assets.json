@@ -1664,6 +1664,19 @@
           }
         }
       },
+      "BookstoreProjectCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BookstoreProjectData": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BookstoreProjectCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookstoreProjectCore.dll": {}
+        }
+      },
       "BookstoreProjectData/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4458,6 +4471,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BookstoreProjectCore/1.0.0": {
+      "type": "project",
+      "path": "../BookstoreProjectCore/BookstoreProjectCore.csproj",
+      "msbuildProject": "../BookstoreProjectCore/BookstoreProjectCore.csproj"
+    },
     "BookstoreProjectData/1.0.0": {
       "type": "project",
       "path": "../BookstoreProjectData/BookstoreProjectData.csproj",
@@ -4466,6 +4484,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BookstoreProjectCore >= 1.0.0",
       "BookstoreProjectData >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.22",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.22",
@@ -4475,19 +4494,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Student17\\.nuget\\packages\\": {}
+    "C:\\Users\\krisi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student17\\Documents\\Student17_12B\\Diplomen-proekt\\BookstoreWebApp\\BookstoreWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\BookstoreWebApp.csproj",
       "projectName": "BookstoreWebApp",
-      "projectPath": "C:\\Users\\Student17\\Documents\\Student17_12B\\Diplomen-proekt\\BookstoreWebApp\\BookstoreWebApp.csproj",
-      "packagesPath": "C:\\Users\\Student17\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student17\\Documents\\Student17_12B\\Diplomen-proekt\\BookstoreWebApp\\obj\\",
+      "projectPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\BookstoreWebApp.csproj",
+      "packagesPath": "C:\\Users\\krisi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Student17\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\krisi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4495,15 +4519,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Student17\\Documents\\Student17_12B\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj": {
-              "projectPath": "C:\\Users\\Student17\\Documents\\Student17_12B\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj"
+            "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\BookstoreProjectCore.csproj": {
+              "projectPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\BookstoreProjectCore.csproj"
+            },
+            "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj": {
+              "projectPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj"
             }
           }
         }
@@ -4517,7 +4543,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4565,8 +4592,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

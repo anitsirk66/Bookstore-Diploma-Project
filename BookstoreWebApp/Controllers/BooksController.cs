@@ -1,38 +1,36 @@
 ﻿using BookstoreProjectData.Entities;
 using BookstoreProjectData;
-using BookstoreWebApp.Models.Events;
+using BookstoreProjectCore.Models.Events;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using BookstoreWebApp.Models.Books;
+using BookstoreProjectCore.Models.Books;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using BookstoreWebApp.Models.Reviews;
+using BookstoreProjectCore.Contracts;
+using BookstoreProjectCore.DTOs.Books;
+using BookstoreProjectCore.Services;
+using System.Security.Claims;
+using BookstoreProjectCore.Models.Reviews;
 
 namespace BookstoreWebApp.Controllers
 {
     public class BooksController : Controller
     {
-        private readonly BookstoreContext context;
-        public BooksController(BookstoreContext _context)
+        private readonly IBookService service;
+        private readonly IReviewService reviewService;
+        public BooksController(IBookService _service, IReviewService _reviewService)
         {
-            context = _context;
+            service = _service;
+            reviewService = _reviewService;
         }
 
         [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var books = await context.Books.Select(b => new BooksIndexViewModel
-            {
-                Id = b.Id,
-                Title = b.Title,
-                Price = b.Price,
-                CoverImageUrl = b.CoverImageUrl,
-                AuthorName = b.Author.FullName,
-                PromotionPercent = b.Promotion.Percent
-
-            }).ToListAsync();
+            var books = await service.Index();
 
             return View(books);
            
@@ -42,16 +40,16 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var authors = await context.Authors.OrderBy(a => a.FullName).ToListAsync();
+            var authors = await service.GetAuthors();
             ViewBag.Authors = new SelectList(authors, "Id", "FullName");
 
-            var genres = await context.Genres.OrderBy(a => a.Name).ToListAsync();
+            var genres = await service.GetGenres();
             ViewBag.Genres = new SelectList(genres, "Id", "Name");
 
-            var promotions = await context.Promotions.OrderBy(a => a.Percent).ToListAsync();
+            var promotions = await service.GetPromotions();
             ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
-            return View(new BooksCreateViewModel()); ; 
+            return View();  
         }
 
         [Authorize(Roles = "Admin")]
@@ -60,32 +58,24 @@ namespace BookstoreWebApp.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var authors = await context.Authors.OrderBy(a => a.FullName).ToListAsync();
+
+                var errors = ModelState.Select(x => x.Value.Errors)
+                    .Where(y => y.Count > 0)
+                    .ToList();
+
+                var authors = await service.GetAuthors();
                 ViewBag.Authors = new SelectList(authors, "Id", "FullName");
 
-                var genres = await context.Genres.OrderBy(a => a.Name).ToListAsync();
+                var genres = await service.GetGenres();
                 ViewBag.Genres = new SelectList(genres, "Id", "Name");
 
-                var promotions = await context.Promotions.OrderBy(a => a.Percent).ToListAsync();
+                var promotions = await service.GetPromotions();
                 ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
                 return View(model);
             }
 
-            var book = new Book
-            {
-                Id = Guid.NewGuid(),
-                Title = model.Title,
-                Price = model.Price,
-                CoverImageUrl = model.CoverImageUrl,
-                Synopsis = model.Synopsis,
-                AuthorId = model.AuthorId,
-                GenreId = model.GenreId,
-                PromotionId = model.PromotionId
-            };
-
-            await context.Books.AddAsync(book);
-            await context.SaveChangesAsync();
+            await service.CreateAsync(model);
             return RedirectToAction("Index");
         }
 
@@ -93,67 +83,35 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var model = await context.Books
-                .Where(b => b.Id == id)
-                .Select(b => new BooksDeleteViewModel
-                {
-                    Id = b.Id
-                })
-                .FirstOrDefaultAsync();
-
-            if (model == null)
-            {
-                return NotFound();
-            }
-            return View(model);
-        }
-
-        [Authorize(Roles = "Admin")]
-        [HttpPost]
-        public async Task<IActionResult> Delete(BooksDeleteViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var book = await context.Books.FindAsync(model.Id);
-            if (book == null) { return NotFound(); }
-
-            context.Books.Remove(book);
-            await context.SaveChangesAsync();
+            await service.DeleteAsync(id);
             return RedirectToAction("Index");
         }
+
+        //[Authorize(Roles = "Admin")]
+        //[HttpPost]
+        //public async Task<IActionResult> DeletePost (Guid id)
+        //{
+        //    await service.DeleteAsync(id);
+        //    return RedirectToAction("Index");
+        //}
 
         [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
         {
-            var book = await context.Books.FindAsync(id);
-            if (book == null) { return NotFound(); }
-
-            var model = new BooksEditViewModel
-            {
-                Id = book.Id,
-                Title = book.Title,
-                Price = book.Price,
-                CoverImageUrl = book.CoverImageUrl,
-                Synopsis = book.Synopsis,
-                AuthorId = book.AuthorId,
-                GenreId = book.GenreId,
-                PromotionId = book.PromotionId
-            };
-
-            var authors = await context.Authors.OrderBy(a => a.FullName).ToListAsync();
+            var authors = await service.GetAuthors();
             ViewBag.Authors = new SelectList(authors, "Id", "FullName");
 
-            var genres = await context.Genres.OrderBy(a => a.Name).ToListAsync();
+            var genres = await service.GetGenres();
             ViewBag.Genres = new SelectList(genres, "Id", "Name");
 
-            var promotions = await context.Promotions.OrderBy(a => a.Percent).ToListAsync();
+            var promotions = await service.GetPromotions();
             ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
-            return View(model);
+            var book = await service.GetByIdEdit(id);
+            if (book == null) { return NotFound(); }
+
+            return View(book);
         }
 
         [Authorize(Roles = "Admin")]
@@ -162,30 +120,24 @@ namespace BookstoreWebApp.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var authors = await context.Authors.OrderBy(a => a.FullName).ToListAsync();
+
+                var errors = ModelState.Select(x => x.Value.Errors)
+                    .Where(y => y.Count > 0)
+                    .ToList();
+                    
+                var authors = await service.GetAuthors();
                 ViewBag.Authors = new SelectList(authors, "Id", "FullName");
 
-                var genres = await context.Genres.OrderBy(a => a.Name).ToListAsync();
+                var genres = await service.GetGenres();
                 ViewBag.Genres = new SelectList(genres, "Id", "Name");
 
-                var promotions = await context.Promotions.OrderBy(a => a.Percent).ToListAsync();
+                var promotions = await service.GetPromotions();
                 ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
                 return View(model);
             }
 
-            var book = await context.Books.FindAsync(model.Id);
-            if (book == null) { return NotFound(); }
-
-            book.Title = model.Title;
-            book.Price = model.Price;
-            book.CoverImageUrl = model.CoverImageUrl;
-            book.Synopsis = model.Synopsis;
-            book.AuthorId = model.AuthorId;
-            book.GenreId = model.GenreId;
-            book.PromotionId = model.PromotionId;
-
-            await context.SaveChangesAsync();
+            await service.EditAsync(model);
             return RedirectToAction("Index");
         }
 
@@ -193,20 +145,29 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Details(Guid id)
         {
-            var book = await context.Books.Where(book => book.Id == id).Select(book => new BooksDetailsViewModel
-            {
-                Id = book.Id,
-                Title = book.Title,
-                Synopsis = book.Synopsis,
-                GenreName = book.Genre.Name,
-                Reviews = book.Reviews.Select(r=> new ReviewIndexViewModel
-                {
-                    Id = r.Id, Username = r.User.UserName, Text = r.Text, DateAndTime = r.DateAndTime, BookId = book.Id
-                }).ToList()
-            }).FirstOrDefaultAsync();
-
+            var book = await service.ShowBookDetails(id);
             if (book == null) { return NotFound(); };
             return View(book);
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> AddReview(ReviewsCreateViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return RedirectToAction("Details", new { id = model.BookId });
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (await reviewService.UserAlreadyReviewed(model.BookId, userId))
+            {
+                TempData["Error"] = "You have already reviewed this book.";
+                return RedirectToAction("Details", new { id = model.BookId });
+            }
+
+            await reviewService.AddReview(userId, model);
+
+            return RedirectToAction("Details", new { id = model.BookId });
         }
     }
 }

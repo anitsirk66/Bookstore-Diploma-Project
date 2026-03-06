@@ -1,7 +1,9 @@
-﻿using BookstoreProjectData;
+﻿using BookstoreProjectCore.Contracts;
+using BookstoreProjectCore.DTOs.Authors;
+using BookstoreProjectCore.Models.Authors;
+using BookstoreProjectData;
 using BookstoreProjectData.Entities;
-using BookstoreWebApp.Models.Authors;
-using BookstoreWebApp.Models.Books;
+using BookstoreProjectCore.Models.Books;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -9,27 +11,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookstoreWebApp.Controllers
 {
-    //[Authorize(Roles = "Admin")]
     public class AuthorsController : Controller
     {
-        private readonly BookstoreContext context;
-        public AuthorsController(BookstoreContext _context)
+        private readonly IAuthorService service;
+        public AuthorsController(IAuthorService _service)
         {
-            context = _context;
+            service = _service;
         }
 
         [AllowAnonymous]
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var authors = context.Authors.Select(b => new AuthorsIndexViewModel
-            {
-                Id = b.Id,
-                FullName = b.FullName,
-                Nationality = b.Nationality,
-                Biography = b.Biography,
-                ImageUrl = "/img/noPfp.jpg"
-            }).ToList();
+            var authors = await service.Index();
 
             return View(authors);
 
@@ -39,7 +33,7 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View(new AuthorsCreateViewModel()); 
+            return View(); 
         }
 
         [Authorize(Roles = "Admin")]
@@ -51,16 +45,7 @@ namespace BookstoreWebApp.Controllers
                 return View(model);
             }
 
-            var author = new Author
-            {
-                Id = Guid.NewGuid(),
-                FullName = model.FullName,
-                Nationality = model.Nationality,
-                Biography = model.Biography
-            };
-
-            await context.Authors.AddAsync(author);
-            await context.SaveChangesAsync();
+            await service.CreateAsync(model);
             return RedirectToAction("Index");
         }
 
@@ -68,53 +53,25 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var model = await context.Authors
-                .Where(a => a.Id == id)
-                .Select(b => new AuthorsDeleteViewModel
-                {
-                    Id = b.Id
-                })
-                .FirstOrDefaultAsync();
-
-            if (model == null)
-            {
-                return NotFound();
-            }
-            return View(model);
-        }
-        [Authorize(Roles = "Admin")]
-        [HttpPost]
-        public async Task<IActionResult> Delete(AuthorsDeleteViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var author = await context.Authors.FindAsync(model.Id);
-            if (author == null) { return NotFound(); }
-
-            context.Authors.Remove(author);
-            await context.SaveChangesAsync();
+            await service.DeleteAsync(id);
             return RedirectToAction("Index");
         }
+        //[Authorize(Roles = "Admin")]
+        //[HttpPost]
+        //public async Task<IActionResult> DeletePost (Guid id)
+        //{
+        //    await service.DeleteAsync(id);
+        //    return RedirectToAction("Index");
+        //}
 
         [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
         {
-            var author = await context.Authors.FindAsync(id);
+            var author = await service.GetEditById(id);
             if (author == null) { return NotFound(); }
 
-            var model = new AuthorsEditViewModel
-            {
-                Id = author.Id,
-                FullName = author.FullName,
-                Nationality = author.Nationality,
-                Biography = author.Biography
-            };
-
-            return View(model);
+            return View(author);
         }
 
         [Authorize(Roles = "Admin")]
@@ -123,17 +80,15 @@ namespace BookstoreWebApp.Controllers
         {
             if (!ModelState.IsValid)
             {
+
+                var errors = ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
                 return View(model);
             }
 
-            var author = await context.Authors.FindAsync(model.Id);
-            if (author == null) { return NotFound(); }
-
-            author.FullName = model.FullName;
-            author.Nationality = model.Nationality;
-            author.Biography = model.Biography;
-
-            await context.SaveChangesAsync();
+            await service.EditAsync(model);
             return RedirectToAction("Index");
         }
 

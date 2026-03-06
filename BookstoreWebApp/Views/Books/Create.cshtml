@@ -1,5 +1,34 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using BookstoreProjectCore.Models.Books;
+@model BooksCreateViewModel
+
+<h1 style="font-family: Arial;">Add a new book</h1>
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label">Title</label>
+        <input asp-for="Title" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label">Price</label>
+        <input asp-for="Price" type="number" step="0.01" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label asp-for="CoverImageUrl" class="form-label">Cover URL: </label>
+        <input asp-for="CoverImageUrl" class="form-control"  />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Synopsis" class="form-label">Synopsis: </label>
+        <input asp-for="Synopsis" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label asp-for="AuthorId" class="form-label">Select author</label>
+        <select asp-for="AuthorId" class="form-control" asp-items="ViewBag.Authors" required></select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="GenreId" class="form-label">Select genre</label>
+        <select asp-for="GenreId" class="form-control" asp-items="ViewBag.Genres" required></select>
+    </div>
+    
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>

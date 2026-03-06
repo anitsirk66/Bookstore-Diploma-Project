@@ -17,12 +17,15 @@ namespace BookstoreProjectData.Entities
         public string FullName { get; set; } = null!;
 
         [Required]
-        [StringLength(200)]
+        [StringLength(1000)]
         public string Biography { get; set; } = null!;
 
         [Required]
         [StringLength(50)]
         public string Nationality { get; set; } = null!;
+
+        [Required]
+        public string CoverImageUrl { get; set; } = null!;
 
         public List<Book> Books { get; set;} = new List<Book>();
         public List<Event> Events { get; set;} = new List<Event>();

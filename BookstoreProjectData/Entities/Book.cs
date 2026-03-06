@@ -26,7 +26,7 @@ namespace BookstoreProjectData.Entities
         public string CoverImageUrl { get; set; } = null!;
 
         [Required]
-        [MinLength(30), MaxLength(300)]
+        [MinLength(30), MaxLength(1000)]
         public string Synopsis { get; set; } = null!;
 
 

@@ -17,7 +17,7 @@ namespace BookstoreProjectData.Entities
         public int Percent {  get; set; } 
         
         [Required]
-        [StringLength(80)]
+        [StringLength(200)]
         public string Description { get; set; } = null!;
 
         [Required]

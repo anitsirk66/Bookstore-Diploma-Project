@@ -1,4 +1,4 @@
-﻿@using BookstoreWebApp.Models.Authors;
+﻿@using BookstoreProjectCore.Models.Authors;
 @model IEnumerable<AuthorsIndexViewModel>
 
 @if(User.IsInRole("Admin"))
@@ -24,12 +24,12 @@
                     <td>@c.FullName</td>
                     <td>@c.Nationality</td>
                     <td>@c.Biography</td>
-                    <td><img src="@c.ImageUrl" width="400" height="200" /></td>
+                    <td><img src="@c.ImageUrl" width="200" height="200" /></td>
                     @if(User.IsInRole("Admin"))
                     {
                         <td>
                             <a class="btn btn-success" asp-action="Edit" asp-route-id="@c.Id">Edit</a>
-                            <form asp-action="Delete" method="post" asp-route-id="@c.Id">
+                            <form asp-action="Delete" method="get" asp-route-id="@c.Id">
                                 <button type="submit" class="btn btn-danger">Delete</button>
                             </form>
                         </td>

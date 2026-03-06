@@ -30,8 +30,12 @@ namespace BookstoreProjectData.Migrations
 
                     b.Property<string>("Biography")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("CoverImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FullName")
                         .IsRequired()
@@ -73,8 +77,8 @@ namespace BookstoreProjectData.Migrations
 
                     b.Property<string>("Synopsis")
                         .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("nvarchar(300)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -124,8 +128,8 @@ namespace BookstoreProjectData.Migrations
 
                     b.Property<string>("Desciption")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -196,8 +200,8 @@ namespace BookstoreProjectData.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("nvarchar(80)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<DateOnly>("From")
                         .HasColumnType("date");
@@ -557,7 +561,7 @@ namespace BookstoreProjectData.Migrations
                     b.HasOne("BookstoreProjectData.Entities.Book", "Book")
                         .WithMany("Publishers_Books")
                         .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BookstoreProjectData.Entities.Publisher", "Publisher")

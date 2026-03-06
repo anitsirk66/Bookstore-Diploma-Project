@@ -17,7 +17,7 @@ namespace BookstoreProjectData.Entities
         public string Name { get; set; } = null!;
 
         [Required]
-        [StringLength(100)]
+        [StringLength(200)]
         public string Description { get; set; } = null!;
 
         public List<Publisher_Book> Publishers_Books { get; set; } = new List<Publisher_Book>();

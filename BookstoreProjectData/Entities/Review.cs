@@ -24,7 +24,7 @@ namespace BookstoreProjectData.Entities
         public User User { get; set; }
 
         [Required]
-        [StringLength(2000)]
+        [StringLength(250)]
         public string Text { get; set; } = null!;
 
         [Required]

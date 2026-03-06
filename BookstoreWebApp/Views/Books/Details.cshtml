@@ -1,5 +1,112 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using BookstoreProjectCore.Models.Books;
+@model BooksDetailsViewModel
+
 @{
+    /*
+<h2>@Model.Title</h2>
+
+<div>
+    <img src="@Model.CoverImageUrl" width="300" />
+</div>
+
+<p><strong>Author:</strong> @Model.AuthorName</p>
+<p><strong>Price:</strong> @Model.Price</p>
+<p><strong>Synopsis:</strong></p>
+<p>@Model.Synopsis</p>
+
+
+    
+    <a asp-action="Index" class="btn btn-secondary">Back</a> */
 }
+
+
+<div class="container mt-4">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a asp-controller="Books" asp-action="Index">Books</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                @Model.Title
+            </li>
+        </ol>
+    </nav>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4 text-center">
+            <img src="@Model.CoverImageUrl"
+                 class="img-fluid rounded shadow book-cover-large"
+                 alt="@Model.Title" />
+        </div>
+
+        <div class="col-md-8">
+
+            <h1 class="fw-bold">@Model.Title</h1>
+            <h5 class="text-muted mb-3">@Model.AuthorName</h5>
+
+            <p><strong>Genre:</strong> @Model.GenreName</p>
+
+            <div class="price-box mt-3 mb-4">
+                <span class="book-price-large">
+                    @Model.Price €
+                </span>
+            </div>
+
+            <div class="d-flex gap-3 mb-4">
+                <a asp-action="Order"
+                   asp-route-id="@Model.Id"
+                   class="btn btn-danger btn-lg">
+                    Add to Cart
+                </a>
+
+                <a asp-action="Index"
+                   class="btn btn-outline-dark btn-lg">
+                    Back
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mt-5">
+
+        <ul class="nav nav-tabs" id="bookTabs" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active"
+                        data-bs-toggle="tab"
+                        data-bs-target="#description">
+                    Description
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link"
+                        data-bs-toggle="tab"
+                        data-bs-target="#reviews">
+                    Reviews
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content p-4 border border-top-0">
+
+            <div class="tab-pane fade show active"
+                 id="description">
+                <p>@Model.Synopsis</p>
+            </div>
+            <div class="tab-pane fade show active"
+                 id="reviews">
+                <p> *user reviews* </p>
+            </div>
+           
+        </div>
+
+    </div>
+
+  
+
+</div>

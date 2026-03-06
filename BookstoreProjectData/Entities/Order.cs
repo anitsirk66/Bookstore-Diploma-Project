@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookstoreProjectData.Entities
 {
+
     public class Order
     {
         [Key]
