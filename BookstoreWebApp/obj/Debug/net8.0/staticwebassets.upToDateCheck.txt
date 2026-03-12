@@ -18,6 +18,7 @@ wwwroot\img\menu-5.jpg
 wwwroot\img\menu-board.png
 wwwroot\img\nav-underline.png
 wwwroot\img\noPfp.jpg
+wwwroot\img\online-shopping.png
 wwwroot\img\popular-1.jpg
 wwwroot\img\popular-2.jpg
 wwwroot\img\popular-3.jpg
@@ -32,6 +33,7 @@ wwwroot\img\store.png
 wwwroot\img\sunrise.jpg
 wwwroot\img\table-set.png
 wwwroot\img\tm-brown-button.png
+wwwroot\img\user.png
 wwwroot\img\vertical-menu-bg.png
 wwwroot\js\bootstrap.bundle.min.js
 wwwroot\js\jquery-1.11.2.min.js

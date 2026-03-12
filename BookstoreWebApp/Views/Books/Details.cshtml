@@ -58,9 +58,10 @@
             </div>
 
             <div class="d-flex gap-3 mb-4">
-                <a asp-action="Order"
-                   asp-route-id="@Model.Id"
-                   class="btn btn-danger btn-lg">
+                <a asp-controller="Orders" asp-action="AddToCart"
+                   asp-route-id="@Model.Id" 
+                   asp-route-bookId =""
+                   class="btn btn-danger">
                     Add to Cart
                 </a>
 

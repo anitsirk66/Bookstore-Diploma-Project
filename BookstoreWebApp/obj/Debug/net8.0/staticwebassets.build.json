@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g9UQdvuZEyU+wnwuhepC1giAnIyCSBCM8wVaPQfZI90=",
+  "Hash": "p0FT4Zuw8SvXvP1eE0GPqbY9bAJqzmvh4rFd+w3QU9Y=",
   "Source": "BookstoreWebApp",
   "BasePath": "_content/BookstoreWebApp",
   "Mode": "Default",
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "k3vju2hk8s",
-      "Integrity": "0KXmvMfOzFLLcw/5z6k1Cd/DnThOL1+qLC0+BuIVKq8=",
+      "Fingerprint": "26b2ja0865",
+      "Integrity": "CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1739,6 +1739,27 @@
       "OriginalItemSpec": "wwwroot\\img\\noPfp.jpg"
     },
     {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\online-shopping.png",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/online-shopping#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yi3ozjvdwr",
+      "Integrity": "Jnm7iJ83lwnsD+6wtwD8iTzuQsUDRHbXM4VRbSyDfUo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\online-shopping.png"
+    },
+    {
       "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-1.jpg",
       "SourceId": "BookstoreWebApp",
       "SourceType": "Discovered",
@@ -2031,6 +2052,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\tm-brown-button.png"
+    },
+    {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\user.png",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/user#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a57tczqn5v",
+      "Integrity": "biH9UmF7y690isgjUpLn5n9XPVgkMlRBJcow5d1cgXg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\user.png"
     },
     {
       "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\vertical-menu-bg.png",
@@ -3665,6 +3707,51 @@
       ]
     },
     {
+      "Route": "css/site.26b2ja0865.css",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 09:40:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26b2ja0865"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -3675,7 +3762,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3516"
+          "Value": "3725"
         },
         {
           "Name": "Content-Type",
@@ -3683,11 +3770,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0KXmvMfOzFLLcw/5z6k1Cd/DnThOL1+qLC0+BuIVKq8=\""
+          "Value": "\"CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Mar 2026 09:52:54 GMT"
+          "Value": "Thu, 12 Mar 2026 09:40:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3697,52 +3784,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0KXmvMfOzFLLcw/5z6k1Cd/DnThOL1+qLC0+BuIVKq8="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.k3vju2hk8s.css",
-      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3516"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0KXmvMfOzFLLcw/5z6k1Cd/DnThOL1+qLC0+BuIVKq8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Mar 2026 09:52:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "k3vju2hk8s"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0KXmvMfOzFLLcw/5z6k1Cd/DnThOL1+qLC0+BuIVKq8="
+          "Value": "sha256-CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM="
         }
       ]
     },
@@ -7361,6 +7403,88 @@
       ]
     },
     {
+      "Route": "img/online-shopping.png",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\online-shopping.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jnm7iJ83lwnsD+6wtwD8iTzuQsUDRHbXM4VRbSyDfUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 11:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jnm7iJ83lwnsD+6wtwD8iTzuQsUDRHbXM4VRbSyDfUo="
+        }
+      ]
+    },
+    {
+      "Route": "img/online-shopping.yi3ozjvdwr.png",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\online-shopping.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jnm7iJ83lwnsD+6wtwD8iTzuQsUDRHbXM4VRbSyDfUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 11:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yi3ozjvdwr"
+        },
+        {
+          "Name": "label",
+          "Value": "img/online-shopping.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jnm7iJ83lwnsD+6wtwD8iTzuQsUDRHbXM4VRbSyDfUo="
+        }
+      ]
+    },
+    {
       "Route": "img/popular-1.6hm1f4sucr.jpg",
       "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-1.jpg",
       "Selectors": [],
@@ -8505,6 +8629,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-9jrQh6666zI6jd2+Uq08Kzn/rSGz3yvnFgx9CyYTdvI="
+        }
+      ]
+    },
+    {
+      "Route": "img/user.a57tczqn5v.png",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"biH9UmF7y690isgjUpLn5n9XPVgkMlRBJcow5d1cgXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 11:29:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a57tczqn5v"
+        },
+        {
+          "Name": "label",
+          "Value": "img/user.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-biH9UmF7y690isgjUpLn5n9XPVgkMlRBJcow5d1cgXg="
+        }
+      ]
+    },
+    {
+      "Route": "img/user.png",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"biH9UmF7y690isgjUpLn5n9XPVgkMlRBJcow5d1cgXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 11:29:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-biH9UmF7y690isgjUpLn5n9XPVgkMlRBJcow5d1cgXg="
         }
       ]
     },

@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\img\\noPfp.jpg"
     },
     {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\online-shopping.png",
+      "PackagePath": "staticwebassets\\img\\online-shopping.png"
+    },
+    {
       "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-1.jpg",
       "PackagePath": "staticwebassets\\img\\popular-1.jpg"
     },
@@ -139,6 +143,10 @@
     {
       "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\tm-brown-button.png",
       "PackagePath": "staticwebassets\\img\\tm-brown-button.png"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
     },
     {
       "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\vertical-menu-bg.png",

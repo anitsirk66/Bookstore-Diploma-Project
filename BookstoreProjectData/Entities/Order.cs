@@ -12,7 +12,6 @@ namespace BookstoreProjectData.Entities
     public class Order
     {
         [Key]
-
         public Guid Id { get; set; }
 
         [Required]
