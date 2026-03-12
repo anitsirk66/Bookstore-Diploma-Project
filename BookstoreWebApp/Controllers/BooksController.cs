@@ -58,10 +58,9 @@ namespace BookstoreWebApp.Controllers
         {
             if (!ModelState.IsValid)
             {
-
-                var errors = ModelState.Select(x => x.Value.Errors)
-                    .Where(y => y.Count > 0)
-                    .ToList();
+                //var errors = ModelState.Select(x => x.Value.Errors)
+                //    .Where(y => y.Count > 0)
+                //    .ToList();
 
                 var authors = await service.GetAuthors();
                 ViewBag.Authors = new SelectList(authors, "Id", "FullName");
@@ -86,14 +85,6 @@ namespace BookstoreWebApp.Controllers
             await service.DeleteAsync(id);
             return RedirectToAction("Index");
         }
-
-        //[Authorize(Roles = "Admin")]
-        //[HttpPost]
-        //public async Task<IActionResult> DeletePost (Guid id)
-        //{
-        //    await service.DeleteAsync(id);
-        //    return RedirectToAction("Index");
-        //}
 
         [Authorize(Roles = "Admin")]
         [HttpGet]
@@ -120,10 +111,9 @@ namespace BookstoreWebApp.Controllers
         {
             if (!ModelState.IsValid)
             {
-
-                var errors = ModelState.Select(x => x.Value.Errors)
-                    .Where(y => y.Count > 0)
-                    .ToList();
+                //var errors = ModelState.Select(x => x.Value.Errors)
+                //    .Where(y => y.Count > 0)
+                //    .ToList();
                     
                 var authors = await service.GetAuthors();
                 ViewBag.Authors = new SelectList(authors, "Id", "FullName");
@@ -148,26 +138,6 @@ namespace BookstoreWebApp.Controllers
             var book = await service.ShowBookDetails(id);
             if (book == null) { return NotFound(); };
             return View(book);
-        }
-
-        [AllowAnonymous]
-        [HttpPost]
-        public async Task<IActionResult> AddReview(ReviewsCreateViewModel model)
-        {
-            if (!ModelState.IsValid)
-                return RedirectToAction("Details", new { id = model.BookId });
-
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            if (await reviewService.UserAlreadyReviewed(model.BookId, userId))
-            {
-                TempData["Error"] = "You have already reviewed this book.";
-                return RedirectToAction("Details", new { id = model.BookId });
-            }
-
-            await reviewService.AddReview(userId, model);
-
-            return RedirectToAction("Details", new { id = model.BookId });
         }
     }
 }

@@ -44,7 +44,7 @@ namespace BookstoreProjectCore.Services
                 {
                     Username = r.User.UserName,
                     Text = r.Text,
-                    DateAndTime = r.DateAndTime
+                    CreatedOn = r.DateAndTime
                 })
                 .ToListAsync();
         }
@@ -53,6 +53,17 @@ namespace BookstoreProjectCore.Services
         {
             return await context.Reviews
                 .AnyAsync(r => r.BookId == bookId && r.UserId == userId);
+        }
+
+        public async Task DeleteAsync(Guid id)
+        {
+            var review = await context.Reviews.FindAsync(id);
+
+            if (review == null)
+                throw new ArgumentException("Review not found");
+
+            context.Reviews.Remove(review);
+            await context.SaveChangesAsync();
         }
     }
 }

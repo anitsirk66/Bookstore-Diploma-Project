@@ -66,11 +66,9 @@ namespace BookstoreWebApp.Controllers
 
             if (result.Succeeded)
             {
-                if(model.Role == "Client" || model.Role == "Admin")
-                {
-                    await userManager.AddToRoleAsync(user, model.Role);
-                }
-                return RedirectToAction("Home", "Index");
+                await userManager.AddToRoleAsync(user, "Client");
+                
+                return RedirectToAction( "Index", "Home");
             }
 
             foreach(var item in result.Errors)

@@ -1,21 +1,32 @@
 ﻿@using BookstoreProjectCore.Models.Events;
 @model EventsCreateViewModel
 
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
 <h1 style="font-family: Arial;">Add a new event *only possible for administrator*</h1>
 <form asp-action="Create" method="post">
     <div class="mb-3">
         <label asp-for="Name" class="form-label">Event name</label>
         <input asp-for="Name" class="form-control" required/>
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label asp-for="DateAndTime" class="form-label">Date and time</label>
         <input asp-for="DateAndTime" type="datetime-local" class="form-control" required />
+        <span asp-validation-for="DateAndTime" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label asp-for="AuthorId" class="form-label">Author's name</label>
         <select asp-for="AuthorId" class="form-control" asp-items="ViewBag.Authors" required></select>
+        <span asp-validation-for="AuthorId" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <button type="submit" class="btn btn-primary">Create</button>
     </div>
 </form>
+
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

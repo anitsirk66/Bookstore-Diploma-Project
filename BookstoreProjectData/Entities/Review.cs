@@ -21,7 +21,7 @@ namespace BookstoreProjectData.Entities
         [ForeignKey(nameof(User))]
         [Required]
         public string UserId { get; set; } = null!;
-        public User User { get; set; }
+        public User User { get; set; } = null!;
 
         [Required]
         [StringLength(250)]

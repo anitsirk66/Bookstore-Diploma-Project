@@ -141,6 +141,10 @@
       "PackagePath": "staticwebassets\\img\\tm-brown-button.png"
     },
     {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
       "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\vertical-menu-bg.png",
       "PackagePath": "staticwebassets\\img\\vertical-menu-bg.png"
     },

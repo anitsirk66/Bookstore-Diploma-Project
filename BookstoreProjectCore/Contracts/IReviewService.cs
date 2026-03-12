@@ -13,5 +13,7 @@ namespace BookstoreProjectCore.Contracts
         Task AddReview(string userid, ReviewsCreateViewModel model);
         Task<IEnumerable<ReviewsIndexViewModel>> GetReviews(Guid bookid);
         Task<bool> UserAlreadyReviewed(Guid bookid, string userid);
+
+        Task DeleteAsync(Guid id);
     }
 }

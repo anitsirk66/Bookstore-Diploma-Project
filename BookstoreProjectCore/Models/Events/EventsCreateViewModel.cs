@@ -9,13 +9,15 @@ namespace BookstoreProjectCore.Models.Events
     {
         public Guid Id { get; set; }
 
-        [StringLength(50)]
+        [Required(ErrorMessage = "This field is required.")]
+        [StringLength(50, ErrorMessage = "The event's name can be a maximum of 50 characters.")]
         public string Name { get; set; } = null!;
 
-        [Required]
-        [DataType(DataType.DateTime)]
+        [Required(ErrorMessage = "This field is required.")]
+        [DataType(DataType.DateTime, ErrorMessage = "Enter a date and time.")]
         public DateTime DateAndTime { get; set; }
 
+        [Required(ErrorMessage = "This field is required.")]
         public Guid AuthorId { get; set; }
         //public Author Author { get; set; } = null!;
     }

@@ -32,6 +32,7 @@ wwwroot\img\store.png
 wwwroot\img\sunrise.jpg
 wwwroot\img\table-set.png
 wwwroot\img\tm-brown-button.png
+wwwroot\img\user.png
 wwwroot\img\vertical-menu-bg.png
 wwwroot\js\bootstrap.bundle.min.js
 wwwroot\js\jquery-1.11.2.min.js
