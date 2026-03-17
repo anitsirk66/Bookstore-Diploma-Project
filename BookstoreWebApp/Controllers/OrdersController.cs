@@ -22,8 +22,8 @@ namespace BookstoreWebApp.Controllers
             return View();
         }
 
-        //add to cart
-        [Authorize(Roles = "Client")]
+        
+        [Authorize]
         public async Task<IActionResult> AddToCart(Guid bookid)
         {
             var user = await userManager.GetUserAsync(User);

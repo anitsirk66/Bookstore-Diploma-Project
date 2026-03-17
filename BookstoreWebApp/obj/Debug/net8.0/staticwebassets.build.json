@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p0FT4Zuw8SvXvP1eE0GPqbY9bAJqzmvh4rFd+w3QU9Y=",
+  "Hash": "zQxDznZ4heZr6dq9MKW6xJJXB2HUfxPqoh4rX0P0VfI=",
   "Source": "BookstoreWebApp",
   "BasePath": "_content/BookstoreWebApp",
   "Mode": "Default",
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "26b2ja0865",
-      "Integrity": "CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM=",
+      "Fingerprint": "b1tn5svvqw",
+      "Integrity": "QUi+6cQm4sySu8dCCfj4b+PL0yLqPeoeJ6IXqdO8EhY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1760,6 +1760,27 @@
       "OriginalItemSpec": "wwwroot\\img\\online-shopping.png"
     },
     {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\parcel.png",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/parcel#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w6f2p5skzc",
+      "Integrity": "aGadQksbT4dMZqveXSHzgW/HFQu/AUX0qWmxoR00ax4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\parcel.png"
+    },
+    {
       "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-1.jpg",
       "SourceId": "BookstoreWebApp",
       "SourceType": "Discovered",
@@ -1884,6 +1905,153 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\shadow.png"
+    },
+    {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/shopping_bag_files/0WKY0ny-iWR3yYCvsD6MQVMjVbw#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6m7fao1008",
+      "Integrity": "snHWZj+ntPvXt3wsXT81AVz64Sv36eX5LCV3lrNXVCg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg"
+    },
+    {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/shopping_bag_files/9mM--t8iClqcK4e1MHzNovhHkVA#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h5l9ubo7y5",
+      "Integrity": "qwJAUgT1x7KnhNbEQM4E0h/3zWguHVzCvdxrpAALllo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg"
+    },
+    {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/shopping_bag_files/e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qu3vfn1722",
+      "Integrity": "QiA4rs8fxdEUgxz/cDrtV2aY0w0yW9mK1jp6nmCny2c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css"
+    },
+    {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/shopping_bag_files/kxTm6_yMJSr-Au_oSrzcrpJm2mY#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lpozofdxmk",
+      "Integrity": "2Svg6RgsvXVDRP0gigrFS2m0ZC9sgBBt/dDeXBI+OV0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg"
+    },
+    {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\widget.js.download",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/shopping_bag_files/widget.js#[.{fingerprint}]?.download",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qi3ay1oplx",
+      "Integrity": "Uvb/766HcQweiD/JcMqqOl2g4reE2EMXLy7kenvbK2c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shopping_bag_files\\widget.js.download"
+    },
+    {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/shopping_bag_files/XhuulIbo88eLoQSXNdexXtHhacY#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2ynawq0zk2",
+      "Integrity": "uh9f2aGQ8acscQB25YFuPvAHJPlOSnAwbFEZEVCZp4c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg"
+    },
+    {
+      "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg",
+      "SourceId": "BookstoreWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\",
+      "BasePath": "_content/BookstoreWebApp",
+      "RelativePath": "img/shopping_bag_files/zYRmeqAEd4Z0yDRz8nuL0syHMEI#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k59hom5rjk",
+      "Integrity": "mIi89oZA989uSV1pmSN1sATZBcR4We/nxJ4yjSEFEB8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg"
     },
     {
       "Identity": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\special-1.jpg",
@@ -3401,7 +3569,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Feb 2026 08:32:08 GMT"
+          "Value": "Fri, 13 Mar 2026 07:56:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3446,7 +3614,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Feb 2026 08:32:08 GMT"
+          "Value": "Fri, 13 Mar 2026 07:56:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3491,7 +3659,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Feb 2026 08:32:08 GMT"
+          "Value": "Fri, 13 Mar 2026 07:56:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3528,7 +3696,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Feb 2026 08:32:08 GMT"
+          "Value": "Fri, 13 Mar 2026 07:56:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3707,7 +3875,7 @@
       ]
     },
     {
-      "Route": "css/site.26b2ja0865.css",
+      "Route": "css/site.b1tn5svvqw.css",
       "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3717,7 +3885,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3725"
+          "Value": "4876"
         },
         {
           "Name": "Content-Type",
@@ -3725,11 +3893,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM=\""
+          "Value": "\"QUi+6cQm4sySu8dCCfj4b+PL0yLqPeoeJ6IXqdO8EhY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Mar 2026 09:40:58 GMT"
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3739,7 +3907,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "26b2ja0865"
+          "Value": "b1tn5svvqw"
         },
         {
           "Name": "label",
@@ -3747,7 +3915,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM="
+          "Value": "sha256-QUi+6cQm4sySu8dCCfj4b+PL0yLqPeoeJ6IXqdO8EhY="
         }
       ]
     },
@@ -3762,7 +3930,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3725"
+          "Value": "4876"
         },
         {
           "Name": "Content-Type",
@@ -3770,11 +3938,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM=\""
+          "Value": "\"QUi+6cQm4sySu8dCCfj4b+PL0yLqPeoeJ6IXqdO8EhY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Mar 2026 09:40:58 GMT"
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3784,7 +3952,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CgCPi99nBntElt25DzXGHEBgDtfKeIlQ+wE1wD3+zmM="
+          "Value": "sha256-QUi+6cQm4sySu8dCCfj4b+PL0yLqPeoeJ6IXqdO8EhY="
         }
       ]
     },
@@ -7485,6 +7653,88 @@
       ]
     },
     {
+      "Route": "img/parcel.png",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\parcel.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aGadQksbT4dMZqveXSHzgW/HFQu/AUX0qWmxoR00ax4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aGadQksbT4dMZqveXSHzgW/HFQu/AUX0qWmxoR00ax4="
+        }
+      ]
+    },
+    {
+      "Route": "img/parcel.w6f2p5skzc.png",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\parcel.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aGadQksbT4dMZqveXSHzgW/HFQu/AUX0qWmxoR00ax4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w6f2p5skzc"
+        },
+        {
+          "Name": "label",
+          "Value": "img/parcel.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aGadQksbT4dMZqveXSHzgW/HFQu/AUX0qWmxoR00ax4="
+        }
+      ]
+    },
+    {
       "Route": "img/popular-1.6hm1f4sucr.jpg",
       "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-1.jpg",
       "Selectors": [],
@@ -7973,6 +8223,580 @@
         {
           "Name": "integrity",
           "Value": "sha256-pQJ5pAFMJuSzUajcVqAZhAWkJsiFR8fW2GWgRN93tcs="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/0WKY0ny-iWR3yYCvsD6MQVMjVbw.6m7fao1008.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"snHWZj+ntPvXt3wsXT81AVz64Sv36eX5LCV3lrNXVCg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6m7fao1008"
+        },
+        {
+          "Name": "label",
+          "Value": "img/shopping_bag_files/0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-snHWZj+ntPvXt3wsXT81AVz64Sv36eX5LCV3lrNXVCg="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"snHWZj+ntPvXt3wsXT81AVz64Sv36eX5LCV3lrNXVCg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-snHWZj+ntPvXt3wsXT81AVz64Sv36eX5LCV3lrNXVCg="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/9mM--t8iClqcK4e1MHzNovhHkVA.h5l9ubo7y5.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qwJAUgT1x7KnhNbEQM4E0h/3zWguHVzCvdxrpAALllo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h5l9ubo7y5"
+        },
+        {
+          "Name": "label",
+          "Value": "img/shopping_bag_files/9mM--t8iClqcK4e1MHzNovhHkVA.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qwJAUgT1x7KnhNbEQM4E0h/3zWguHVzCvdxrpAALllo="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/9mM--t8iClqcK4e1MHzNovhHkVA.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "841"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qwJAUgT1x7KnhNbEQM4E0h/3zWguHVzCvdxrpAALllo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qwJAUgT1x7KnhNbEQM4E0h/3zWguHVzCvdxrpAALllo="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QiA4rs8fxdEUgxz/cDrtV2aY0w0yW9mK1jp6nmCny2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QiA4rs8fxdEUgxz/cDrtV2aY0w0yW9mK1jp6nmCny2c="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.qu3vfn1722.css",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QiA4rs8fxdEUgxz/cDrtV2aY0w0yW9mK1jp6nmCny2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qu3vfn1722"
+        },
+        {
+          "Name": "label",
+          "Value": "img/shopping_bag_files/e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QiA4rs8fxdEUgxz/cDrtV2aY0w0yW9mK1jp6nmCny2c="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/kxTm6_yMJSr-Au_oSrzcrpJm2mY.lpozofdxmk.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Svg6RgsvXVDRP0gigrFS2m0ZC9sgBBt/dDeXBI+OV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lpozofdxmk"
+        },
+        {
+          "Name": "label",
+          "Value": "img/shopping_bag_files/kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Svg6RgsvXVDRP0gigrFS2m0ZC9sgBBt/dDeXBI+OV0="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Svg6RgsvXVDRP0gigrFS2m0ZC9sgBBt/dDeXBI+OV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Svg6RgsvXVDRP0gigrFS2m0ZC9sgBBt/dDeXBI+OV0="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/widget.js.download",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\widget.js.download",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "271574"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uvb/766HcQweiD/JcMqqOl2g4reE2EMXLy7kenvbK2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uvb/766HcQweiD/JcMqqOl2g4reE2EMXLy7kenvbK2c="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/widget.js.qi3ay1oplx.download",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\widget.js.download",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "271574"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uvb/766HcQweiD/JcMqqOl2g4reE2EMXLy7kenvbK2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qi3ay1oplx"
+        },
+        {
+          "Name": "label",
+          "Value": "img/shopping_bag_files/widget.js.download"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uvb/766HcQweiD/JcMqqOl2g4reE2EMXLy7kenvbK2c="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/XhuulIbo88eLoQSXNdexXtHhacY.2ynawq0zk2.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uh9f2aGQ8acscQB25YFuPvAHJPlOSnAwbFEZEVCZp4c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2ynawq0zk2"
+        },
+        {
+          "Name": "label",
+          "Value": "img/shopping_bag_files/XhuulIbo88eLoQSXNdexXtHhacY.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uh9f2aGQ8acscQB25YFuPvAHJPlOSnAwbFEZEVCZp4c="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/XhuulIbo88eLoQSXNdexXtHhacY.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uh9f2aGQ8acscQB25YFuPvAHJPlOSnAwbFEZEVCZp4c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uh9f2aGQ8acscQB25YFuPvAHJPlOSnAwbFEZEVCZp4c="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/zYRmeqAEd4Z0yDRz8nuL0syHMEI.k59hom5rjk.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mIi89oZA989uSV1pmSN1sATZBcR4We/nxJ4yjSEFEB8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k59hom5rjk"
+        },
+        {
+          "Name": "label",
+          "Value": "img/shopping_bag_files/zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mIi89oZA989uSV1pmSN1sATZBcR4We/nxJ4yjSEFEB8="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping_bag_files/zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg",
+      "AssetFile": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mIi89oZA989uSV1pmSN1sATZBcR4We/nxJ4yjSEFEB8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Mar 2026 13:12:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mIi89oZA989uSV1pmSN1sATZBcR4We/nxJ4yjSEFEB8="
         }
       ]
     },

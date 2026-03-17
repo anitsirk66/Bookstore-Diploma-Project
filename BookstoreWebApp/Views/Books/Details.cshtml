@@ -57,6 +57,7 @@
                 </span>
             </div>
 
+            
             <div class="d-flex gap-3 mb-4">
                 <a asp-controller="Orders" asp-action="AddToCart"
                    asp-route-id="@Model.Id" 
@@ -64,7 +65,9 @@
                    class="btn btn-danger">
                     Add to Cart
                 </a>
-
+            </div>
+            
+            <div class="d-flex gap-3 mb-4">
                 <a asp-action="Index"
                    class="btn btn-outline-dark btn-lg">
                     Back
@@ -95,15 +98,74 @@
 
         <div class="tab-content p-4 border border-top-0">
 
-            <div class="tab-pane fade show active"
-                 id="description">
+            <div class="tab-pane fade show active" id="description">
                 <p>@Model.Synopsis</p>
             </div>
-            <div class="tab-pane fade show active"
-                 id="reviews">
-                <p> *user reviews* </p>
+
+            <div class="tab-pane fade" id="reviews">
+                @if (!Model.Reviews.Any())
+                {
+                    <p>No reviews yet.</p>
+                }
+                else
+                {
+                    @foreach (var review in Model.Reviews)
+                    {
+                        <div class="review-box">
+                            <div class="review-content">
+                                <p>@review.Text</p>
+                            </div>
+                            <div class="review-by">
+                                <span class="review-user"> Reviewed by
+                                        @if(review.IsAnonymous == false)
+                                        {
+                                            <b>@review.Username</b>
+                                        }
+                                        else 
+                                        {
+                                            <b>anonymous</b>
+                                        }
+                                </span>
+                            </div>
+                            <span class="review-date">On @review.CreatedOn.ToString("dd MMM yyyy")</span>
+
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <a asp-controller="Reviews" asp-action="Delete" method="get" asp-route-id="@review.Id"
+                                   class="btn btn-danger">Delete this review</a>
+                            }
+                        </div>
+                    }
+                }
+
+                @if (User?.Identity?.IsAuthenticated ?? false && User.IsInRole("Client"))
+                {
+                    <form asp-controller="Reviews" asp-action="Create" method="post" class="review-form">
+                        <input type="hidden" name="BookId" value="@Model.Id" />
+
+                        <h4 class="review-title">Your turn! Write your own review</h4>
+
+                        <div class="form-group">
+                            <label class="review-label">Your opinion</label>
+                            <textarea name="Text" class="form-control review-textarea" required></textarea>
+                        </div>
+
+                        <div class="form-check review-anonymous">
+                            <input class="form-check-input" type="checkbox" id="anonymousCheck" name="IsAnonymous" />
+                            <label class="form-check-label" for="anonymousCheck">
+                                I would like to stay anonymous
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark review-btn">Send review</button>
+                    </form>
+                }
+                else
+                {
+                    <p>Please log in to leave a review.</p>
+                }
             </div>
-           
+
         </div>
 
     </div>

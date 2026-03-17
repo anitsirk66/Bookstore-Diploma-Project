@@ -1,24 +1,39 @@
 ﻿@using BookstoreProjectCore.Models.Authors;
 @model AuthorsEditViewModel
 
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
 <h1>Edit Author</h1>
 
 <form asp-action="Edit" method="post">
     <div class="mb-3">
         <label asp-for="FullName" class="form-label">New name</label>
         <input asp-for="FullName" class="form-control" required />
+        <span asp-validation-for="FullName" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label asp-for="Nationality" class="form-label">New nationality</label>
         <input asp-for="Nationality" class="form-control" required />
+        <span asp-validation-for="Nationality" class="text-danger"></span>
+
     </div>
     <div class="mb-3">
         <label asp-for="Biography" class="form-label">New biography</label>
         <input asp-for="Biography" class="form-control" required />
+        <span asp-validation-for="Biography" class="text-danger"></span>
+
     </div>
     <div class="mb-3">
         <label asp-for="ImageUrl" class="form-label">New image's URL</label>
         <input asp-for="ImageUrl" class="form-control" required />
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+
     </div>
     <button type="submit" class="btn btn-light">Submit</button>
 </form>
+
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

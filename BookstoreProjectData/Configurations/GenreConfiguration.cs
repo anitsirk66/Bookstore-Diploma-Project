@@ -1,0 +1,23 @@
+﻿using BookstoreProjectData.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BookstoreProjectData.Configurations
+{
+    public class GenreConfiguration : IEntityTypeConfiguration<Genre>
+    {
+        public void Configure (EntityTypeBuilder<Genre> builder)
+        {
+            entity.HasKey(g => g.Id);
+
+            entity.Property(g => g.Name)
+                  .IsRequired()
+                  .HasMaxLength(50);
+        }
+    }
+}

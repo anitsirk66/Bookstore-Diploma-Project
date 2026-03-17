@@ -33,10 +33,10 @@
                             </form>
                         </div>
                     }
-                    else
+                    else if (User?.Identity?.IsAuthenticated ?? false)
                     {
                         <div class="user-actions">
-                            <a asp-action="Order" class="btn btn-outline-danger">Add to cart</a>
+                            <a asp-controller="Orders" asp-action="AddToCart" class="btn btn-outline-danger">Add to cart</a>
                         </div>
                     }
                     

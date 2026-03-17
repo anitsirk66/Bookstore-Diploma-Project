@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\img\\online-shopping.png"
     },
     {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\parcel.png",
+      "PackagePath": "staticwebassets\\img\\parcel.png"
+    },
+    {
       "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-1.jpg",
       "PackagePath": "staticwebassets\\img\\popular-1.jpg"
     },
@@ -111,6 +115,34 @@
     {
       "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shadow.png",
       "PackagePath": "staticwebassets\\img\\shadow.png"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg",
+      "PackagePath": "staticwebassets\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg",
+      "PackagePath": "staticwebassets\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg",
+      "PackagePath": "staticwebassets\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css",
+      "PackagePath": "staticwebassets\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg",
+      "PackagePath": "staticwebassets\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\widget.js.download",
+      "PackagePath": "staticwebassets\\img\\shopping_bag_files\\widget.js.download"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg",
+      "PackagePath": "staticwebassets\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg"
     },
     {
       "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\special-1.jpg",
