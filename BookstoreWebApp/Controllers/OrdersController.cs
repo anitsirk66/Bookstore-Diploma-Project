@@ -1,4 +1,5 @@
 ﻿using BookstoreProjectCore.Contracts;
+using BookstoreProjectCore.Services;
 using BookstoreProjectData.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -29,6 +30,25 @@ namespace BookstoreWebApp.Controllers
             var user = await userManager.GetUserAsync(User);
             await service.AddToCart(bookid, user.Id);
             return RedirectToAction("Index"); //*
+        }
+
+        public async Task<IActionResult> GetCart()
+        {
+            var user = await userManager.GetUserAsync(User);
+
+            var order = await service.GetCart(user.Id);
+
+            var cartItems = new List<Order_Book>();
+
+            if (order != null)
+            {
+                foreach (var item in order.Orders_Books)
+                {
+                    cartItems.Add(item);
+                }
+            }
+
+            return View(cartItems); //?
         }
     }
 }

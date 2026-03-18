@@ -22,6 +22,9 @@ namespace BookstoreProjectData.Configurations
                   .WithMany(u => u.Orders)
                   .HasForeignKey(o => o.UserId)
                   .OnDelete(DeleteBehavior.Restrict);
+            builder.HasMany(o=>o.Orders_Books)
+                .WithOne(b=>b.Order)
+                .HasForeignKey(o => o.OrderId);
         }
     }
 }

@@ -13,9 +13,9 @@ namespace BookstoreProjectData.Configurations
     {
         public void Configure (EntityTypeBuilder<Genre> builder)
         {
-            entity.HasKey(g => g.Id);
+            builder.HasKey(g => g.Id);
 
-            entity.Property(g => g.Name)
+            builder.Property(g => g.Name)
                   .IsRequired()
                   .HasMaxLength(50);
         }
