@@ -13,11 +13,15 @@ namespace BookstoreProjectData.Configurations
     {
         public void Configure (EntityTypeBuilder<Genre> builder)
         {
-            builder.HasKey(g => g.Id);
+			builder.HasKey(g => g.Id);
 
-            builder.Property(g => g.Name)
-                  .IsRequired()
-                  .HasMaxLength(50);
-        }
+			builder.Property(g => g.Name)
+				.IsRequired()
+				.HasMaxLength(50);
+
+			builder.Property(g => g.Desciption)
+				.IsRequired()
+				.HasMaxLength(300);
+		}
     }
 }

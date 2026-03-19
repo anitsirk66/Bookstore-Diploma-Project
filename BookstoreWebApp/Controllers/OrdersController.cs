@@ -1,4 +1,5 @@
 ﻿using BookstoreProjectCore.Contracts;
+using BookstoreProjectCore.Models.Cart;
 using BookstoreProjectCore.Services;
 using BookstoreProjectData.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -8,47 +9,76 @@ using Microsoft.Identity.Client;
 
 namespace BookstoreWebApp.Controllers
 {
-    public class OrdersController : Controller
-    {
-        private readonly IOrderService service;
-        private readonly UserManager<User> userManager;
+	public class OrdersController : Controller
+	{
+		private readonly IOrderService service;
+		private readonly UserManager<User> userManager;
 
-        public OrdersController(IOrderService _service, UserManager<User> _userManager)
-        {
-            service = _service;
-            userManager = _userManager;
-        }
-        public IActionResult Index()
-        {
-            return View();
-        }
+		public OrdersController(IOrderService _service, UserManager<User> _userManager)
+		{
+			service = _service;
+			userManager = _userManager;
+		}
 
-        
-        [Authorize]
-        public async Task<IActionResult> AddToCart(Guid bookid)
-        {
-            var user = await userManager.GetUserAsync(User);
-            await service.AddToCart(bookid, user.Id);
-            return RedirectToAction("Index"); //*
-        }
+		public IActionResult Index()
+		{
+			return View();
+		}
 
-        public async Task<IActionResult> GetCart()
-        {
-            var user = await userManager.GetUserAsync(User);
+		[Authorize]
+		public async Task<IActionResult> AddToCart(string id)
+		{
+			var bookid = new Guid(id);
+			var user = await userManager.GetUserAsync(User);
 
-            var order = await service.GetCart(user.Id);
+			if (user == null)
+			{
+				return Unauthorized();
+			}
 
-            var cartItems = new List<Order_Book>();
+			await service.AddToCart(bookid, user.Id);
 
-            if (order != null)
-            {
-                foreach (var item in order.Orders_Books)
-                {
-                    cartItems.Add(item);
-                }
-            }
+			return RedirectToAction(nameof(GetCart));
+		}
 
-            return View(cartItems); //?
-        }
-    }
+		[Authorize]
+		public async Task<IActionResult> GetCart()
+		{
+			var user = await userManager.GetUserAsync(User);
+
+			var order = await service.GetCart(user.Id);
+
+			var model = new CartViewModel();
+
+			if (order != null)
+			{
+				model.Items = order.Orders_Books.Select(ob => new CartItemViewModel
+				{
+					BookId = ob.BookId,
+					Title = ob.Book.Title,
+					CoverImageUrl = ob.Book.CoverImageUrl,
+					UnitPrice = ob.UnitPrice,
+					Quantity = ob.Quantity
+				}).ToList();
+			}
+
+			return View(model);
+		}
+
+		[Authorize]
+		[HttpPost]
+		public async Task<IActionResult> RemoveFromCart(Guid bookId)
+		{
+			var user = await userManager.GetUserAsync(User);
+
+			if (user == null)
+			{
+				return Unauthorized();
+			}
+
+			await service.RemoveFromCart(bookId, user.Id);
+
+			return RedirectToAction(nameof(GetCart));
+		}
+	}
 }

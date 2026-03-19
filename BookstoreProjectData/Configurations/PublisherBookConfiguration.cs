@@ -13,17 +13,21 @@ namespace BookstoreProjectData.Configurations
     {
         public void Configure (EntityTypeBuilder<Publisher_Book> builder)
         {
-            builder.HasKey(pb => new { pb.PublisherId, pb.BookId });
+			builder.HasKey(pb => new { pb.PublisherId, pb.BookId });
 
-            builder.HasOne(pb => pb.Publisher)
-                  .WithMany(p => p.Publishers_Books)
-                  .HasForeignKey(pb => pb.PublisherId)
-                  .OnDelete(DeleteBehavior.Cascade);
+			builder.Property(pb => pb.Language)
+				.IsRequired()
+				.HasMaxLength(30);
 
-            builder.HasOne(pb => pb.Book)
-                  .WithMany(b => b.Publishers_Books)
-                  .HasForeignKey(pb => pb.BookId)
-                  .OnDelete(DeleteBehavior.Cascade);
-        }
+			builder.HasOne(pb => pb.Publisher)
+				.WithMany(p => p.Publishers_Books)
+				.HasForeignKey(pb => pb.PublisherId)
+				.OnDelete(DeleteBehavior.Restrict);
+
+			builder.HasOne(pb => pb.Book)
+				.WithMany(b => b.Publishers_Books)
+				.HasForeignKey(pb => pb.BookId)
+				.OnDelete(DeleteBehavior.Restrict);
+		}
     }
 }

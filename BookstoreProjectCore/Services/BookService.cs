@@ -158,5 +158,31 @@ namespace BookstoreProjectCore.Services
                                 .OrderBy(a => a.Id)
                                 .ToListAsync();
         }
+
+        public async Task<IEnumerable<BooksIndexViewModel>> FilterBooks(Guid? genreId, Guid? authorId)
+        {
+            var query = context.Books.AsQueryable();
+
+            if (genreId.HasValue)
+            {
+                query = query.Where(b => b.GenreId == genreId);
+            }
+
+            if (authorId.HasValue)
+            {
+                query = query.Where(b => b.AuthorId == authorId);
+            }
+
+            return await query
+                .Select(b => new BooksIndexViewModel
+                {
+                    Id = b.Id,
+                    Title = b.Title,
+                    AuthorName = b.Author.FullName,
+                    CoverImageUrl = b.CoverImageUrl,
+                    Price = b.Price
+                })
+                .ToListAsync();
+        }
     }
 }

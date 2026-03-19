@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj": {}
+    "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectData\\BookstoreProjectData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj": {
+    "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectData\\BookstoreProjectData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj",
+        "projectUniqueName": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectData\\BookstoreProjectData.csproj",
         "projectName": "BookstoreProjectData",
-        "projectPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj",
+        "projectPath": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectData\\BookstoreProjectData.csproj",
         "packagesPath": "C:\\Users\\krisi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\obj\\",
+        "outputPath": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

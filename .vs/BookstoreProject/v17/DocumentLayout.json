@@ -1,50 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\",
+  "WorkspaceRootPath": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectcore\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstoreprojectcore\\contracts\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\contracts\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstorewebapp\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstorewebapp\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstoreprojectcore\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstorewebapp\\seed\\entityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\seed\\entityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstoreprojectcore\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectdata\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|solutionrelative:bookstoreprojectdata\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectdata\\entities\\order_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|solutionrelative:bookstoreprojectdata\\entities\\order_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectdata\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|solutionrelative:bookstoreprojectdata\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstorewebapp\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstorewebapp\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectdata\\entities\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|solutionrelative:bookstoreprojectdata\\entities\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstoreprojectcore\\contracts\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\contracts\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstorewebapp\\views\\orders\\addtocart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\views\\orders\\addtocart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstorewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstorewebapp\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/OLIVIABENSON_SQLEXPRESS01/partyDb/True/SqlTable/dbo.Books.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectdata\\configurations\\orderbookconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|solutionrelative:bookstoreprojectdata\\configurations\\orderbookconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstorewebapp\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectdata\\bookstorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|solutionrelative:bookstoreprojectdata\\bookstorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstorewebapp\\views\\orders\\getcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\views\\orders\\getcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstorewebapp\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstorewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstoreprojectcore\\models\\books\\booksindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\models\\books\\booksindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|c:\\users\\krisi\\downloads\\bookstore-diploma-project-main fixed\\bookstore-diploma-project-main\\bookstoreprojectdata\\migrations\\20260318202457_addconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24AC55A1-B6E3-4F69-AB7C-D010AF125DD6}|BookstoreProjectData\\BookstoreProjectData.csproj|solutionrelative:bookstoreprojectdata\\migrations\\20260318202457_addconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,152 +94,188 @@
           ]
         },
         {
-          "DockedWidth": 122,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 127,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Views\\Books\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Views\\Books\\Index.cshtml",
               "RelativeDocumentMoniker": "BookstoreWebApp\\Views\\Books\\Index.cshtml",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Views\\Books\\Index.cshtml",
               "RelativeToolTip": "BookstoreWebApp\\Views\\Books\\Index.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAvwBMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T07:30:29.796Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Views\\Books\\Details.cshtml",
-              "RelativeDocumentMoniker": "BookstoreWebApp\\Views\\Books\\Details.cshtml",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Views\\Books\\Details.cshtml",
-              "RelativeToolTip": "BookstoreWebApp\\Views\\Books\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T07:30:28.954Z",
+              "WhenOpened": "2026-03-19T11:21:58.339Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Promotion.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Entities\\Promotion.cs",
-              "RelativeDocumentMoniker": "BookstoreProjectData\\Entities\\Promotion.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Entities\\Promotion.cs",
-              "RelativeToolTip": "BookstoreProjectData\\Entities\\Promotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T12:27:51.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "BookstoreProjectCore\\Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Services\\OrderService.cs",
-              "RelativeToolTip": "BookstoreProjectCore\\Services\\OrderService.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwEEAAAAtAAAAAAAAAA==",
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Contracts\\IBookService.cs",
+              "RelativeDocumentMoniker": "BookstoreProjectCore\\Contracts\\IBookService.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Contracts\\IBookService.cs",
+              "RelativeToolTip": "BookstoreProjectCore\\Contracts\\IBookService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwB4AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T08:21:06.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "BookstoreProjectData\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Entities\\User.cs",
-              "RelativeToolTip": "BookstoreProjectData\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T12:28:20.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Entities\\Order.cs",
-              "RelativeDocumentMoniker": "BookstoreProjectData\\Entities\\Order.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Entities\\Order.cs",
-              "RelativeToolTip": "BookstoreProjectData\\Entities\\Order.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T12:28:25.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "BookstoreWebApp\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "BookstoreWebApp\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAUwB0AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T08:20:51.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BookstoreContext.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreContext.cs",
-              "RelativeDocumentMoniker": "BookstoreProjectData\\BookstoreContext.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreContext.cs",
-              "RelativeToolTip": "BookstoreProjectData\\BookstoreContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA9wA8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T08:22:54.68Z",
+              "WhenOpened": "2026-03-19T12:56:33.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Order_Book.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Entities\\Order_Book.cs",
-              "RelativeDocumentMoniker": "BookstoreProjectData\\Entities\\Order_Book.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Entities\\Order_Book.cs",
-              "RelativeToolTip": "BookstoreProjectData\\Entities\\Order_Book.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookstoreWebApp\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookstoreWebApp\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T12:50:01.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T12:55:21.434Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrderBookConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Configurations\\OrderBookConfiguration.cs",
-              "RelativeDocumentMoniker": "BookstoreProjectData\\Configurations\\OrderBookConfiguration.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\Configurations\\OrderBookConfiguration.cs",
-              "RelativeToolTip": "BookstoreProjectData\\Configurations\\OrderBookConfiguration.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "EntitySeeder.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Seed\\EntitySeeder.cs",
+              "RelativeDocumentMoniker": "BookstoreWebApp\\Seed\\EntitySeeder.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Seed\\EntitySeeder.cs",
+              "RelativeToolTip": "BookstoreWebApp\\Seed\\EntitySeeder.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwD0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T09:06:59.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-18T20:25:32.974Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AddToCart.cshtml",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Views\\Orders\\AddToCart.cshtml",
-              "RelativeDocumentMoniker": "BookstoreWebApp\\Views\\Orders\\AddToCart.cshtml",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Views\\Orders\\AddToCart.cshtml",
-              "RelativeToolTip": "BookstoreWebApp\\Views\\Orders\\AddToCart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "BookstoreWebApp\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "BookstoreWebApp\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:52:25.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Contracts\\IOrderService.cs",
+              "RelativeDocumentMoniker": "BookstoreProjectCore\\Contracts\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Contracts\\IOrderService.cs",
+              "RelativeToolTip": "BookstoreProjectCore\\Contracts\\IOrderService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:51:28.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "BookstoreWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Program.cs",
+              "RelativeToolTip": "BookstoreWebApp\\Program.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAQwF4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:32:11.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "BookstoreProjectCore\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Services\\BookService.cs",
+              "RelativeToolTip": "BookstoreProjectCore\\Services\\BookService.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAUwKgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:30:37.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookstoreWebApp\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "BookstoreWebApp\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-18T09:10:43.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T07:59:10.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "BookstoreProjectCore\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Services\\OrderService.cs",
+              "RelativeToolTip": "BookstoreProjectCore\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T07:58:26.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.Books.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/OLIVIABENSON_SQLEXPRESS01/partyDb/True/SqlTable/dbo.Books.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/OLIVIABENSON_SQLEXPRESS01/partyDb/True/SqlTable/dbo.Books.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-19T08:33:37.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "BookstoreWebApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\appsettings.json",
+              "RelativeToolTip": "BookstoreWebApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-19T07:52:04.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetCart.cshtml",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Views\\Orders\\GetCart.cshtml",
+              "RelativeDocumentMoniker": "BookstoreWebApp\\Views\\Orders\\GetCart.cshtml",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\Views\\Orders\\GetCart.cshtml",
+              "RelativeToolTip": "BookstoreWebApp\\Views\\Orders\\GetCart.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T20:47:54.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20260318202457_AddConfigurations.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectData\\Migrations\\20260318202457_AddConfigurations.cs",
+              "RelativeDocumentMoniker": "BookstoreProjectData\\Migrations\\20260318202457_AddConfigurations.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectData\\Migrations\\20260318202457_AddConfigurations.cs",
+              "RelativeToolTip": "BookstoreProjectData\\Migrations\\20260318202457_AddConfigurations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T20:24:57.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BooksIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Models\\Books\\BooksIndexViewModel.cs",
+              "RelativeDocumentMoniker": "BookstoreProjectCore\\Models\\Books\\BooksIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreProjectCore\\Models\\Books\\BooksIndexViewModel.cs",
+              "RelativeToolTip": "BookstoreProjectCore\\Models\\Books\\BooksIndexViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T20:11:57.15Z"
             }
           ]
         }

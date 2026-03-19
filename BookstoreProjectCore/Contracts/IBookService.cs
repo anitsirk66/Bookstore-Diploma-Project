@@ -27,6 +27,9 @@ namespace BookstoreProjectCore.Contracts
         Task<List<Author>> GetAuthors();
         Task<List<Genre>> GetGenres();
         Task<List<Promotion>> GetPromotions();
+
+        Task<IEnumerable<BooksIndexViewModel>> FilterBooks(Guid? genreId, Guid? authorId);
+
     }
 }
 

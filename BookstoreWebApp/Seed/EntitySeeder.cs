@@ -67,98 +67,112 @@ namespace BookstoreWebApp.Seed
                     {
                          Id = Guid.NewGuid(),
                          FullName = "Lewis Carroll",
-                         Biography = "Charles Lutwidge Dodgson, better known by his pen name Lewis Carroll, was an English author, poet, mathematician, photographer and reluctant Anglican deacon.",
+						 CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						 Biography = "Charles Lutwidge Dodgson, better known by his pen name Lewis Carroll, was an English author, poet, mathematician, photographer and reluctant Anglican deacon.",
                          Nationality = "British"
                     },
                     new Author     
                     {
                          Id = Guid.NewGuid(),
                          FullName = "George Orwell",
-                         Biography = "English novelist and essayist known for his dystopian works 1984 and Animal Farm, exploring themes of totalitarianism and political ideology.",
+						 CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						 Biography = "English novelist and essayist known for his dystopian works 1984 and Animal Farm, exploring themes of totalitarianism and political ideology.",
                          Nationality = "British"
                     },
                     new Author
                     {
                          Id = Guid.NewGuid(),
                          FullName = "E.B. White",
-                         Biography = "American writer and essayist, widely known for his contributions to children’s literature, including Charlotte’s Web and Stuart Little.",
+						 CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						 Biography = "American writer and essayist, widely known for his contributions to children’s literature, including Charlotte’s Web and Stuart Little.",
                          Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Markus Zusak",
-                        Biography = "Australian novelist recognized internationally for The Book Thief, a historical novel set during World War II.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "Australian novelist recognized internationally for The Book Thief, a historical novel set during World War II.",
                         Nationality = "Australian"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Anthony Doerr",
-                        Biography = "American novelist and short story writer, winner of the Pulitzer Prize for Fiction for All the Light We Cannot See.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "American novelist and short story writer, winner of the Pulitzer Prize for Fiction for All the Light We Cannot See.",
                         Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Terry Pratchett",
-                        Biography = "British novelist famous for the comedic fantasy Discworld series, blending satire, humor, and social commentary.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "British novelist famous for the comedic fantasy Discworld series, blending satire, humor, and social commentary.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Douglas Adams",
-                        Biography = "English author and humorist best known for The Hitchhiker’s Guide to the Galaxy, a science fiction comedy series.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "English author and humorist best known for The Hitchhiker’s Guide to the Galaxy, a science fiction comedy series.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Jane Austen",
-                        Biography = "English novelist known for romantic fiction that critiques the British landed gentry, including Pride and Prejudice and Sense and Sensibility.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "English novelist known for romantic fiction that critiques the British landed gentry, including Pride and Prejudice and Sense and Sensibility.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "J. R. R. Tolkien",
-                        Biography = "English writer and philologist, author of The Hobbit and The Lord of the Rings, and a foundational figure in modern high fantasy literature.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "English writer and philologist, author of The Hobbit and The Lord of the Rings, and a foundational figure in modern high fantasy literature.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "George R. R. Martin",
-                        Biography = "American novelist and screenwriter best known for the epic fantasy series A Song of Ice and Fire, adapted into the TV series Game of Thrones.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "American novelist and screenwriter best known for the epic fantasy series A Song of Ice and Fire, adapted into the TV series Game of Thrones.",
                         Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Dan Brown",
-                        Biography = "American author of thriller novels, including The Da Vinci Code, known for blending history, art, and conspiracy themes.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "American author of thriller novels, including The Da Vinci Code, known for blending history, art, and conspiracy themes.",
                         Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Gillian Flynn",
-                        Biography = "American author and screenwriter known for psychological thrillers such as Gone Girl.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "American author and screenwriter known for psychological thrillers such as Gone Girl.",
                         Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Jojo Moyes",
-                        Biography = "British novelist known for romantic fiction, especially the internationally successful novel Me Before You.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "British novelist known for romantic fiction, especially the internationally successful novel Me Before You.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Nicholas Sparks",
-                        Biography = "American novelist known for romantic drama novels, many of which have been adapted into films, including The Notebook.",
+						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+						Biography = "American novelist known for romantic drama novels, many of which have been adapted into films, including The Notebook.",
                         Nationality = "American"
                     }
                 };

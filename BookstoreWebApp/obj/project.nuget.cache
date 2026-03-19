@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f8PZBHlM+WQ=",
+  "dgSpecHash": "Qpx+OAPtmEU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\BookstoreWebApp.csproj",
+  "projectFilePath": "C:\\Users\\krisi\\Downloads\\Bookstore-Diploma-Project-main fixed\\Bookstore-Diploma-Project-main\\BookstoreWebApp\\BookstoreWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krisi\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\krisi\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

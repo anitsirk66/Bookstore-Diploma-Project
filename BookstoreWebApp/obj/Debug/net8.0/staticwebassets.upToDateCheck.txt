@@ -7,6 +7,7 @@ wwwroot\img\1.jpg
 wwwroot\img\booklogo.png
 wwwroot\img\BOOKTHIEF.jpg
 wwwroot\img\favicon.ico
+wwwroot\img\filter.webp
 wwwroot\img\header-line.png
 wwwroot\img\light.png
 wwwroot\img\logo.png

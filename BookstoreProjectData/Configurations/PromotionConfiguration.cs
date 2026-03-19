@@ -13,15 +13,25 @@ namespace BookstoreProjectData.Configurations
     {
         public void Configure(EntityTypeBuilder<Promotion> builder)
         {
-            builder.HasKey(p => p.Id);
+			builder.HasKey(p => p.Id);
 
-            builder.Property(p => p.Percent)
-                  .HasPrecision(3, 0);
+			builder.Property(p => p.Percent)
+				.IsRequired();
 
-            builder.HasMany(p => p.Books)
-                .WithOne(b => b.Promotion)
-                .HasForeignKey(b => b.PromotionId)
-                .OnDelete(DeleteBehavior.SetNull);
-        }
+			builder.Property(p => p.Description)
+				.IsRequired()
+				.HasMaxLength(200);
+
+			builder.Property(p => p.From)
+				.IsRequired();
+
+			builder.Property(p => p.To)
+				.IsRequired();
+
+			builder.HasMany(p => p.Books)
+				.WithOne(b => b.Promotion)
+				.HasForeignKey(b => b.PromotionId)
+				.OnDelete(DeleteBehavior.SetNull);
+		}
     }
 }

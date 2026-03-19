@@ -209,7 +209,6 @@ namespace BookstoreProjectData.Migrations
                         .HasColumnType("date");
 
                     b.Property<int>("Percent")
-                        .HasPrecision(3)
                         .HasColumnType("int");
 
                     b.Property<DateOnly>("To")
@@ -228,8 +227,8 @@ namespace BookstoreProjectData.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -251,7 +250,8 @@ namespace BookstoreProjectData.Migrations
 
                     b.Property<string>("Language")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("PublisherId", "BookId");
 
@@ -274,8 +274,8 @@ namespace BookstoreProjectData.Migrations
 
                     b.Property<string>("Text")
                         .IsRequired()
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -563,13 +563,13 @@ namespace BookstoreProjectData.Migrations
                     b.HasOne("BookstoreProjectData.Entities.Book", "Book")
                         .WithMany("Publishers_Books")
                         .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BookstoreProjectData.Entities.Publisher", "Publisher")
                         .WithMany("Publishers_Books")
                         .HasForeignKey("PublisherId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Book");

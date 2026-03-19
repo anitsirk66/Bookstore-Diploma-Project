@@ -14,3 +14,33 @@ C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreP
 C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\refint\BookstoreProjectCore.dll
 C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.pdb
 C:\Users\krisi\OneDrive\Документи\12th grade\Diplomen-proekt\BookstoreProjectCore\obj\Debug\net8.0\ref\BookstoreProjectCore.dll
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.deps.json
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.dll
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.pdb
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.AssemblyReference.cache
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfoInputs.cache
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfo.cs
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\Bookstor.E4D36913.Up2Date
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\refint\BookstoreProjectCore.dll
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\ЗдравкаДимитрова\Downloads\Bookstore-Diploma-Project-main\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\ref\BookstoreProjectCore.dll
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.deps.json
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.dll
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\bin\Debug\net8.0\BookstoreProjectData.pdb
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.AssemblyReference.cache
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfoInputs.cache
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.AssemblyInfo.cs
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\Bookstor.E4D36913.Up2Date
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.dll
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\refint\BookstoreProjectCore.dll
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\BookstoreProjectCore.pdb
+C:\Users\krisi\Downloads\Bookstore-Diploma-Project-main fixed\Bookstore-Diploma-Project-main\BookstoreProjectCore\obj\Debug\net8.0\ref\BookstoreProjectCore.dll

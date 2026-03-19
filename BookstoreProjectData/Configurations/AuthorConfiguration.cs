@@ -13,11 +13,22 @@ namespace BookstoreProjectData.Configurations
     {
         public void Configure(EntityTypeBuilder<Author> builder)
         {
-            builder.HasKey(a => a.Id);
+			builder.HasKey(a => a.Id);
 
-            builder.Property(a => a.FullName)
-                  .IsRequired()
-                  .HasMaxLength(50);
-        }
+			builder.Property(a => a.FullName)
+				.IsRequired()
+				.HasMaxLength(50);
+
+			builder.Property(a => a.Biography)
+				.IsRequired()
+				.HasMaxLength(1000);
+
+			builder.Property(a => a.Nationality)
+				.IsRequired()
+				.HasMaxLength(50);
+
+			builder.Property(a => a.CoverImageUrl)
+				.IsRequired();
+		}
     }
 }

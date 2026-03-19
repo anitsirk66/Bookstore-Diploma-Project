@@ -274,3 +274,19 @@ body {
 .review-date {
     font-style: italic;
 }
+
+.cart-item {
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+    .cart-item:hover {
+        transform: scale(1.01);
+    }
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
