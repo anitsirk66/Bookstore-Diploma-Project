@@ -13,8 +13,9 @@ namespace BookstoreProjectData.Configurations
     {
         public void Configure(EntityTypeBuilder<Promotion> builder)
         {
-            builder.HasKey(p => p.Id);
+			builder.HasKey(p => p.Id);
 
+<<<<<<< HEAD
             builder.Property(p => p.Percent)
                 .IsRequired();
 
@@ -27,11 +28,25 @@ namespace BookstoreProjectData.Configurations
 
             builder.Property(p => p.To)
                 .IsRequired();
+=======
+			builder.Property(p => p.Percent)
+				.IsRequired();
+>>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
 
-            builder.HasMany(p => p.Books)
-                .WithOne(b => b.Promotion)
-                .HasForeignKey(b => b.PromotionId)
-                .OnDelete(DeleteBehavior.SetNull);
-        }
+			builder.Property(p => p.Description)
+				.IsRequired()
+				.HasMaxLength(200);
+
+			builder.Property(p => p.From)
+				.IsRequired();
+
+			builder.Property(p => p.To)
+				.IsRequired();
+
+			builder.HasMany(p => p.Books)
+				.WithOne(b => b.Promotion)
+				.HasForeignKey(b => b.PromotionId)
+				.OnDelete(DeleteBehavior.SetNull);
+		}
     }
 }

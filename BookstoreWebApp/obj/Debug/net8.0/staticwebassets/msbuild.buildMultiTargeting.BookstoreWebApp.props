@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\BookstoreWebApp.props" />
-</Project>

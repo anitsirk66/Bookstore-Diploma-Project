@@ -1,0 +1,7 @@
+BookstoreWebApp/obj/
+BookstoreWebApp/bin/
+BookstoreProjectData/obj/
+BookstoreProjectData/bin/
+.vs/
+BookstoreProjectCore/bin/
+BookstoreProjectCore/obj/

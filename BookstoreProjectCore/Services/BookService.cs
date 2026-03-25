@@ -159,6 +159,7 @@ namespace BookstoreProjectCore.Services
                                 .ToListAsync();
         }
 
+<<<<<<< HEAD
         public async Task<List<Publisher>> GetPublishers()
         {
             return await context.Publishers
@@ -183,6 +184,20 @@ namespace BookstoreProjectCore.Services
             if (publisherIds != null && publisherIds.Any())
             {
                 query = query.Where(b => b.Publishers_Books.Any(pb => publisherIds.Contains(pb.PublisherId)));
+=======
+        public async Task<IEnumerable<BooksIndexViewModel>> FilterBooks(Guid? genreId, Guid? authorId)
+        {
+            var query = context.Books.AsQueryable();
+
+            if (genreId.HasValue)
+            {
+                query = query.Where(b => b.GenreId == genreId);
+            }
+
+            if (authorId.HasValue)
+            {
+                query = query.Where(b => b.AuthorId == authorId);
+>>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
             }
 
             return await query

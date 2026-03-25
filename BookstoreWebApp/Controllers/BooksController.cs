@@ -39,6 +39,24 @@ namespace BookstoreWebApp.Controllers
             var books = await service.FilterBooks(genreIds, authorIds, publisherIds);
 
             return View(books);
+<<<<<<< HEAD
+=======
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Index(Guid? genreId, Guid? authorId)
+        {
+            var authors = await service.GetAuthors();
+            ViewBag.Authors = new SelectList(authors, "Id", "FullName");
+
+            var genres = await service.GetGenres();
+            ViewBag.Genres = new SelectList(genres, "Id", "Name");
+
+            var books = await service.FilterBooks(genreId, authorId);
+
+            return View(books);
+>>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
         }
 
         [Authorize(Roles = "Admin")]

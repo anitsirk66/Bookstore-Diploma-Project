@@ -32,6 +32,7 @@ namespace BookstoreProjectData.Configurations
                   .HasForeignKey(b => b.GenreId)
                   .OnDelete(DeleteBehavior.Restrict);
 
+<<<<<<< HEAD
             builder.Property(b => b.CoverImageUrl)
                     .IsRequired();
 
@@ -39,5 +40,14 @@ namespace BookstoreProjectData.Configurations
                   .IsRequired()
                   .HasMaxLength(1000);
         }
+=======
+			builder.Property(b => b.CoverImageUrl)
+	                .IsRequired();
+
+			builder.Property(b => b.Synopsis)
+				  .IsRequired()
+				  .HasMaxLength(1000);
+		}
+>>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
     }
 }

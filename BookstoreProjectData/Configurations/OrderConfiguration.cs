@@ -13,8 +13,9 @@ namespace BookstoreProjectData.Configurations
     {
         public void Configure(EntityTypeBuilder<Order> builder)
         {
-            builder.HasKey(o => o.Id);
+			builder.HasKey(o => o.Id);
 
+<<<<<<< HEAD
             builder.Property(o => o.DateAndTime)
                 .IsRequired();
 
@@ -35,5 +36,27 @@ namespace BookstoreProjectData.Configurations
                 .OnDelete(DeleteBehavior.Restrict);
 
         }
+=======
+			builder.Property(o => o.DateAndTime)
+				.IsRequired();
+
+			builder.Property(o => o.Address)
+				.IsRequired()
+				.HasMaxLength(50);
+
+			builder.Property(o => o.Status)
+				.IsRequired()
+				.HasMaxLength(50);
+
+			builder.Property(o => o.UserId)
+				.IsRequired();
+
+			builder.HasOne(o => o.User)
+				.WithMany(u => u.Orders)
+				.HasForeignKey(o => o.UserId)
+				.OnDelete(DeleteBehavior.Restrict);
+
+		}
+>>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
     }
 }

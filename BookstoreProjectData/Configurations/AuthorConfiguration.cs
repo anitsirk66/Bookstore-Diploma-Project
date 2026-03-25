@@ -13,8 +13,9 @@ namespace BookstoreProjectData.Configurations
     {
         public void Configure(EntityTypeBuilder<Author> builder)
         {
-            builder.HasKey(a => a.Id);
+			builder.HasKey(a => a.Id);
 
+<<<<<<< HEAD
             builder.Property(a => a.FullName)
                 .IsRequired()
                 .HasMaxLength(50);
@@ -30,5 +31,22 @@ namespace BookstoreProjectData.Configurations
             builder.Property(a => a.CoverImageUrl)
                 .IsRequired();
         }
+=======
+			builder.Property(a => a.FullName)
+				.IsRequired()
+				.HasMaxLength(50);
+
+			builder.Property(a => a.Biography)
+				.IsRequired()
+				.HasMaxLength(1000);
+
+			builder.Property(a => a.Nationality)
+				.IsRequired()
+				.HasMaxLength(50);
+
+			builder.Property(a => a.CoverImageUrl)
+				.IsRequired();
+		}
+>>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
     }
 }
