@@ -4459,11 +4459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectData\\BookstoreProjectData.csproj",
+      "projectUniqueName": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj",
       "projectName": "BookstoreProjectData",
-      "projectPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectData\\BookstoreProjectData.csproj",
+      "projectPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\BookstoreProjectData.csproj",
       "packagesPath": "C:\\Users\\krisi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectData\\obj\\",
+      "outputPath": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreProjectData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

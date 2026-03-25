@@ -1,25 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\",
+  "WorkspaceRootPath": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt ( without filtering)\\bookstorewebapp\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt ( without filtering)\\bookstorewebapp\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt ( without filtering)\\bookstoreprojectcore\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt ( without filtering)\\bookstoreprojectcore\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectcore\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt ( without filtering)\\bookstoreprojectcore\\models\\reviews\\reviewsindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectcore\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstorewebapp\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstorewebapp\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68233EDC-E855-475E-89A6-3B9CC3133ABF}|BookstoreWebApp\\BookstoreWebApp.csproj|solutionrelative:bookstorewebapp\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectcore\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|c:\\users\\krisi\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\diplomen-proekt\\bookstoreprojectcore\\models\\reviews\\reviewsindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEF55D56-8FF1-4953-97C4-F4690161534B}|BookstoreProjectCore\\BookstoreProjectCore.csproj|solutionrelative:bookstoreprojectcore\\models\\reviews\\reviewsindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 63,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,68 +58,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReviewsIndexViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectCore\\Models\\Reviews\\ReviewsIndexViewModel.cs",
-              "RelativeDocumentMoniker": "BookstoreProjectCore\\Models\\Reviews\\ReviewsIndexViewModel.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectCore\\Models\\Reviews\\ReviewsIndexViewModel.cs",
-              "RelativeToolTip": "BookstoreProjectCore\\Models\\Reviews\\ReviewsIndexViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Interfaces\\IBookService.cs",
+              "RelativeDocumentMoniker": "BookstoreProjectCore\\Interfaces\\IBookService.cs",
+              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Interfaces\\IBookService.cs",
+              "RelativeToolTip": "BookstoreProjectCore\\Interfaces\\IBookService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T14:08:09.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T07:03:32.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "ReviewsIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Models\\Reviews\\ReviewsIndexViewModel.cs",
+              "RelativeDocumentMoniker": "BookstoreProjectCore\\Models\\Reviews\\ReviewsIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Models\\Reviews\\ReviewsIndexViewModel.cs",
+              "RelativeToolTip": "BookstoreProjectCore\\Models\\Reviews\\ReviewsIndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T14:08:09.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "IReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectCore\\Interfaces\\IReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Interfaces\\IReviewService.cs",
               "RelativeDocumentMoniker": "BookstoreProjectCore\\Interfaces\\IReviewService.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectCore\\Interfaces\\IReviewService.cs",
+              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Interfaces\\IReviewService.cs",
               "RelativeToolTip": "BookstoreProjectCore\\Interfaces\\IReviewService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T09:23:34.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectCore\\Services\\ReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Services\\ReviewService.cs",
               "RelativeDocumentMoniker": "BookstoreProjectCore\\Services\\ReviewService.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreProjectCore\\Services\\ReviewService.cs",
+              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreProjectCore\\Services\\ReviewService.cs",
               "RelativeToolTip": "BookstoreProjectCore\\Services\\ReviewService.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAowFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T08:27:25.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T08:27:25.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ReviewsController.cs",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\Controllers\\ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Controllers\\ReviewsController.cs",
               "RelativeDocumentMoniker": "BookstoreWebApp\\Controllers\\ReviewsController.cs",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Controllers\\ReviewsController.cs",
               "RelativeToolTip": "BookstoreWebApp\\Controllers\\ReviewsController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAgwE0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T08:25:29.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T08:25:29.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\Views\\Books\\Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Views\\Books\\Details.cshtml",
               "RelativeDocumentMoniker": "BookstoreWebApp\\Views\\Books\\Details.cshtml",
-              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\Views\\Books\\Details.cshtml",
+              "ToolTip": "C:\\Users\\krisi\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\Views\\Books\\Details.cshtml",
               "RelativeToolTip": "BookstoreWebApp\\Views\\Books\\Details.cshtml",
               "ViewState": "AgIAAIQAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-24T07:31:14.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T07:31:14.75Z"
             }
           ]
         }
