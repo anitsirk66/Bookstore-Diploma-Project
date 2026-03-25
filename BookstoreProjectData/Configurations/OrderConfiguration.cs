@@ -15,7 +15,6 @@ namespace BookstoreProjectData.Configurations
         {
 			builder.HasKey(o => o.Id);
 
-<<<<<<< HEAD
             builder.Property(o => o.DateAndTime)
                 .IsRequired();
 
@@ -35,8 +34,6 @@ namespace BookstoreProjectData.Configurations
                 .HasForeignKey(o => o.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-        }
-=======
 			builder.Property(o => o.DateAndTime)
 				.IsRequired();
 
@@ -57,6 +54,5 @@ namespace BookstoreProjectData.Configurations
 				.OnDelete(DeleteBehavior.Restrict);
 
 		}
->>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
     }
 }

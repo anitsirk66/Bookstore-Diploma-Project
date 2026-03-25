@@ -15,7 +15,6 @@ namespace BookstoreProjectData.Configurations
         {
 			builder.HasKey(p => p.Id);
 
-<<<<<<< HEAD
             builder.Property(p => p.Percent)
                 .IsRequired();
 
@@ -28,10 +27,8 @@ namespace BookstoreProjectData.Configurations
 
             builder.Property(p => p.To)
                 .IsRequired();
-=======
 			builder.Property(p => p.Percent)
 				.IsRequired();
->>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
 
 			builder.Property(p => p.Description)
 				.IsRequired()

@@ -15,7 +15,6 @@ namespace BookstoreProjectData.Configurations
         {
 			builder.HasKey(a => a.Id);
 
-<<<<<<< HEAD
             builder.Property(a => a.FullName)
                 .IsRequired()
                 .HasMaxLength(50);
@@ -30,8 +29,8 @@ namespace BookstoreProjectData.Configurations
 
             builder.Property(a => a.CoverImageUrl)
                 .IsRequired();
-        }
-=======
+        
+
 			builder.Property(a => a.FullName)
 				.IsRequired()
 				.HasMaxLength(50);
@@ -47,6 +46,5 @@ namespace BookstoreProjectData.Configurations
 			builder.Property(a => a.CoverImageUrl)
 				.IsRequired();
 		}
->>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
     }
 }

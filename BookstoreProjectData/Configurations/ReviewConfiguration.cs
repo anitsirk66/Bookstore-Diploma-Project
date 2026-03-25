@@ -15,7 +15,6 @@ namespace BookstoreProjectData.Configurations
         {
 			builder.HasKey(r => r.Id);
 
-<<<<<<< HEAD
             builder.Property(r => r.Text)
                 .IsRequired()
                 .HasMaxLength(250);
@@ -32,8 +31,6 @@ namespace BookstoreProjectData.Configurations
                 .WithMany(u => u.Reviews)
                 .HasForeignKey(r => r.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
-        }
-=======
 			builder.Property(r => r.Text)
 				.IsRequired()
 				.HasMaxLength(250);
@@ -51,6 +48,5 @@ namespace BookstoreProjectData.Configurations
 				.HasForeignKey(r => r.UserId)
 				.OnDelete(DeleteBehavior.Restrict);
 		}
->>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
     }
 }
