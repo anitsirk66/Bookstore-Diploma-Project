@@ -67,9 +67,14 @@ namespace BookstoreWebApp.Controllers
         
         [Authorize(Roles = "Admin")]
         [HttpGet]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(Guid reviewId)
         {
-            await reviewService.DeleteAsync(id);
+            //var user = await userManager.GetUserAsync(User);
+
+            //if (user == null) { return Unauthorized(); }
+
+            await reviewService.DeleteAsync(reviewId);
+
             return RedirectToAction("Details");
         }
     }

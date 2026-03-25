@@ -28,12 +28,17 @@ namespace BookstoreWebApp.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(List<Guid> genreIds, List<Guid> authorIds, List<Guid> publisherIds)
         {
-            var books = await service.Index();
+            ViewBag.Authors = await service.GetAuthors();
+
+            ViewBag.Genres = await service.GetGenres();
+
+            ViewBag.Publishers = await service.GetPublishers();
+
+            var books = await service.FilterBooks(genreIds, authorIds, publisherIds);
 
             return View(books);
-           
         }
 
         [Authorize(Roles = "Admin")]

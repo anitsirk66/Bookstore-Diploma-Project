@@ -3,6 +3,7 @@ using BookstoreProjectCore.Models.Reviews;
 using BookstoreProjectData;
 using BookstoreProjectData.Entities;
 using BookstoreWebApp.Models.Reviews;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -55,15 +56,29 @@ namespace BookstoreProjectCore.Services
                 .AnyAsync(r => r.BookId == bookId && r.UserId == userId);
         }
 
-        public async Task DeleteAsync(Guid id)
+
+        public async Task DeleteAsync(Guid reviewId)
         {
-            var review = await context.Reviews.FindAsync(id);
+            var review = await context.Reviews
+                .FirstOrDefaultAsync(r => r.Id == reviewId);
 
             if (review == null)
                 throw new ArgumentException("Review not found");
 
             context.Reviews.Remove(review);
             await context.SaveChangesAsync();
+        }
+
+        public async Task EditAsync(ReviewsEditViewModel model)
+        {
+            var review = await context.Reviews.FirstOrDefaultAsync(r => r.Id == model.Id);
+
+            if (review == null) { throw new ArgumentException("Review not found"); }
+
+            review.Text = model.Text;
+            review.DateAndTime = model.DateAndTime;
+            review.User.UserName = model.UserName;
+
         }
     }
 }

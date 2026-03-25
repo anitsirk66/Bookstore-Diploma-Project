@@ -1,0 +1,47 @@
+﻿@using BookstoreProjectCore.Models.Cart
+@model CartViewModel
+
+
+<h2 class="text-center mb-4">My Cart</h2>
+
+@if (!Model.Items.Any())
+{
+    <p class="text-center text-muted">Your cart is empty.</p>
+}
+else
+{
+    <div class="container">
+        @foreach (var item in Model.Items)
+        {
+            <div class="cart-item shadow-sm p-3 mb-3 rounded d-flex align-items-center">
+                <div class="me-3">
+                    <img src="@item.CoverImageUrl" width="100" height="120" style="object-fit: cover;" />
+                </div>
+
+                <div class="flex-grow-1">
+                    <h5>@item.Title</h5>
+                    <p class="text-muted mb-1">Price: @item.UnitPrice.ToString("F2") €</p>
+                    <p class="mb-1">Quantity: <strong>@item.Quantity</strong></p>
+                </div>
+
+                <div class="text-end">
+                    <h5 class="text-danger">@item.TotalPrice.ToString("F2") €</h5>
+
+                    <form asp-controller="Orders" asp-action="RemoveFromCart" method="post" class="mt-2">
+                        <input type="hidden" name="bookId" value="@item.BookId" />
+                        <button type="submit" class="btn btn-sm btn-outline-danger">Remove</button>
+                    </form>
+                </div>
+
+                <div class="d-flex gap-3 mb-4">
+                    <a asp-controller="Books" asp-action="Index" class="btn btn-outline-dark btn-lg"> Back </a>
+                </div>
+            </div>
+        }
+
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h4>Total:</h4>
+            <h4 class="text-success">@Model.TotalPrice.ToString("F2") €</h4>
+        </div>
+    </div>
+}

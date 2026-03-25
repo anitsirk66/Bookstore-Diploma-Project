@@ -158,5 +158,43 @@ namespace BookstoreProjectCore.Services
                                 .OrderBy(a => a.Id)
                                 .ToListAsync();
         }
+
+        public async Task<List<Publisher>> GetPublishers()
+        {
+            return await context.Publishers
+                                .OrderBy(a => a.Id)
+                                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<BooksIndexViewModel>> FilterBooks(List<Guid> genreIds, List<Guid> authorIds, List<Guid> publisherIds)
+        {
+            var query = context.Books.AsQueryable();
+
+            if (genreIds != null && genreIds.Any())
+            {
+                query = query.Where(b => genreIds.Contains(b.GenreId));
+            }
+
+            if (authorIds != null && authorIds.Any())
+            {
+                query = query.Where(b => authorIds.Contains(b.AuthorId));
+            }
+
+            if (publisherIds != null && publisherIds.Any())
+            {
+                query = query.Where(b => b.Publishers_Books.Any(pb => publisherIds.Contains(pb.PublisherId)));
+            }
+
+            return await query
+                .Select(b => new BooksIndexViewModel
+                {
+                    Id = b.Id,
+                    Title = b.Title,
+                    AuthorName = b.Author.FullName,
+                    CoverImageUrl = b.CoverImageUrl,
+                    Price = b.Price
+                })
+                .ToListAsync();
+        }
     }
 }

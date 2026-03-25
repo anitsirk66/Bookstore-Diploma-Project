@@ -10,4 +10,8 @@
     <ProjectReference Include="..\BookstoreProjectData\BookstoreProjectData.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="real prject\" />
+  </ItemGroup>
+
 </Project>

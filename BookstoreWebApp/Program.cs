@@ -38,9 +38,9 @@ namespace BookstoreWebApp
             }).AddEntityFrameworkStores<BookstoreContext>()
               .AddDefaultTokenProviders()
               .AddDefaultUI();
-            
+
             builder.Services.AddControllersWithViews();
-           
+
             builder.Services.AddRazorPages();
 
             //builder.Services.AddDefaultIdentity<User>(options =>
@@ -71,7 +71,7 @@ namespace BookstoreWebApp
                 await EntitySeeder.SeedAsync(context);
                 await IdentitySeeder.SeedRolesAsync(roleManager);
             }
-            
+
 
             if (app.Environment.IsDevelopment())
             {
@@ -95,7 +95,7 @@ namespace BookstoreWebApp
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
 
-            
+
             app.Run();
         }
 

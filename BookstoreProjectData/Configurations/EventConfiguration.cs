@@ -11,7 +11,7 @@ namespace BookstoreProjectData.Configurations
 {
     public class EventConfiguration : IEntityTypeConfiguration<Event>
     {
-        public void Configure (EntityTypeBuilder<Event> builder)
+        public void Configure(EntityTypeBuilder<Event> builder)
         {
             builder.HasKey(e => e.Id);
 

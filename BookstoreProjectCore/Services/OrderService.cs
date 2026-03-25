@@ -23,12 +23,15 @@ namespace BookstoreProjectCore.Services
             {
                 throw new Exception("Invalid book Id");
             }
-            var existingBook = await context.Books.AnyAsync(b => b.Id == bookId);
-            if(!existingBook)
+
+
+            var book = await context.Books.FirstOrDefaultAsync(b => b.Id == bookId);
+            if(book == null)
             {
                 throw new Exception("Book not found");
             }
-            var order = await context.Orders.Include(o=>o.Orders_Books).FirstOrDefaultAsync(o=>o.UserId == userId);
+
+            var order = await context.Orders.Include(o=>o.Orders_Books).FirstOrDefaultAsync(o=>o.UserId == userId && o.Status == "InCart");
 
             if (order == null)
             {
@@ -41,21 +44,22 @@ namespace BookstoreProjectCore.Services
                     Status = "InCart"
                 };
                 context.Orders.Add(order);
-                await context.SaveChangesAsync();
             }
 
             var existingBookOrder = order.Orders_Books.FirstOrDefault(b => b.BookId == bookId);
 
             if(existingBookOrder != null)
             {
-                existingBookOrder.Quantity = existingBookOrder.Quantity+1;
+                existingBookOrder.Quantity += 1;
             }
             else
             {
                 order.Orders_Books.Add(new Order_Book
                 {
+                    OrderId = order.Id,
                     BookId = bookId,
-                    Quantity = 1
+                    Quantity = 1,
+                    UnitPrice = book.Price
                 });
             }
             await context.SaveChangesAsync();
@@ -65,15 +69,30 @@ namespace BookstoreProjectCore.Services
             return await context.Orders
                 .Include(o => o.Orders_Books)
                 .ThenInclude(ob => ob.Book)
-                .FirstOrDefaultAsync(o => o.UserId == userId);
+                .FirstOrDefaultAsync(o => o.UserId == userId && o.Status == "InCart");
         }
 
-        //public async Task<Order?> GetBooks(string userId)
-        //{
-        //    return await context.Books
-        //        .Include(o => o.Orders_Books)
-        //        .ThenInclude(ob => ob.Order)
-        //        .FirstOrDefaultAsync(o => o.UserId == userId);
-        //}
+        public async Task RemoveFromCart(Guid bookId, string userId)
+        {
+            var order = await context.Orders
+                .Include(o => o.Orders_Books)
+                .FirstOrDefaultAsync(o => o.UserId == userId && o.Status == "InCart");
+
+            if (order == null)
+            {
+                throw new Exception("Cart not found");
+            }
+
+            var item = order.Orders_Books.FirstOrDefault(ob => ob.BookId == bookId);
+
+            if (item == null)
+            {
+                throw new Exception("Book is not in cart");
+            }
+
+            context.Orders_Books.Remove(item);
+
+            await context.SaveChangesAsync();
+        }
     }
 }

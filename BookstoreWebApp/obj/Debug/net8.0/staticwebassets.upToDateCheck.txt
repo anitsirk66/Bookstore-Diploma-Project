@@ -3,13 +3,16 @@ wwwroot\css\font-awesome.min.css
 wwwroot\css\site.css
 wwwroot\css\templatemo-style.css
 wwwroot\favicon.ico
+wwwroot\filter.webp
 wwwroot\img\1.jpg
 wwwroot\img\booklogo.png
 wwwroot\img\BOOKTHIEF.jpg
 wwwroot\img\favicon.ico
+wwwroot\img\filter.webp
 wwwroot\img\header-line.png
 wwwroot\img\light.png
 wwwroot\img\logo.png
+wwwroot\img\logout.webp
 wwwroot\img\menu-1.jpg
 wwwroot\img\menu-2.jpg
 wwwroot\img\menu-3.jpg

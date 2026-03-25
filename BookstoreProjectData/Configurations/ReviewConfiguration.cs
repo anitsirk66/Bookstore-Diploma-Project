@@ -11,22 +11,26 @@ namespace BookstoreProjectData.Configurations
 {
     public class ReviewConfiguration:IEntityTypeConfiguration<Review>
     {
-        public void Configure (EntityTypeBuilder<Review> builder)
+        public void Configure(EntityTypeBuilder<Review> builder)
         {
             builder.HasKey(r => r.Id);
 
             builder.Property(r => r.Text)
-                  .HasMaxLength(2000);
+                .IsRequired()
+                .HasMaxLength(250);
+
+            builder.Property(r => r.DateAndTime)
+                .IsRequired();
 
             builder.HasOne(r => r.Book)
-                  .WithMany(b => b.Reviews)
-                  .HasForeignKey(r => r.BookId)
-                  .OnDelete(DeleteBehavior.Cascade);
+                .WithMany(b => b.Reviews)
+                .HasForeignKey(r => r.BookId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne(r => r.User)
-                  .WithMany(u => u.Reviews)
-                  .HasForeignKey(r => r.UserId)
-                  .OnDelete(DeleteBehavior.Restrict);
+                .WithMany(u => u.Reviews)
+                .HasForeignKey(r => r.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

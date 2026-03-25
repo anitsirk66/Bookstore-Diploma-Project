@@ -16,7 +16,17 @@ namespace BookstoreProjectData.Configurations
             builder.HasKey(p => p.Id);
 
             builder.Property(p => p.Percent)
-                  .HasPrecision(3, 0);
+                .IsRequired();
+
+            builder.Property(p => p.Description)
+                .IsRequired()
+                .HasMaxLength(200);
+
+            builder.Property(p => p.From)
+                .IsRequired();
+
+            builder.Property(p => p.To)
+                .IsRequired();
 
             builder.HasMany(p => p.Books)
                 .WithOne(b => b.Promotion)

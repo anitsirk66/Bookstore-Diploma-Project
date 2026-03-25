@@ -11,7 +11,7 @@ namespace BookstoreProjectData.Configurations
 {
     public class BookConfiguration : IEntityTypeConfiguration<Book>
     {
-        public void Configure (EntityTypeBuilder<Book> builder)
+        public void Configure(EntityTypeBuilder<Book> builder)
         {
             builder.HasKey(b => b.Id);
 
@@ -31,6 +31,13 @@ namespace BookstoreProjectData.Configurations
                   .WithMany(g => g.Books)
                   .HasForeignKey(b => b.GenreId)
                   .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Property(b => b.CoverImageUrl)
+                    .IsRequired();
+
+            builder.Property(b => b.Synopsis)
+                  .IsRequired()
+                  .HasMaxLength(1000);
         }
     }
 }

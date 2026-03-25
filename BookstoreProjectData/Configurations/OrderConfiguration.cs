@@ -16,15 +16,24 @@ namespace BookstoreProjectData.Configurations
             builder.HasKey(o => o.Id);
 
             builder.Property(o => o.DateAndTime)
-                  .IsRequired();
+                .IsRequired();
+
+            builder.Property(o => o.Address)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            builder.Property(o => o.Status)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            builder.Property(o => o.UserId)
+                .IsRequired();
 
             builder.HasOne(o => o.User)
-                  .WithMany(u => u.Orders)
-                  .HasForeignKey(o => o.UserId)
-                  .OnDelete(DeleteBehavior.Restrict);
-            builder.HasMany(o=>o.Orders_Books)
-                .WithOne(b=>b.Order)
-                .HasForeignKey(o => o.OrderId);
+                .WithMany(u => u.Orders)
+                .HasForeignKey(o => o.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
         }
     }
 }

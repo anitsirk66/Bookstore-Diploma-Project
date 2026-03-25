@@ -1,4 +1,5 @@
-﻿using BookstoreProjectCore.Models.Reviews;
+﻿using BookstoreProjectCore.Models.Books;
+using BookstoreProjectCore.Models.Reviews;
 using BookstoreWebApp.Models.Reviews;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,8 @@ namespace BookstoreProjectCore.Contracts
         Task<IEnumerable<ReviewsIndexViewModel>> GetReviews(Guid bookid);
         Task<bool> UserAlreadyReviewed(Guid bookid, string userid);
 
-        Task DeleteAsync(Guid id);
+        Task DeleteAsync(Guid reviewId);
+
+        Task EditAsync(ReviewsEditViewModel dto);
     }
 }

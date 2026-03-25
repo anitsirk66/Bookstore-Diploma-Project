@@ -1,431 +1,443 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookstoreWebApp.bundle.scp.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookstoreWebApp.bundle.scp.css",
       "PackagePath": "staticwebassets\\BookstoreWebApp.0i7zis3r4n.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\css\\font-awesome.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\css\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\css\\templatemo-style.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\css\\templatemo-style.css",
       "PackagePath": "staticwebassets\\css\\templatemo-style.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\1.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\filter.webp",
+      "PackagePath": "staticwebassets\\filter.webp"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\1.jpg",
       "PackagePath": "staticwebassets\\img\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\BOOKTHIEF.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\BOOKTHIEF.jpg",
       "PackagePath": "staticwebassets\\img\\BOOKTHIEF.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\booklogo.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\booklogo.png",
       "PackagePath": "staticwebassets\\img\\booklogo.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\favicon.ico",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\header-line.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\filter.webp",
+      "PackagePath": "staticwebassets\\img\\filter.webp"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\header-line.png",
       "PackagePath": "staticwebassets\\img\\header-line.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\light.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\light.png",
       "PackagePath": "staticwebassets\\img\\light.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\logo.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\menu-1.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\logout.webp",
+      "PackagePath": "staticwebassets\\img\\logout.webp"
+    },
+    {
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\menu-1.jpg",
       "PackagePath": "staticwebassets\\img\\menu-1.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\menu-2.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\menu-2.jpg",
       "PackagePath": "staticwebassets\\img\\menu-2.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\menu-3.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\menu-3.jpg",
       "PackagePath": "staticwebassets\\img\\menu-3.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\menu-4.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\menu-4.jpg",
       "PackagePath": "staticwebassets\\img\\menu-4.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\menu-5.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\menu-5.jpg",
       "PackagePath": "staticwebassets\\img\\menu-5.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\menu-board.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\menu-board.png",
       "PackagePath": "staticwebassets\\img\\menu-board.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\nav-underline.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\nav-underline.png",
       "PackagePath": "staticwebassets\\img\\nav-underline.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\noPfp.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\noPfp.jpg",
       "PackagePath": "staticwebassets\\img\\noPfp.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\online-shopping.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\online-shopping.png",
       "PackagePath": "staticwebassets\\img\\online-shopping.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\parcel.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\parcel.png",
       "PackagePath": "staticwebassets\\img\\parcel.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-1.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\popular-1.jpg",
       "PackagePath": "staticwebassets\\img\\popular-1.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-2.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\popular-2.jpg",
       "PackagePath": "staticwebassets\\img\\popular-2.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-3.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\popular-3.jpg",
       "PackagePath": "staticwebassets\\img\\popular-3.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-item-bg-hover.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\popular-item-bg-hover.png",
       "PackagePath": "staticwebassets\\img\\popular-item-bg-hover.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\popular-item-bg.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\popular-item-bg.png",
       "PackagePath": "staticwebassets\\img\\popular-item-bg.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shadow.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\shadow.png",
       "PackagePath": "staticwebassets\\img\\shadow.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg",
       "PackagePath": "staticwebassets\\img\\shopping_bag_files\\0WKY0ny-iWR3yYCvsD6MQVMjVbw.svg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg",
       "PackagePath": "staticwebassets\\img\\shopping_bag_files\\9mM--t8iClqcK4e1MHzNovhHkVA.svg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg",
       "PackagePath": "staticwebassets\\img\\shopping_bag_files\\XhuulIbo88eLoQSXNdexXtHhacY.svg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css",
       "PackagePath": "staticwebassets\\img\\shopping_bag_files\\e7qg7cbQkMD6ZlpuYCqAK_iAwxw.br.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg",
       "PackagePath": "staticwebassets\\img\\shopping_bag_files\\kxTm6_yMJSr-Au_oSrzcrpJm2mY.svg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\widget.js.download",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\widget.js.download",
       "PackagePath": "staticwebassets\\img\\shopping_bag_files\\widget.js.download"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg",
       "PackagePath": "staticwebassets\\img\\shopping_bag_files\\zYRmeqAEd4Z0yDRz8nuL0syHMEI.svg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\special-1.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\special-1.jpg",
       "PackagePath": "staticwebassets\\img\\special-1.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\special-2.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\special-2.jpg",
       "PackagePath": "staticwebassets\\img\\special-2.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\special-3.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\special-3.jpg",
       "PackagePath": "staticwebassets\\img\\special-3.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\special-4.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\special-4.jpg",
       "PackagePath": "staticwebassets\\img\\special-4.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\store.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\store.png",
       "PackagePath": "staticwebassets\\img\\store.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\sunrise.jpg",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\sunrise.jpg",
       "PackagePath": "staticwebassets\\img\\sunrise.jpg"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\table-set.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\table-set.png",
       "PackagePath": "staticwebassets\\img\\table-set.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\tm-brown-button.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\tm-brown-button.png",
       "PackagePath": "staticwebassets\\img\\tm-brown-button.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\user.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\user.png",
       "PackagePath": "staticwebassets\\img\\user.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\img\\vertical-menu-bg.png",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\img\\vertical-menu-bg.png",
       "PackagePath": "staticwebassets\\img\\vertical-menu-bg.png"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\js\\jquery-1.11.2.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\js\\jquery-1.11.2.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-1.11.2.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\js\\templatemo-script.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\js\\templatemo-script.js",
       "PackagePath": "staticwebassets\\js\\templatemo-script.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt\\BookstoreWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\krisi\\OneDrive\\Документи\\12th grade\\Diplomen-proekt ( without filtering)\\BookstoreWebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

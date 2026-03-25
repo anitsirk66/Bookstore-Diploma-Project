@@ -51,7 +51,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BookstoreWebApp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -121,16 +121,16 @@
         </div>
     }
 
-    @if(!ViewData.ModelState.IsValid)
+    @if (!ViewData.ModelState.IsValid)
     {
         <div>
-            @foreach(var item in ViewData.ModelState)
+            @foreach (var item in ViewData.ModelState)
             {
                 if (item.Value.Errors.Any())
                 {
                     <div class="alert alert-danger alert-dismissible fade show">
                         <p>
-                            <b>Field:</b> 
+                            <b>Field:</b>
                             <span class="fst-italic">@item.Key</span>
                         </p>
                         <p>
@@ -191,11 +191,11 @@
             <div class="container">
                 <div class="row tm-copyright">
                     <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2026 <a href="https://github.com/anitsirk66" target="_blank">Kristina Stoyanova</a></p>
-                    
+
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
     <script src="~/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/templatemo-script.js"></script>
     <script src="~/js/jquery-1.11.2.min.js"></script>

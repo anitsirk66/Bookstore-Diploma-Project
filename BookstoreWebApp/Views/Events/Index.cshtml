@@ -3,31 +3,31 @@
 
 
 <section class="tm-welcome-section">
-        <div class="container tm-position-relative">
-            <div class="tm-lights-container">
-                <img src="img/light.png" alt="Light" class="light light-1">
-                <img src="img/light.png" alt="Light" class="light light-2">
-                <img src="img/light.png" alt="Light" class="light light-3">
+    <div class="container tm-position-relative">
+        <div class="tm-lights-container">
+            <img src="img/light.png" alt="Light" class="light light-1">
+            <img src="img/light.png" alt="Light" class="light light-2">
+            <img src="img/light.png" alt="Light" class="light light-3">
         </div>
-            <div class="row tm-welcome-content">
-                <h4 class="white-text tm-handwriting-font tm-welcome-header"><img src="img/header-line.png" alt="Line" class="tm-header-line">&nbsp;Author-reader Events&nbsp;&nbsp;<img src="img/header-line.png" alt="Line" class="tm-header-line"></h4>
-                <h1 class="gold-text tm-welcome-header-2">Pink Sunrise</h1>
-                <p class="gray-text tm-welcome-description" style="color: black; font-size: 12px;">Paragraph with info about author-reader events</p>
-                <a href="#main" class="tm-more-button tm-more-button-welcome" style="display: none;">Read More</a>
+        <div class="row tm-welcome-content">
+            <h4 class="white-text tm-handwriting-font tm-welcome-header"><img src="img/header-line.png" alt="Line" class="tm-header-line">&nbsp;Author-reader Events&nbsp;&nbsp;<img src="img/header-line.png" alt="Line" class="tm-header-line"></h4>
+            <h1 class="gold-text tm-welcome-header-2">Pink Sunrise</h1>
+            <p class="gray-text tm-welcome-description" style="color: black; font-size: 12px;">Paragraph with info about author-reader events</p>
+            <a href="#main" class="tm-more-button tm-more-button-welcome" style="display: none;">Read More</a>
             @if (User.IsInRole("Admin"))
             {
-                <p><a asp-controller ="Events" asp-action="Create" class="btn btn-info">Add event</a></p>
+                <p><a asp-controller="Events" asp-action="Create" class="btn btn-info">Add event</a></p>
             }
         </div>
-            
-        </div>
+
+    </div>
 </section>
 <div class="tm-main-section light-gray-bg">
     <div class="container" id="main">
         <section class="tm-section tm-section-margin-bottom-0 row">
             <div class="col-lg-12 tm-section-header-container">
-                 <h2 class="tm-section-header gold-text tm-handwriting-font"> Popular Events</h2>
-                 <div class="tm-hr-container"><hr class="tm-hr"></div>
+                <h2 class="tm-section-header gold-text tm-handwriting-font"> Popular Events</h2>
+                <div class="tm-hr-container"><hr class="tm-hr"></div>
             </div>
             <div class="col-lg-12 tm-popular-items-container">
                 <div class="row">
@@ -46,7 +46,7 @@
                                         @e.DateAndTime.ToString("dd MMMM yyyy, HH:mm")
                                     </p>
 
-                                    
+
 
                                     @if (User.IsInRole("Admin"))
                                     {
@@ -83,27 +83,27 @@
         <section class="tm-section" style="display: none;">
             <div class="row">
                 <div class="col-lg-12 tm-section-header-container">
-                            <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="img/logo.png" alt="Logo" class="tm-site-logo"> Daily Menu</h2>
-                            <div class="tm-hr-container"><hr class="tm-hr"></div>
+                    <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="img/logo.png" alt="Logo" class="tm-site-logo"> Daily Menu</h2>
+                    <div class="tm-hr-container"><hr class="tm-hr"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="tm-daily-menu-container margin-top-60">
-                     <div class="col-lg-4 col-md-4">
-                          <img src="img/menu-board.png" alt="Menu board" class="tm-daily-menu-img">
-                     </div>
-                     <div class="col-lg-8 col-md-8">
-                          <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
-                           <ol class="margin-top-30">
-                                    <li>Tellus eget condimentum rhoncus.</li>
-                                    <li>Sem quam semper libero.</li>
-                                    <li>Sit amet adipiscing sem neque sed ipsum.</li>
-                                    <li>Nam quam nunc, blandit vel, luctus pulvinar.</li>
-                                    <li>Maecenas nec odio et ante tincidunt tempus.</li>
-                                    <li>Donec vitae sapien ut libero ventenatis faucibus.</li>
-                           </ol>
-                           <a href="#" class="tm-more-button margin-top-30">Read More</a>
-                     </div>
+                    <div class="col-lg-4 col-md-4">
+                        <img src="img/menu-board.png" alt="Menu board" class="tm-daily-menu-img">
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+                        <ol class="margin-top-30">
+                            <li>Tellus eget condimentum rhoncus.</li>
+                            <li>Sem quam semper libero.</li>
+                            <li>Sit amet adipiscing sem neque sed ipsum.</li>
+                            <li>Nam quam nunc, blandit vel, luctus pulvinar.</li>
+                            <li>Maecenas nec odio et ante tincidunt tempus.</li>
+                            <li>Donec vitae sapien ut libero ventenatis faucibus.</li>
+                        </ol>
+                        <a href="#" class="tm-more-button margin-top-30">Read More</a>
+                    </div>
                 </div>
             </div>
         </section>

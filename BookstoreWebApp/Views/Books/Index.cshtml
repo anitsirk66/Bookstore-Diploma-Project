@@ -1,47 +1,92 @@
 ﻿@using BookstoreProjectCore.Models.Books;
 @model IEnumerable<BooksIndexViewModel>
 
-<h1 class="page-title">Books</h1>
-@if(User.IsInRole("Admin"))
-{
-    <div class="create-button">
-        <a asp-controller="Books" asp-action="Create" class="btn btn-outline-primary">Add book</a>
-    </div>
-}
+<div class="books-page">
 
-<div class="books-grid">
-    @foreach(var book in Model)
-    {
-            <div class="book-card">
-        <a asp-action="Details" asp-controller="Books" asp-route-id="@book.Id" class="book-click">
-                <div class="book-cover">
-                   <img src="@book.CoverImageUrl" alt="couldn't load cover" width="200" height="200" style="text-align:center;"/>
+    <aside class="filter-sidebar">
+        <form method="get" asp-controller="Books" asp-action="Index">
+
+            <h4 class="filter-title">Filter</h4>
+            <hr class="divider" />
+
+            <h6>Genre</h6>
+
+            @foreach (var genre in ViewBag.Genres)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="genreIds" value="@genre.Id" />
+                    <label class="form-check-label">@genre.Name</label>
                 </div>
-                <div class="card-body">
-                    <h5 class="book-title">@book.Title</h5>​
-                    <p class="book-author">@book.AuthorName
-                    </p>​
-                    <p class="book-price" style="color: red;">@book.Price €</p>
+            }
 
-                    @if(User.IsInRole("Admin"))
+            <h6 class="mt-3">Author</h6>
+
+            @foreach (var author in ViewBag.Authors)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="authorIds" value="@author.Id" />
+                    <label class="form-check-label">@author.FullName</label>
+                </div>
+            }
+
+            <h6 class="mt-3">Publisher</h6>
+            @foreach (var publisher in ViewBag.Publishers)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="publisherIds" value="@publisher.Id" />
+                    <label class="form-check-label">@publisher.Name</label>
+                </div>
+            }
+
+
+            <button type="submit" class="btn btn-dark mt-3 w-100">Apply Filters</button>
+            <a asp-action="Index" class="btn btn-outline-secondary mt-2 w-100">Reset</a>
+        </form>
+    </aside>
+    <section class="books-section">
+        <h1 class="page-title">Books</h1>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="create-button mb-3">
+                <a asp-controller="Books" asp-action="Create" class="btn btn-primary">Add book</a>
+            </div>
+        }
+
+        <div class="books-grid">
+            @foreach (var book in Model)
+            {
+                <div class="book-card">
+                    <a asp-action="Details" asp-controller="Books" asp-route-id="@book.Id" class="book-click">
+                        <img src="@book.CoverImageUrl" class="book-img" />
+                        <div class="card-body">
+                            <h5>@book.Title</h5>
+                            <p class="text-muted">@book.AuthorName</p>
+                            <p class="price">@book.Price €</p>
+                        </div>
+                    </a>
+
+                    @if (User.IsInRole("Admin"))
                     {
                         <div class="book-actions">
-                            <a asp-controller="Books" asp-action="Edit" class="btn btn-warning" asp-route-id="@book.Id">Edit</a>
-                            <form asp-action="Delete" asp-controller="Books" method="get">
+                            <a asp-action="Edit" asp-route-id="@book.Id" class="btn btn-warning btn-sm">Edit</a>
+                            <form asp-action="Delete" method="get">
                                 <input type="hidden" name="id" value="@book.Id" />
-                                  <button type="submit" class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
                             </form>
                         </div>
                     }
-                    else if (User?.Identity?.IsAuthenticated ?? false)
+                    else if (User.Identity.IsAuthenticated && User.IsInRole("Client"))
                     {
-                        <div class="user-actions">
-                            <a asp-controller="Orders" asp-action="AddToCart" class="btn btn-outline-danger">Add to cart</a>
-                        </div>
+                        <a asp-controller="Orders" asp-action="AddToCart"
+                           asp-route-id="@book.Id"
+                           asp-route-bookId=""
+                           class="btn btn-danger">
+                            Add to Cart
+                        </a>
                     }
-                    
                 </div>
-        </a>
-            </div>
-    }
+            }
+        </div>
+    </section>
 </div>

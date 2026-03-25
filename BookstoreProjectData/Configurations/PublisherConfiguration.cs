@@ -21,7 +21,7 @@ namespace BookstoreProjectData.Configurations
 
             builder.Property(p => p.Description)
                  .IsRequired()
-                 .HasMaxLength(100);
+                 .HasMaxLength(200);
         }
     }
 }

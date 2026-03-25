@@ -1,4 +1,5 @@
 ﻿using BookstoreProjectCore.Contracts;
+using BookstoreProjectCore.Models.Cart;
 using BookstoreProjectCore.Services;
 using BookstoreProjectData.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -25,30 +26,55 @@ namespace BookstoreWebApp.Controllers
 
         
         [Authorize]
-        public async Task<IActionResult> AddToCart(Guid bookid)
+        public async Task<IActionResult> AddToCart(string id)
         {
+            var bookId = new Guid(id);
             var user = await userManager.GetUserAsync(User);
-            await service.AddToCart(bookid, user.Id);
-            return RedirectToAction("Index"); //*
+
+            if (user == null) {return Unauthorized();}
+
+            await service.AddToCart(bookId, user.Id);
+            return RedirectToAction("GetCart");
         }
 
+        [Authorize]
         public async Task<IActionResult> GetCart()
         {
             var user = await userManager.GetUserAsync(User);
 
             var order = await service.GetCart(user.Id);
 
-            var cartItems = new List<Order_Book>();
+            var model = new CartViewModel();
 
             if (order != null)
             {
-                foreach (var item in order.Orders_Books)
+                model.Items = order.Orders_Books.Select(ob => new CartItemViewModel
                 {
-                    cartItems.Add(item);
-                }
+                    BookId = ob.BookId,
+                    Title = ob.Book.Title,
+                    CoverImageUrl = ob.Book.CoverImageUrl,
+                    UnitPrice = ob.UnitPrice,
+                    Quantity = ob.Quantity
+                }).ToList();
             }
 
-            return View(cartItems); //?
+            return View(model);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> RemoveFromCart(Guid bookId)
+        {
+            var user = await userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                return Unauthorized();
+            }
+
+            await service.RemoveFromCart(bookId, user.Id);
+
+            return RedirectToAction(nameof(GetCart));
         }
     }
 }
