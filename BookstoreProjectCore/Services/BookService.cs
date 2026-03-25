@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using BookstoreWebApp.Models.Reviews;
 using System.Net;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace BookstoreProjectCore.Services
 {
@@ -159,7 +161,6 @@ namespace BookstoreProjectCore.Services
                                 .ToListAsync();
         }
 
-<<<<<<< HEAD
         public async Task<List<Publisher>> GetPublishers()
         {
             return await context.Publishers
@@ -184,32 +185,13 @@ namespace BookstoreProjectCore.Services
             if (publisherIds != null && publisherIds.Any())
             {
                 query = query.Where(b => b.Publishers_Books.Any(pb => publisherIds.Contains(pb.PublisherId)));
-=======
-        public async Task<IEnumerable<BooksIndexViewModel>> FilterBooks(Guid? genreId, Guid? authorId)
-        {
-            var query = context.Books.AsQueryable();
-
-            if (genreId.HasValue)
-            {
-                query = query.Where(b => b.GenreId == genreId);
             }
 
-            if (authorId.HasValue)
+            return await query.Select(b => new BooksIndexViewModel
             {
-                query = query.Where(b => b.AuthorId == authorId);
->>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
-            }
-
-            return await query
-                .Select(b => new BooksIndexViewModel
-                {
-                    Id = b.Id,
-                    Title = b.Title,
-                    AuthorName = b.Author.FullName,
-                    CoverImageUrl = b.CoverImageUrl,
-                    Price = b.Price
-                })
-                .ToListAsync();
+                Id = b.Id, Title = b.Title, AuthorName = b.Author.FullName, CoverImageUrl = b.CoverImageUrl, Price = b.Price
+            }).ToListAsync();
         }
+        
     }
 }

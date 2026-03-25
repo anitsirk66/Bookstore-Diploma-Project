@@ -15,7 +15,6 @@ namespace BookstoreProjectData.Configurations
         {
 			builder.HasKey(pb => new { pb.PublisherId, pb.BookId });
 
-<<<<<<< HEAD
             builder.Property(pb => pb.Language)
                 .IsRequired()
                 .HasMaxLength(30);
@@ -29,8 +28,6 @@ namespace BookstoreProjectData.Configurations
                 .WithMany(b => b.Publishers_Books)
                 .HasForeignKey(pb => pb.BookId)
                 .OnDelete(DeleteBehavior.Restrict);
-        }
-=======
 			builder.Property(pb => pb.Language)
 				.IsRequired()
 				.HasMaxLength(30);
@@ -45,6 +42,5 @@ namespace BookstoreProjectData.Configurations
 				.HasForeignKey(pb => pb.BookId)
 				.OnDelete(DeleteBehavior.Restrict);
 		}
->>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
     }
 }

@@ -28,14 +28,10 @@ namespace BookstoreProjectCore.Contracts
         Task<List<Genre>> GetGenres();
         Task<List<Promotion>> GetPromotions();
 
-<<<<<<< HEAD:BookstoreProjectCore/Interfaces/IBookService.cs
         Task<List<Publisher>> GetPublishers();
 
         Task<IEnumerable<BooksIndexViewModel>> FilterBooks(List<Guid> genreIds, List<Guid> authorIds, List<Guid> publisherIds);
-=======
-        Task<IEnumerable<BooksIndexViewModel>> FilterBooks(Guid? genreId, Guid? authorId);
 
->>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4:BookstoreProjectCore/Contracts/IBookService.cs
     }
 }
 
