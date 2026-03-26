@@ -9,7 +9,7 @@ namespace BookstoreWebApp.Seed
     {
         public static async Task SeedAsync(BookstoreContext context)
         {
-            if(!await context.Genres.AnyAsync())
+            if (!await context.Genres.AnyAsync())
             {
                 var genres = new List<Genre>
                 {
@@ -59,7 +59,7 @@ namespace BookstoreWebApp.Seed
                 await context.Genres.AddRangeAsync(genres);
                 await context.SaveChangesAsync();
             }
-            if(!await context.Authors.AnyAsync())
+            if (!await context.Authors.AnyAsync())
             {
                 var authors = new List<Author>
                 {
@@ -67,119 +67,119 @@ namespace BookstoreWebApp.Seed
                     {
                          Id = Guid.NewGuid(),
                          FullName = "Lewis Carroll",
-						 CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						 Biography = "Charles Lutwidge Dodgson, better known by his pen name Lewis Carroll, was an English author, poet, mathematician, photographer and reluctant Anglican deacon.",
+                         CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                         Biography = "Charles Lutwidge Dodgson, better known by his pen name Lewis Carroll, was an English author, poet, mathematician, photographer and reluctant Anglican deacon.",
                          Nationality = "British"
                     },
-                    new Author     
+                    new Author
                     {
                          Id = Guid.NewGuid(),
                          FullName = "George Orwell",
-						 CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						 Biography = "English novelist and essayist known for his dystopian works 1984 and Animal Farm, exploring themes of totalitarianism and political ideology.",
+                         CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                         Biography = "English novelist and essayist known for his dystopian works 1984 and Animal Farm, exploring themes of totalitarianism and political ideology.",
                          Nationality = "British"
                     },
                     new Author
                     {
                          Id = Guid.NewGuid(),
                          FullName = "E.B. White",
-						 CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						 Biography = "American writer and essayist, widely known for his contributions to children’s literature, including Charlotte’s Web and Stuart Little.",
+                         CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                         Biography = "American writer and essayist, widely known for his contributions to children’s literature, including Charlotte’s Web and Stuart Little.",
                          Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Markus Zusak",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "Australian novelist recognized internationally for The Book Thief, a historical novel set during World War II.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "Australian novelist recognized internationally for The Book Thief, a historical novel set during World War II.",
                         Nationality = "Australian"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Anthony Doerr",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "American novelist and short story writer, winner of the Pulitzer Prize for Fiction for All the Light We Cannot See.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "American novelist and short story writer, winner of the Pulitzer Prize for Fiction for All the Light We Cannot See.",
                         Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Terry Pratchett",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "British novelist famous for the comedic fantasy Discworld series, blending satire, humor, and social commentary.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "British novelist famous for the comedic fantasy Discworld series, blending satire, humor, and social commentary.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Douglas Adams",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "English author and humorist best known for The Hitchhiker’s Guide to the Galaxy, a science fiction comedy series.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "English author and humorist best known for The Hitchhiker’s Guide to the Galaxy, a science fiction comedy series.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Jane Austen",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "English novelist known for romantic fiction that critiques the British landed gentry, including Pride and Prejudice and Sense and Sensibility.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "English novelist known for romantic fiction that critiques the British landed gentry, including Pride and Prejudice and Sense and Sensibility.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "J. R. R. Tolkien",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "English writer and philologist, author of The Hobbit and The Lord of the Rings, and a foundational figure in modern high fantasy literature.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "English writer and philologist, author of The Hobbit and The Lord of the Rings, and a foundational figure in modern high fantasy literature.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "George R. R. Martin",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "American novelist and screenwriter best known for the epic fantasy series A Song of Ice and Fire, adapted into the TV series Game of Thrones.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "American novelist and screenwriter best known for the epic fantasy series A Song of Ice and Fire, adapted into the TV series Game of Thrones.",
                         Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Dan Brown",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "American author of thriller novels, including The Da Vinci Code, known for blending history, art, and conspiracy themes.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "American author of thriller novels, including The Da Vinci Code, known for blending history, art, and conspiracy themes.",
                         Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Gillian Flynn",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "American author and screenwriter known for psychological thrillers such as Gone Girl.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "American author and screenwriter known for psychological thrillers such as Gone Girl.",
                         Nationality = "American"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Jojo Moyes",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "British novelist known for romantic fiction, especially the internationally successful novel Me Before You.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "British novelist known for romantic fiction, especially the internationally successful novel Me Before You.",
                         Nationality = "British"
                     },
                     new Author
                     {
                         Id = Guid.NewGuid(),
                         FullName = "Nicholas Sparks",
-						CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
-						Biography = "American novelist known for romantic drama novels, many of which have been adapted into films, including The Notebook.",
+                        CoverImageUrl = "https://cdn2.penguin.com.au/covers/original/9780141354828.jpg",
+                        Biography = "American novelist known for romantic drama novels, many of which have been adapted into films, including The Notebook.",
                         Nationality = "American"
                     }
                 };
                 await context.Authors.AddRangeAsync(authors);
                 await context.SaveChangesAsync();
             }
-            if(!await context.Promotions.AnyAsync())
+            if (!await context.Promotions.AnyAsync())
             {
                 var promotions = new List<Promotion>
                 {
@@ -229,7 +229,7 @@ namespace BookstoreWebApp.Seed
                 await context.Promotions.AddRangeAsync(promotions);
                 await context.SaveChangesAsync();
             }
-            if(!await context.Books.AnyAsync())
+            if (!await context.Books.AnyAsync())
             {
                 var childrensGenre = await context.Genres
                     .FirstAsync(g => g.Name == "Children's");
@@ -288,8 +288,8 @@ namespace BookstoreWebApp.Seed
                         Price = 19,
                         CoverImageUrl = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fa761c72213835.5be04304160a1.png",
                         Synopsis = "On a quiet summer afternoon, young Alice tumbles down a rabbit hole into a fantastical world unlike anything she has ever known. In Wonderland, logic is twisted, language plays tricks, and nothing is quite as it seems. She encounters peculiar characters such as the hurried White Rabbit, the mischievous Cheshire Cat, the eccentric Mad Hatter, and the fearsome Queen of Hearts, whose temper is as unpredictable as the world she rules. As Alice navigates a series of strange encounters and surreal challenges, she questions her own identity and struggles to make sense of a place governed by nonsense and absurdity. Through whimsy and satire, the story explores imagination, curiosity, and the bewildering journey from childhood innocence toward self-awareness.",
-                        AuthorId = lewisCarroll.Id, 
-                        GenreId = childrensGenre.Id, 
+                        AuthorId = lewisCarroll.Id,
+                        GenreId = childrensGenre.Id,
                         PromotionId = null
                     }, //children's
                     new Book
@@ -325,7 +325,7 @@ namespace BookstoreWebApp.Seed
                         GenreId = historical.Id,
                         PromotionId = null
                     },
-                    new Book 
+                    new Book
                     {
                         Id = Guid.NewGuid(),
                         Title = "Good Omens",
@@ -347,7 +347,7 @@ namespace BookstoreWebApp.Seed
                         GenreId = comedy.Id,
                         PromotionId = null
                     },
-                    new Book 
+                    new Book
                     {
                         Id = Guid.NewGuid(),
                         Title = "1984",
@@ -439,7 +439,7 @@ namespace BookstoreWebApp.Seed
                 await context.Books.AddRangeAsync(books);
                 await context.SaveChangesAsync();
             };
-            if(!await context.Publishers.AnyAsync())
+            if (!await context.Publishers.AnyAsync())
             {
                 var publishers = new List<Publisher>
                 {
@@ -471,7 +471,7 @@ namespace BookstoreWebApp.Seed
                 await context.Publishers.AddRangeAsync(publishers);
                 await context.SaveChangesAsync();
             }
-            if(true)
+            if (true)
             {
                 var allTheLight = await context.Books.FirstAsync(b => b.Title == "All the Light We Cannot See");//
                 //var hitchhikersGuide = await context.Books.FirstAsync(b => b.Title == "The Hitchhiker’s Guide to the Galaxy");//
@@ -496,7 +496,7 @@ namespace BookstoreWebApp.Seed
 
                 await context.SaveChangesAsync();
             }
-            if(!await context.Publishers_Books.AnyAsync())
+            if (!await context.Publishers_Books.AnyAsync())
             {
                 var bloomsbury = await context.Publishers.FirstAsync(p => p.Name == "Bloomsbury Publishing");
                 var harper = await context.Publishers.FirstAsync(p => p.Name == "Harper & Brothers");
@@ -608,7 +608,7 @@ namespace BookstoreWebApp.Seed
                 await context.Publishers_Books.AddRangeAsync(pub_book);
                 await context.SaveChangesAsync();
             };
-            if(!await context.Events.AnyAsync())
+            if (!await context.Events.AnyAsync())
             {
                 var markus = await context.Authors
                     .FirstAsync(a => a.FullName == "Markus Zusak");
@@ -621,82 +621,24 @@ namespace BookstoreWebApp.Seed
                     {
                         Id = Guid.NewGuid(),
                         Name = "Meet and Greet with Markus Zusak",
-                        DateAndTime = new DateTime(),
-                        AuthorId = markus.Id
+                        DateAndTime = DateTime.UtcNow,
+                        AuthorId = markus.Id,
+                        Link = "https://translate.google.com/?sl=en&tl=de&op=translate"
                     },
                     new Event
                     {
                         Id = Guid.NewGuid(),
                         Name = "Meet and Greet with Dan Brown",
-                        DateAndTime = new DateTime(),
-                        AuthorId = danbrown.Id
+                        DateAndTime = DateTime.UtcNow,
+                        AuthorId = danbrown.Id,
+                        Link = "https://translate.google.com/?sl=en&tl=de&op=translate"
                     }
                 };
 
                 await context.Events.AddRangeAsync(events);
                 await context.SaveChangesAsync();
             }
-            //if(!await context.Orders.AnyAsync())
-            //{
-            //    var user = await context.Users.FirstAsync();
-
-            //    var orders = new List<Order>
-            //    {
-            //        new Order
-            //        {
-            //             Id = Guid.NewGuid(),  
-            //             DateAndTime = new DateTime(2026, 2, 1),
-            //             Address = "Sofia, Bulgaria",
-            //             Status = "Processing",
-            //             UserId = user.Id  
-            //        }
-            //        //add more
-            //    };
-            //    await context.Orders.AddRangeAsync(orders);
-            //    await context.SaveChangesAsync();
-            //}
-            //if(!await context.Orders_Books.AnyAsync())
-            //{
-            //    var order = await context.Orders.FirstAsync();
-            //    var book1984 = await context.Books
-            //        .FirstAsync(b => b.Title == "1984");
-
-            //    var ord_book = new List<Order_Book>
-            //    {
-            //        new Order_Book
-            //        {
-            //            OrderId = order.Id,
-            //            BookId = book1984.Id,
-            //            Quantity = 2,
-            //            UnitPrice = book1984.Price
-            //        }
-            //    };
-
-            //    await context.Orders_Books.AddRangeAsync(ord_book);
-            //    await context.SaveChangesAsync();
-            //}
-//            if(!await context.Reviews.AnyAsync())
-//            {
-//                var book1984 = await context.Books
-//                    .FirstAsync(b => b.Title == "1984");
-
-//                var user = await context.Users.FirstAsync();
-
-//                var reviews = new List<Review>
-//                {
-//                    new Review
-//                    {
-//                        Id = Guid.NewGuid(),
-//                        BookId = book1984.Id,
-//                        UserId = user.Id,
-//                        Text = "Excellent dystopian novel with deep political meaning.",
-//                        DateAndTime = DateTime.Now
-//                    }
-//};
-//                await context.Reviews.AddRangeAsync(reviews);
-//                await context.SaveChangesAsync();
-
-            }
         }
     }
+}
 

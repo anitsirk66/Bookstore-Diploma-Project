@@ -2,7 +2,21 @@
 @model IEnumerable<BooksIndexViewModel>
 
 <div class="books-page">
+    <form method="get" asp-controller="Books" asp-action="Index" class="search-bar mb-4">
 
+        <div class="input-group">
+            <input type="text"
+                   name="searchItem"
+                   class="form-control"
+                   placeholder="Search books, authors..."
+                   />
+
+            <button type="submit" class="btn btn-dark">
+                🔍 Search
+            </button>
+        </div>
+
+    </form>
     <aside class="filter-sidebar">
         <form method="get" asp-controller="Books" asp-action="Index">
 

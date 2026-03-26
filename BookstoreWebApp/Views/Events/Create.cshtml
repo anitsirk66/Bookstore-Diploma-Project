@@ -18,6 +18,11 @@
         <span asp-validation-for="DateAndTime" class="text-danger"></span>
     </div>
     <div class="mb-3">
+        <label asp-for="Link" class="form-label">Link to event</label>
+        <input asp-for="Link" class="form-control" required />
+        <span asp-validation-for="Link" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
         <label asp-for="AuthorId" class="form-label">Author's name</label>
         <select asp-for="AuthorId" class="form-control" asp-items="ViewBag.Authors" required></select>
         <span asp-validation-for="AuthorId" class="text-danger"></span>

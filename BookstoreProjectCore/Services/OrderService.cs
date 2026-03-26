@@ -1,6 +1,7 @@
 ﻿using BookstoreProjectCore.Contracts;
 using BookstoreProjectData;
 using BookstoreProjectData.Entities;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -100,6 +101,20 @@ namespace BookstoreProjectCore.Services
             }
 
             context.Orders_Books.Remove(item);
+
+            await context.SaveChangesAsync();
+        }
+
+        public async Task ChangeQuantity(string userid, Guid bookid, int quantity)
+        {
+            var order = await context.Orders.Include(o => o.Orders_Books).FirstOrDefaultAsync(o=> o.UserId == userid && o.Status == "InCart"); //*
+
+            if (order == null) { throw new ArgumentException("Not found"); }
+
+            var item = order.Orders_Books.FirstOrDefault(o => o.BookId == bookid);
+            if (item == null) { throw new ArgumentException("Not found"); }
+
+            item.Quantity = quantity;
 
             await context.SaveChangesAsync();
         }

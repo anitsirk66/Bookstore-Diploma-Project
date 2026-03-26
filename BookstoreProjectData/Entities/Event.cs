@@ -25,6 +25,8 @@ namespace BookstoreProjectData.Entities
         public Guid AuthorId { get; set; }
         public Author Author { get; set; } = null!;
 
+        [Required]
+        public string Link { get; set; } = null!;
         //+ adress
     }
 

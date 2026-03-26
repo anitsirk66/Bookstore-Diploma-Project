@@ -169,7 +169,7 @@ namespace BookstoreProjectCore.Services
                                 .ToListAsync();
         }
 
-        public async Task<IEnumerable<BooksIndexViewModel>> FilterBooks(List<Guid> genreIds, List<Guid> authorIds, List<Guid> publisherIds)
+        public async Task<IEnumerable<BooksIndexViewModel>> FilterBooks(string searchItem, List<Guid> genreIds, List<Guid> authorIds, List<Guid> publisherIds)
         {
             var query = context.Books.AsQueryable();
 
@@ -186,6 +186,10 @@ namespace BookstoreProjectCore.Services
             if (publisherIds != null && publisherIds.Any())
             {
                 query = query.Where(b => b.Publishers_Books.Any(pb => publisherIds.Contains(pb.PublisherId)));
+            }
+            if(!string.IsNullOrEmpty(searchItem))
+            {
+                query = query.Where(q => q.Title.ToLower().Contains(searchItem.ToLower()) || q.Author.FullName.Contains(searchItem));
             }
 
             return await query.Select(b => new BooksIndexViewModel

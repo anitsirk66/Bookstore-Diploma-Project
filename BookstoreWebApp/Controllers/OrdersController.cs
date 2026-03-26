@@ -76,6 +76,19 @@ namespace BookstoreWebApp.Controllers
 
 			return RedirectToAction(nameof(GetCart));
 		}
-	}
+
+        [HttpPost]
+        public async Task<IActionResult> ChangeQuantity(Guid bookId, int quantity)
+        {
+            var user = await userManager.GetUserAsync(User);
+
+            if (user == null)
+                return Unauthorized();
+
+            await service.ChangeQuantity(user.Id, bookId, quantity);
+
+            return RedirectToAction("GetCart");
+        }
+    }
 
 }

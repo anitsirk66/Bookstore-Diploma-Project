@@ -22,7 +22,6 @@ namespace BookstoreProjectCore.Models.Reviews
 
 
         public Guid BookId { get; set; }
-        public string BookTitle { get; set; } = null!;
 
         //[Required(ErrorMessage = "This field is required.")]
         //public string UserName { get; set; } = null!;

@@ -16,7 +16,7 @@
             <div class="container-fluid">
 
                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/img/booklogo.png" alt="Logo" class="tm-site-logo" width="50" height="50">
+                    <img src="~/img/cut.png" alt="Logo" class="tm-site-logo" width="50" height="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -110,12 +110,21 @@
             </div>
         </div>
     </header>
-
+    
     @if (TempData["SuccessMessage"] != null)
     {
         <div>
             <div class="alert alert-success alert-dismissible fade show">
                 @TempData["SuccessMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div>
+            <div class="alert alert-danger alert-dismissible fade show">
+                @TempData["Error"]
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             </div>
         </div>

@@ -39,7 +39,7 @@ namespace BookstoreProjectCore.Services
 
         public async Task<IEnumerable<ReviewsIndexViewModel>> GetReviews(Guid bookId)
         {
-            return await context.Reviews
+            var reviews = await context.Reviews
                 .Where(r => r.BookId == bookId)
                 .OrderByDescending(r => r.DateAndTime)
                 .Select(r => new ReviewsIndexViewModel
@@ -49,6 +49,14 @@ namespace BookstoreProjectCore.Services
                     CreatedOn = r.DateAndTime
                 })
                 .ToListAsync();
+            foreach (var review in reviews)
+            {
+                if (review.IsAnonymous)
+                {
+                    review.Username = "Anonymous User";
+                }
+            }
+            return reviews;
         }
 
         public async Task<bool> UserAlreadyReviewed(Guid bookId, string userId)
@@ -88,7 +96,7 @@ namespace BookstoreProjectCore.Services
                 throw new UnauthorizedAccessException();
 
             review.Text = model.Text;
-            review.DateAndTime = model.DateAndTime;
+            review.DateAndTime = DateTime.UtcNow;
 
             await context.SaveChangesAsync();
         }
@@ -102,6 +110,7 @@ namespace BookstoreProjectCore.Services
                 IsAnonymous = s.IsAnonymous,
                 BookId = s.BookId
             }).FirstOrDefaultAsync();
+            
         }
     }
 }

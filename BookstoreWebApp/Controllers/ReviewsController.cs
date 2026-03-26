@@ -30,6 +30,15 @@ namespace BookstoreWebApp.Controllers
         {
             if (!ModelState.IsValid)
             {
+                //return View(model);
+                TempData["Error"] = "";
+                foreach (var item in ViewData.ModelState)
+                {
+                    if (item.Value.Errors.Any())
+                    {
+                        TempData["Error"] += String.Join("; ", item.Value.Errors.Select(x => x.ErrorMessage));
+                    }
+                }
                 return RedirectToAction("Details", "Books", new { id = model.BookId });
             }
 

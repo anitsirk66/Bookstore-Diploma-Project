@@ -36,6 +36,17 @@ body {
     text-align: center;
 }
 
+.tm-welcome-header-2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 .tm-top-header, .navbar {
     background-color: #FC466B !important;
     color: white;
@@ -57,26 +68,21 @@ body {
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 25px;
-    padding: 0 20px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
 }
 
 .book-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
+    background: white;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
     .book-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 12px 24px rgba(0,0,0,0.15);
     }
 
 .card-body {
@@ -96,28 +102,36 @@ body {
     margin-bottom: 10px;
 }
 
-.book-price {
-    font-size: 1rem;
-    color: #d9534f;
+.book-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    color: #FC466B;
     font-weight: bold;
-    margin-bottom: 15px;
+}
+
+.filter-sidebar {
+    background: #fff;
+}
+
+.search-bar input {
+    border-radius: 20px 0 0 20px;
+}
+
+.search-bar button {
+    border-radius: 0 20px 20px 0;
 }
 
 .book-actions {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-.btn {
-    padding: 6px 14px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
 
 .btn-edit {
     background-color: #f0ad4e;
@@ -360,6 +374,18 @@ body {
     color: red;
     font-weight: bold;
 }
-=======
+
+.search-bar {
+    max-width: 500px;
+    margin: 0 auto;
 }
->>>>>>> 2e8c9ef4dc2c8dfbbaeb6450faaa5f967d37f6d4
+
+    .search-bar input {
+        border-radius: 25px 0 0 25px;
+        padding: 10px 15px;
+    }
+
+    .search-bar button {
+        border-radius: 0 25px 25px 0;
+    }
+

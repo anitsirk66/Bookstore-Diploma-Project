@@ -12,5 +12,8 @@ namespace BookstoreProjectCore.Contracts
         Task AddToCart(Guid bookId, string userId);
         Task<Order?> GetCart(string userId);
         Task RemoveFromCart(Guid bookId, string userId);
-	}
+
+        Task ChangeQuantity(string userid, Guid bookid, int quantity);
+
+    }
 }

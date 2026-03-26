@@ -21,7 +21,17 @@ else
                 <div class="flex-grow-1">
                     <h5>@item.Title</h5>
                     <p class="text-muted mb-1">Price: @item.UnitPrice.ToString("F2") €</p>
-                    <p class="mb-1">Quantity: <strong>@item.Quantity</strong></p>
+                    <form asp-controller="Orders" asp-action="ChangeQuantity" method="post" class="">
+                        <input type="hidden" name="bookId" value="@item.BookId" />
+                        <label>Quantity: </label>
+
+                        <select name="quantity" class="form-select" onchange="this.form.submit()">
+                            @for (int i = 1; i < 10; i++)
+                            {
+                                <option value="@i" selected="@(i==item.Quantity)">@i</option>
+                            }
+                        </select>
+                    </form>
                 </div>
 
                 <div class="text-end">

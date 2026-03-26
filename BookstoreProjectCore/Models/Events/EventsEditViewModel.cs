@@ -17,6 +17,11 @@ namespace BookstoreProjectCore.Models.Events
         public string Name { get; set; } = null!;
 
         [Required(ErrorMessage = "This field is required.")]
+        [Url(ErrorMessage = "Please enter a valid URL (e.g. https://example.com)")]
+        public string Link { get; set; } = null!;
+
+
+        [Required(ErrorMessage = "This field is required.")]
         [DataType(DataType.DateTime, ErrorMessage = "Enter a date and time.")]
         public DateTime DateAndTime { get; set; }
 

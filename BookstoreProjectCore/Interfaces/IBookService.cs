@@ -30,7 +30,7 @@ namespace BookstoreProjectCore.Contracts
 
         Task<List<Publisher>> GetPublishers();
 
-        Task<IEnumerable<BooksIndexViewModel>> FilterBooks(List<Guid> genreIds, List<Guid> authorIds, List<Guid> publisherIds);
+        Task<IEnumerable<BooksIndexViewModel>> FilterBooks(string searchItem, List<Guid> genreIds, List<Guid> authorIds, List<Guid> publisherIds);
 
     }
 }
