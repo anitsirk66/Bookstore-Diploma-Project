@@ -15,8 +15,9 @@ namespace BookstoreProjectCore.Contracts
         Task<IEnumerable<ReviewsIndexViewModel>> GetReviews(Guid bookid);
         Task<bool> UserAlreadyReviewed(Guid bookid, string userid);
 
-        Task DeleteAsync(Guid reviewId);
+        Task DeleteAsync(Guid reviewId, string userId, bool isAdmin);
 
-        Task EditAsync(ReviewsEditViewModel dto);
+        Task EditAsync(ReviewsEditViewModel model, string userId, bool isAdmin);
+        Task<ReviewsEditViewModel?> GetByIdAsync(Guid reviewId);
     }
 }

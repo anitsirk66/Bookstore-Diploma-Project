@@ -29,7 +29,8 @@ namespace BookstoreProjectCore.Services
                 BookId = model.BookId,
                 UserId = userId,
                 Text = model.Text,
-                DateAndTime = DateTime.UtcNow
+                DateAndTime = DateTime.UtcNow,
+                IsAnonymous = model.IsAnonymous
             };
 
             context.Reviews.Add(review);
@@ -57,28 +58,50 @@ namespace BookstoreProjectCore.Services
         }
 
 
-        public async Task DeleteAsync(Guid reviewId)
+        public async Task DeleteAsync(Guid reviewId, string userId, bool isAdmin)
         {
+            if (reviewId == Guid.Empty)
+            {
+                throw new Exception("ReviewId is EMPTY");
+            }
+
             var review = await context.Reviews
                 .FirstOrDefaultAsync(r => r.Id == reviewId);
 
             if (review == null)
-                throw new ArgumentException("Review not found");
+                throw new ArgumentException($"Review not found with id {reviewId}");
+
+            if (!isAdmin && review.UserId != userId)
+                throw new UnauthorizedAccessException();
 
             context.Reviews.Remove(review);
             await context.SaveChangesAsync();
         }
 
-        public async Task EditAsync(ReviewsEditViewModel model)
+        public async Task EditAsync(ReviewsEditViewModel model, string userId, bool isAdmin)
         {
             var review = await context.Reviews.FirstOrDefaultAsync(r => r.Id == model.Id);
 
             if (review == null) { throw new ArgumentException("Review not found"); }
 
+            if (!isAdmin && review.UserId != userId)
+                throw new UnauthorizedAccessException();
+
             review.Text = model.Text;
             review.DateAndTime = model.DateAndTime;
-            review.User.UserName = model.UserName;
 
+            await context.SaveChangesAsync();
+        }
+
+        public async Task<ReviewsEditViewModel?> GetByIdAsync(Guid reviewId)
+        {
+            return await context.Reviews.Where(r=>r.Id== reviewId).Select(s=>new ReviewsEditViewModel
+            {
+                Id=s.Id,
+                Text =s.Text,
+                IsAnonymous = s.IsAnonymous,
+                BookId = s.BookId
+            }).FirstOrDefaultAsync();
         }
     }
 }

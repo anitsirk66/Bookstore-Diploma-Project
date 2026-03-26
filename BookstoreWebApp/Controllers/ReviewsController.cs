@@ -24,13 +24,6 @@ namespace BookstoreWebApp.Controllers
             return View();
         }
 
-        //[Authorize]
-        //[HttpGet]
-        //public IActionResult Create()
-        //{
-        //    return View();
-        //}
-
         [Authorize(Roles = "Client")]
         [HttpPost]
         public async Task<IActionResult> Create(ReviewsCreateViewModel model)
@@ -67,15 +60,42 @@ namespace BookstoreWebApp.Controllers
         
         [Authorize(Roles = "Admin")]
         [HttpGet]
-        public async Task<IActionResult> Delete(Guid reviewId)
+        public async Task<IActionResult> Delete(Guid reviewId, Guid bookId)
         {
-            //var user = await userManager.GetUserAsync(User);
+            var user = await userManager.GetUserAsync(User);
 
-            //if (user == null) { return Unauthorized(); }
+            await reviewService.DeleteAsync(reviewId, user.Id, User.IsInRole("Admin"));
 
-            await reviewService.DeleteAsync(reviewId);
+            return RedirectToAction("Details", "Books", new{ id = bookId});
+        }
 
-            return RedirectToAction("Details");
+        [Authorize(Roles = "Client")]
+        [HttpGet]
+        public async Task<IActionResult> Edit(Guid reviewId)
+        {
+            var review = await reviewService.GetByIdAsync(reviewId);
+
+            if(review  == null) { return NotFound(); }
+
+            return View(review);
+        }
+
+        [Authorize(Roles = "Client")]
+        [HttpPost]
+        public async Task <IActionResult> Edit(ReviewsEditViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var user = await userManager.GetUserAsync(User);
+
+            await reviewService.EditAsync(
+                model,
+                user.Id,
+                User.IsInRole("Admin")
+            );
+
+            return RedirectToAction("Details", "Books", new { id = model.BookId });
         }
     }
 }

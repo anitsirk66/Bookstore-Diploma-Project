@@ -133,8 +133,21 @@
 
                             @if (User.IsInRole("Admin"))
                             {
-                                <a asp-controller="Reviews" asp-action="Delete" method="get" asp-route-id="@review.Id"
-                                   class="btn btn-danger">Delete this review</a>
+                                <form asp-controller="Reviews" asp-action="Delete" method="get">
+                                    <input type="hidden" name="reviewId" value="@review.Id" />
+                                    <input type="hidden" name="bookId" value="@review.BookId" />
+
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <a asp-controller="Reviews"
+                                   asp-action="Edit"
+                                   asp-route-reviewId="@review.Id"
+                                   class="btn btn-warning btn-sm">
+                                    Edit
+                                </a>
                             }
                         </div>
                     }

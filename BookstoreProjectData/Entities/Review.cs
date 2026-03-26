@@ -29,5 +29,7 @@ namespace BookstoreProjectData.Entities
 
         [Required]
         public DateTime DateAndTime { get; set; }
+
+        public bool IsAnonymous { get; set; }
     }
 }

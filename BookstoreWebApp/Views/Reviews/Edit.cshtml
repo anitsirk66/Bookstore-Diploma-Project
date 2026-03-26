@@ -1,0 +1,22 @@
+﻿@using BookstoreProjectCore.Models.Reviews;
+@model ReviewsEditViewModel
+
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="BookId" />
+
+    <div class="mb-3">
+        <label>Your opinion</label>
+        <textarea asp-for="Text" class="form-control" required></textarea>
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="IsAnonymous" class="form-check-input" />
+        <label class="form-check-label">
+            Stay anonymous
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save changes</button>
+</form>

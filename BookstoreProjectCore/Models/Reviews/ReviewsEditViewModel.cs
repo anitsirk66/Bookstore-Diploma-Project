@@ -14,20 +14,20 @@ namespace BookstoreProjectCore.Models.Reviews
     {
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage = "This field is required.")]
-        [StringLength(250, ErrorMessage = "The title can be a maximum of 250 characters.")]
         public string Text { get; set; } = null!;
 
-        [Required(ErrorMessage = "This field is required.")]
         public DateTime DateAndTime { get; set; }
 
-        [Required(ErrorMessage = "This field is required.")]
+        public bool IsAnonymous { get; set; }
+
+
         public Guid BookId { get; set; }
         public string BookTitle { get; set; } = null!;
 
-        [Required(ErrorMessage = "This field is required.")]
-        public string UserName { get; set; } = null!;
-        public string UserId { get; set; } = null!;
+        //[Required(ErrorMessage = "This field is required.")]
+        //public string UserName { get; set; } = null!;
+        //public string UserId { get; set; } = null!;
+
 
     }
 }

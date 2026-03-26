@@ -51,11 +51,12 @@ namespace BookstoreProjectCore.Services
 
                 Reviews = b.Reviews.Select(r => new ReviewsIndexViewModel
                 {
-                    //Id = r.Id,
+                    Id = r.Id,
                     Username = r.User.UserName,
                     Text = r.Text,
                     CreatedOn = r.DateAndTime,
-                   // BookId = r.BookId  //по id или ?
+                    BookId = r.BookId,
+                    IsAnonymous = r.IsAnonymous
                 }).ToList()
             })
             .FirstOrDefaultAsync();

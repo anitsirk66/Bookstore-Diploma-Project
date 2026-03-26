@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookstoreProjectData\BookstoreProjectData.csproj" />
+    <Compile Remove="real prject\**" />
+    <EmbeddedResource Remove="real prject\**" />
+    <None Remove="real prject\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="real prject\" />
+    <ProjectReference Include="..\BookstoreProjectData\BookstoreProjectData.csproj" />
   </ItemGroup>
 
 </Project>
