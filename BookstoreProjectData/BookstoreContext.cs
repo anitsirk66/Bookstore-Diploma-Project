@@ -21,6 +21,9 @@ namespace BookstoreProjectData
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<Publisher_Book> Publishers_Books { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<MonthlyBookSelection> MonthlyBookSelections { get; set; }
+        public DbSet<MonthlyBook> MonthlyBooks { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -35,6 +38,7 @@ namespace BookstoreProjectData
             modelBuilder.ApplyConfiguration(new OrderConfiguration());
             modelBuilder.ApplyConfiguration(new OrderBookConfiguration());
             modelBuilder.ApplyConfiguration(new PublisherBookConfiguration());
+            modelBuilder.ApplyConfiguration(new MonthlyBookConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

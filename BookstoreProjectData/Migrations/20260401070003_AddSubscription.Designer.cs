@@ -4,6 +4,7 @@ using BookstoreProjectData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookstoreProjectData.Migrations
 {
     [DbContext(typeof(BookstoreContext))]
-    partial class BookstoreContextModelSnapshot : ModelSnapshot
+    [Migration("20260401070003_AddSubscription")]
+    partial class AddSubscription
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -143,38 +146,6 @@ namespace BookstoreProjectData.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Genres");
-                });
-
-            modelBuilder.Entity("BookstoreProjectData.Entities.MonthlyBook", b =>
-                {
-                    b.Property<Guid>("MonthlyBookSelectionId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("BookId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("MonthlyBookSelectionId", "BookId");
-
-                    b.HasIndex("BookId");
-
-                    b.ToTable("MonthlyBooks");
-                });
-
-            modelBuilder.Entity("BookstoreProjectData.Entities.MonthlyBookSelection", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("Month")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Year")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("MonthlyBookSelections");
                 });
 
             modelBuilder.Entity("BookstoreProjectData.Entities.Order", b =>
@@ -327,30 +298,6 @@ namespace BookstoreProjectData.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Reviews");
-                });
-
-            modelBuilder.Entity("BookstoreProjectData.Entities.Subscription", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Subscriptions");
                 });
 
             modelBuilder.Entity("BookstoreProjectData.Entities.User", b =>
@@ -591,25 +538,6 @@ namespace BookstoreProjectData.Migrations
                     b.Navigation("Author");
                 });
 
-            modelBuilder.Entity("BookstoreProjectData.Entities.MonthlyBook", b =>
-                {
-                    b.HasOne("BookstoreProjectData.Entities.Book", "Book")
-                        .WithMany()
-                        .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BookstoreProjectData.Entities.MonthlyBookSelection", "MonthlyBookSelection")
-                        .WithMany("MonthlyBooks")
-                        .HasForeignKey("MonthlyBookSelectionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Book");
-
-                    b.Navigation("MonthlyBookSelection");
-                });
-
             modelBuilder.Entity("BookstoreProjectData.Entities.Order", b =>
                 {
                     b.HasOne("BookstoreProjectData.Entities.User", "User")
@@ -748,11 +676,6 @@ namespace BookstoreProjectData.Migrations
             modelBuilder.Entity("BookstoreProjectData.Entities.Genre", b =>
                 {
                     b.Navigation("Books");
-                });
-
-            modelBuilder.Entity("BookstoreProjectData.Entities.MonthlyBookSelection", b =>
-                {
-                    b.Navigation("MonthlyBooks");
                 });
 
             modelBuilder.Entity("BookstoreProjectData.Entities.Order", b =>

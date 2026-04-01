@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using BookstoreProjectData.Entities
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -16,7 +21,7 @@
             <div class="container-fluid">
 
                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/img/cut.png" alt="Logo" class="tm-site-logo" width="50" height="50">
+                    <img src="~/img/whiteLogoSmall.png" alt="Logo" class="tm-site-logo" width="50" height="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,6 +37,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Books</a>
                         </li>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Subscription" asp-action="MonthlyBooks">Monthly Picks for You</a>
+                            </li>
+                        }
                         @if (User.IsInRole("Admin"))
                         {
 

@@ -1,0 +1,56 @@
+﻿@using BookstoreProjectCore.Models.Books
+@using BookstoreProjectData.Entities
+@model IEnumerable<BooksIndexViewModel>
+
+
+<div class="container mt-4">
+
+    <h2 class="text-center mb-4">📚 Books of the Month</h2>
+
+    <div class="text-center mb-4">
+        @if (!(bool) ViewBag.IsSubscribed)
+        {
+            <form asp-controller="Subscription" asp-action="Subscribe" method="post">
+                <button class="btn btn-danger">Subscribe</button>
+            </form>
+        }
+        else
+        {
+            <span class="badge bg-success">Subscribed</span>
+        }
+    </div>
+
+    @if (!Model.Any())
+    {
+        <p class="text-center">No books selected for this month.</p>
+    }
+    else
+    {
+        <div class="books-grid-subscription">
+            @foreach (var book in Model)
+            {
+                <div class="book-card-subscription text-center">
+                    <a asp-action="Details" asp-controller="Books" asp-route-id="@book.Id" class="book-click">
+                        <img src="@book.CoverImageUrl" class="book-img-subscription mb-2" />
+                        <div class="card-body">
+                            <h5>@book.Title</h5>
+                            <p class="text-muted">@book.AuthorName</p>
+                            <p class="price">@book.Price €</p>
+                        </div>
+                    </a>
+
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Client"))
+                    {
+                        <a asp-controller="Orders" asp-action="AddToCart"
+                           asp-route-id="@book.Id"
+                           asp-route-bookId=""
+                           class="btn btn-danger">
+                            Add to Cart
+                        </a>
+                    }
+                </div>
+            }
+        </div>
+    }
+
+</div>

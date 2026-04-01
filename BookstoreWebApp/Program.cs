@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 using BookstoreProjectCore.Contracts;
 using BookstoreProjectCore.Services;
+using BookstoreProjectCore.Interfaces;
 
 namespace BookstoreWebApp
 {
@@ -55,6 +56,7 @@ namespace BookstoreWebApp
             builder.Services.AddScoped<IEventService, EventService>();
             builder.Services.AddScoped<IReviewService, ReviewService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
 
             var app = builder.Build();
 
