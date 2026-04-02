@@ -16,11 +16,14 @@ namespace BookstoreProjectData.Entities
         public string UserId { get; set; } = null!;
 
         [Required]
-        public bool IsActive { get; set; }
+        public string Address { get; set; } = null!;
+
+        public int Month { get; set; }
+        public int Year { get; set; }
 
         [Required]
-        public DateTime StartDate { get; set; }
+        public DateTime CreatedOn { get; set; }
 
-        public DateTime? EndDate { get; set; }
+        //public DateTime? EndDate { get; set; }
     }
 }

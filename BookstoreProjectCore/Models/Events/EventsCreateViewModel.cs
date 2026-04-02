@@ -13,9 +13,9 @@ namespace BookstoreProjectCore.Models.Events
         [StringLength(50, ErrorMessage = "The event's name can be a maximum of 50 characters.")]
         public string Name { get; set; } = null!;
 
-        [Required(ErrorMessage = "This field is required.")]
+        //[Required(ErrorMessage = "This field is required.")]
         [Url(ErrorMessage = "Please enter a valid URL (e.g. https://example.com)")]
-        public string Link { get; set; } = null!;
+        public string? Link { get; set; }
 
         [Required(ErrorMessage = "This field is required.")]
         [DataType(DataType.DateTime, ErrorMessage = "Enter a date and time.")]

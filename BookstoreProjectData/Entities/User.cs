@@ -16,5 +16,8 @@ namespace BookstoreProjectData.Entities
 
         public List<Order> Orders { get; set; } = new List<Order>();
         public List<Review> Reviews { get; set; } = new List<Review>();
+
+        [Required]
+        public string Address { get; set; } = null!;
     }
 }

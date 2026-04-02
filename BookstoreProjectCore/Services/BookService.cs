@@ -23,6 +23,43 @@ namespace BookstoreProjectCore.Services
             context = _context;
         }
 
+        public async Task<BooksEditViewModel?> GetByIdEdit(Guid id)
+        {
+            return await context.Books
+             .Where(b => b.Id == id)
+             .Select(b => new BooksEditViewModel
+             {
+                 Id = b.Id,
+                 Title = b.Title,
+                 CoverImageUrl = b.CoverImageUrl,
+                 Price = b.Price,
+                 Synopsis = b.Synopsis,
+                 AuthorId = b.AuthorId,
+                 GenreId = b.GenreId,
+                 AuthorName = b.Author.FullName,
+                 GenreName = b.Genre.Name
+             })
+             .FirstOrDefaultAsync();
+
+        }
+        public async Task EditAsync(BooksEditViewModel dto)
+        {
+            var book = await context.Books
+                .FirstOrDefaultAsync(b => b.Id == dto.Id);
+
+            if (book == null)
+                throw new ArgumentException("Book not found");
+
+            book.Title = dto.Title;
+            book.Price = dto.Price;
+            book.CoverImageUrl = dto.CoverImageUrl;
+            book.Synopsis = dto.Synopsis;
+            if (dto.AuthorId.HasValue) { book.AuthorId = dto.AuthorId.Value; }
+            if (dto.GenreId.HasValue) { book.GenreId = dto.GenreId.Value; }
+
+            await context.SaveChangesAsync();
+        }
+
         public async Task<IEnumerable<BooksIndexViewModel>> Index()
         {
             return await context.Books.Select(b => new BooksIndexViewModel
@@ -79,26 +116,6 @@ namespace BookstoreProjectCore.Services
 
         }
 
-        public async Task<BooksEditViewModel?> GetByIdEdit(Guid id)
-        {
-            return await context.Books
-             .Where(b => b.Id == id)
-             .Select(b => new BooksEditViewModel
-             {
-                 Id = b.Id,
-                 Title = b.Title,
-                 CoverImageUrl = b.CoverImageUrl,
-                 Price = b.Price,
-                 Synopsis = b.Synopsis,
-                 AuthorId = b.AuthorId,
-                 GenreId = b.GenreId,
-                 AuthorName = b.Author.FullName,
-                 GenreName = b.Genre.Name
-             })
-             .FirstOrDefaultAsync();
-
-        }
-
         public async Task CreateAsync(BooksCreateViewModel dto)
         {
             var book = new Book
@@ -115,23 +132,7 @@ namespace BookstoreProjectCore.Services
             await context.Books.AddAsync(book);
             await context.SaveChangesAsync();
         }
-        public async Task EditAsync(BooksEditViewModel dto)
-        {
-            var book = await context.Books
-                .FirstOrDefaultAsync(b => b.Id == dto.Id);
-
-            if (book == null)
-                throw new ArgumentException("Book not found");
-
-            book.Title = dto.Title;
-            book.Price = dto.Price;
-            book.CoverImageUrl = dto.CoverImageUrl;
-            book.Synopsis = dto.Synopsis;
-            book.AuthorId = dto.AuthorId;
-            book.GenreId = dto.GenreId;
-
-            await context.SaveChangesAsync();
-        }
+        
         public async Task DeleteAsync(Guid id)
         {
             var book = await context.Books.FindAsync(id);

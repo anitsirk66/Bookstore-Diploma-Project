@@ -19,47 +19,41 @@ namespace BookstoreProjectCore.Services
             context = _context;
         }
 
-        public async Task Subscribe(string userId)
+        public async Task Subscribe(string userId, string address)
         {
-            var sub = new Subscription
-            {
-                Id = Guid.NewGuid(),
-                UserId = userId,
-                IsActive = true,
-                StartDate = DateTime.UtcNow
-            };
+            var user = await context.Users.FindAsync(userId);
 
-            context.Subscriptions.Add(sub);
+            if (user == null)
+                throw new ArgumentException("User not found");
+
+            user.Subscription = true;
+            user.Address = address;
+
+            //var now = DateTime.UtcNow;
+
+            //var subscribed = await context.Subscriptions.AnyAsync(s => s.UserId == userId && s.Month == now.Month && s.Year == now.Year);
+
+            //if (subscribed) { throw new Exception("Already subscribed."); }
+
+            //var sub = new Subscription
+            //{
+            //    Id = Guid.NewGuid(),
+            //    UserId = userId,
+            //    Address = address,
+            //    Month = now.Month,
+            //    Year = now.Year,
+            //    CreatedOn = DateTime.UtcNow
+            //};
+
+            //context.Subscriptions.Add(sub);
             await context.SaveChangesAsync();
         }
 
-        public async Task<List<BooksIndexViewModel>> GetMonthlyBooks()
+        public async Task<bool> IsAlreadySubscribed(string userId)
         {
             var now = DateTime.UtcNow;
 
-            var books =  await context.MonthlyBookSelections
-                .Where(m => m.Month == now.Month && m.Year == now.Year)
-                .Include(m => m.MonthlyBooks)
-                    .ThenInclude(mb => mb.Book)
-                        .ThenInclude(b => b.Author)
-                .SelectMany(m => m.MonthlyBooks)
-                .Select(mb => mb.Book)
-                .ToListAsync();
-
-            var output = new List<BooksIndexViewModel>();
-            foreach (var book in books)
-            {
-                var vm = new BooksIndexViewModel {
-                    Id =book.Id,
-                    Title = book.Title,
-                    CoverImageUrl = book.CoverImageUrl,
-                    Price = book.Price,
-                    AuthorName = book.Author.FullName
-                };
-                output.Add(vm);
-            }
-            return output;
-            //throw new NotImplementedException();
+            return await context.Subscriptions.AnyAsync(s => s.UserId == userId && s.Month == now.Month && s.Year == now.Year);
         }
     }
 }

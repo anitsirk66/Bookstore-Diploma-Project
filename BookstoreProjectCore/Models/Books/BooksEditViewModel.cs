@@ -27,13 +27,11 @@ namespace BookstoreProjectCore.Models.Books
         public string Synopsis { get; set; } = null!;
 
 
-        [Required(ErrorMessage = "This field is required.")]
-        public Guid AuthorId { get; set; }
-        public string AuthorName { get; set; } = null!;
+        public Guid? AuthorId { get; set; }
+        public string? AuthorName { get; set; } = null!;
 
-        [Required(ErrorMessage = "This field is required.")]
-        public Guid GenreId { get; set; }
-        public string GenreName { get; set; } = null!;
+        public Guid? GenreId { get; set; }
+        public string? GenreName { get; set; } = null!;
         
         public Guid? PromotionId { get; set; }
 

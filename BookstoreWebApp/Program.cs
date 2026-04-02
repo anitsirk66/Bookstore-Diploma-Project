@@ -56,7 +56,8 @@ namespace BookstoreWebApp
             builder.Services.AddScoped<IEventService, EventService>();
             builder.Services.AddScoped<IReviewService, ReviewService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
-            builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
+                        builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
+                        builder.Services.AddScoped<IMonthlySelectionService, MonthlySelectionService>();
 
             var app = builder.Build();
 

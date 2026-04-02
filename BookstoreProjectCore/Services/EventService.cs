@@ -52,7 +52,8 @@ namespace BookstoreProjectCore.Services
                 Id = Guid.NewGuid(),
                 Name = dto.Name,
                 DateAndTime = dto.DateAndTime,
-                AuthorId = dto.AuthorId
+                AuthorId = dto.AuthorId,
+                Link = dto.Link
             };
 
             await context.Events.AddAsync(eventt);

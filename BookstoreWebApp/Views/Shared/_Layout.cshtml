@@ -40,7 +40,7 @@
                         @if (SignInManager.IsSignedIn(User))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Subscription" asp-action="MonthlyBooks">Monthly Picks for You</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Subscription" asp-action="Index">Monthly Picks for You</a>
                             </li>
                         }
                         @if (User.IsInRole("Admin"))

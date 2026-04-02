@@ -8,15 +8,15 @@
     <h2 class="text-center mb-4">📚 Books of the Month</h2>
 
     <div class="text-center mb-4">
-        @if (!(bool) ViewBag.IsSubscribed)
+        @if (User.Identity.IsAuthenticated && User.IsInRole("Client") && !(bool)ViewBag.IsSubscribed)
         {
             <form asp-controller="Subscription" asp-action="Subscribe" method="post">
                 <button class="btn btn-danger">Subscribe</button>
             </form>
         }
-        else
+        else if ((bool)ViewBag.IsSubscribed)
         {
-            <span class="badge bg-success">Subscribed</span>
+            <span class="btn btn-success">Subscribed</span>
         }
     </div>
 
@@ -51,6 +51,17 @@
                 </div>
             }
         </div>
+        @if (ViewBag.Price != null)
+        {
+            <h4 class="text-center text-success mb-3">
+                Subscription Price: @ViewBag.Price €
+            </h4>
+        }
     }
 
 </div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}

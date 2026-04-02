@@ -121,13 +121,13 @@ namespace BookstoreWebApp.Controllers
                 //    .ToList();
                     
                 var authors = await service.GetAuthors();
-                ViewBag.Authors = new SelectList(authors, "Id", "FullName");
+                ViewBag.Authors = new SelectList(authors, "Id", "FullName", model.AuthorId);
 
                 var genres = await service.GetGenres();
-                ViewBag.Genres = new SelectList(genres, "Id", "Name");
+                ViewBag.Genres = new SelectList(genres, "Id", "Name", model.GenreId);
 
-                var promotions = await service.GetPromotions();
-                ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
+                //var promotions = await service.GetPromotions();
+                //ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
                 return View(model);
             }

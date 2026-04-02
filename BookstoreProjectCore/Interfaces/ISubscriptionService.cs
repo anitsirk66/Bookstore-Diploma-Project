@@ -10,8 +10,8 @@ namespace BookstoreProjectCore.Interfaces
 {
     public interface ISubscriptionService
     {
-        Task Subscribe(string userId);
+        Task Subscribe(string userId, string address);
 
-        Task<List<BooksIndexViewModel>> GetMonthlyBooks();
+        Task<bool> IsAlreadySubscribed(string userId);
     }
 }
