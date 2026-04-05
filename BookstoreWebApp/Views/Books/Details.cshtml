@@ -1,24 +1,6 @@
 ﻿@using BookstoreProjectCore.Models.Books;
 @model BooksDetailsViewModel
 
-@{
-            /*
-        <h2>@Model.Title</h2>
-
-    <div>
-    <img src="@Model.CoverImageUrl" width="300" />
-        </div>
-
-        <p><strong>Author:</strong> @Model.AuthorName</p>
-        <p><strong>Price:</strong> @Model.Price</p>
-        <p><strong>Synopsis:</strong></p>
-        <p>@Model.Synopsis</p>
-
-
-
-    <a asp-action="Index" class="btn btn-secondary">Back</a> */
-}
-
 
 <div class="container mt-4">
 
@@ -47,7 +29,7 @@
         <div class="col-md-8">
 
             <h1 class="fw-bold">@Model.Title</h1>
-            <h5 class="text-muted mb-3">@Model.AuthorName</h5>
+            <a asp-action="AuthorPage" asp-controller="Authors" class="btn btn-link mb-3">@Model.AuthorName</a>
 
             <p><strong>Genre:</strong> @Model.GenreName</p>
 

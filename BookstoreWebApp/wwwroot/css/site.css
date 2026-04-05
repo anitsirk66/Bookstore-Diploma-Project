@@ -205,34 +205,7 @@ body {
         box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     }
 
-.order-now-container {
-    margin-top: auto;
-    text-align: center;
-}
 
-.order-now-link {
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-    .order-now-link:hover {
-        background: linear-gradient(135deg, #00f2fe, #4facfe);
-        transform: translateY(-2px) scale(1.03);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-        color: #fff;
-    }
-
-    .order-now-link:active {
-        transform: scale(0.98);
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
 
 .review-form {
     max-width: 600px;
@@ -409,4 +382,9 @@ body {
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.author-page {
+    max-width: 600px;
+    margin: 0 auto;
 }

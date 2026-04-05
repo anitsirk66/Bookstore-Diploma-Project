@@ -1,6 +1,5 @@
 ﻿//using AspNetCore;
 using BookstoreProjectCore.Contracts;
-using BookstoreProjectCore.DTOs.Events;
 using BookstoreProjectData;
 using BookstoreProjectData.Entities;
 using BookstoreProjectCore.Models.Books;
@@ -93,7 +92,7 @@ namespace BookstoreWebApp.Controllers
 
 
         [Authorize(Roles = "Admin")]
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Delete(Guid id)
         {
             await service.DeleteAsync(id);

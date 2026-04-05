@@ -22,7 +22,7 @@ namespace BookstoreWebApp.Controllers
         }
 
         [HttpGet]
-        public  async Task< IActionResult> Index(SubscriptionViewModel vmodel)
+        public async Task<IActionResult> Index(SubscriptionViewModel vmodel)
         {
             if (!ModelState.IsValid) { return View(vmodel); }
 
@@ -37,12 +37,20 @@ namespace BookstoreWebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Subscribe(string address)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            //if (!ModelState.IsValid) { return View(model); }
 
-            await service.Subscribe(userId, address);
+            var user = await manager.GetUserAsync(User);
+            if(user == null) { return Unauthorized(); }
+
+            if (await service.IsAlreadySubscribed(user.Id))
+            {
+                TempData["Fail"] = "You are already subscribed!"; 
+            }
+
+            await service.Subscribe(user.Id, address);
             TempData["Success"] = "You are now subscribed!";
 
-            return RedirectToAction("Index");
+            return RedirectToAction("MonthlyBooks");  
         }
 
     }

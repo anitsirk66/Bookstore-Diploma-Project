@@ -8,13 +8,13 @@
     <h2 class="text-center mb-4">📚 Books of the Month</h2>
 
     <div class="text-center mb-4">
-        @if (User.Identity.IsAuthenticated && User.IsInRole("Client") && !(bool)ViewBag.IsSubscribed)
+        @if (User.Identity.IsAuthenticated && User.IsInRole("Client"))
         {
             <form asp-controller="Subscription" asp-action="Subscribe" method="post">
                 <button class="btn btn-danger">Subscribe</button>
             </form>
         }
-        else if ((bool)ViewBag.IsSubscribed)
+        else if (!ViewBag.IsSubscribed)
         {
             <span class="btn btn-success">Subscribed</span>
         }

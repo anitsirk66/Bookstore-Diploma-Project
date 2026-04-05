@@ -57,34 +57,7 @@
             </div>
         </nav>
     </header>
-    <header style="display:none;">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BookstoreWebApp</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Index">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Privacy">Books</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
-            </div>
-        </nav>
-    </header>
+    
     <header style="display:none">
         <div class="tm-top-header">
             <div class="container">
@@ -140,6 +113,10 @@
             </div>
         </div>
     }
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
 
     @if (!ViewData.ModelState.IsValid)
     {
@@ -174,48 +151,6 @@
         </main>
     </div>
 
-    <footer style="display:none;">
-        <div class="tm-black-bg">
-            <div class="container">
-                <div class="row margin-bottom-60">
-                    <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
-                        <h3 class="tm-footer-div-title">Main Menu</h3>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Directory</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Our Services</a></li>
-                        </ul>
-                    </nav>
-                    <div class="col-lg-5 col-md-5 tm-footer-div">
-                        <h3 class="tm-footer-div-title">About Us</h3>
-                        <p class="margin-top-15">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
-                        <p class="margin-top-15">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 tm-footer-div">
-                        <h3 class="tm-footer-div-title">Get Social</h3>
-                        <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.</p>
-                        <div class="tm-social-icons-container">
-                            <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
-                            <a href="#" class="tm-social-icon"><i class="fa fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="container">
-                <div class="row tm-copyright">
-                    <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2026 <a href="https://github.com/anitsirk66" target="_blank">Kristina Stoyanova</a></p>
-
-                </div>
-            </div>
-        </div>
-    </footer>
     <script src="~/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/templatemo-script.js"></script>
     <script src="~/js/jquery-1.11.2.min.js"></script>

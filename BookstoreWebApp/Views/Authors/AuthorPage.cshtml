@@ -1,0 +1,17 @@
+﻿@using BookstoreProjectCore.Models.Authors
+@model AuthorDetailsViewModel
+
+<div class="container mt-4 text-center">
+
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <img src="@Model.ImageUrl" class="rounded-circle mb-3" style="width:150px; height:150px;" />
+    }
+
+    <h2>@Model.FullName</h2>
+    <p><strong>Nationality:</strong> @Model.Nationality</p>
+
+    <div class="mt-3">
+        <p>@Model.Biography</p>
+    </div>
+</div>

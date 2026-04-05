@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using BookstoreWebApp.Models.Reviews;
 using BookstoreProjectCore.Contracts;
-using BookstoreProjectCore.DTOs.Books;
 using BookstoreProjectCore.Services;
 using System.Security.Claims;
 using BookstoreProjectCore.Models.Reviews;

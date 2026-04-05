@@ -28,7 +28,8 @@ namespace BookstoreProjectCore.Services
                 Id = b.Id,
                 Name = b.Name,
                 DateAndTime = b.DateAndTime,
-                AuthorName = b.Author.FullName
+                AuthorName = b.Author.FullName,
+                Link = b.Link
             }).ToListAsync();
         }
         public async Task<EventsIndexViewModel?> GetById(Guid id)
@@ -40,7 +41,8 @@ namespace BookstoreProjectCore.Services
                 Id = b.Id,
                 Name = b.Name,
                 DateAndTime = b.DateAndTime,
-                AuthorName = b.Author.FullName
+                AuthorName = b.Author.FullName,
+                Link = b.Link
             })
             .FirstOrDefaultAsync();
 
@@ -69,6 +71,7 @@ namespace BookstoreProjectCore.Services
             eventt.Name = dto.Name;
             eventt.DateAndTime = dto.DateAndTime;
             eventt.AuthorId = dto.AuthorId;
+            eventt.Link = dto.Link;
 
             await context.SaveChangesAsync();
         }
@@ -98,7 +101,7 @@ namespace BookstoreProjectCore.Services
                 Id = b.Id,
                 Name = b.Name,
                 DateAndTime = b.DateAndTime,
-                //AuthorName = b.Author.FullName
+                Link = b.Link
             })
             .FirstOrDefaultAsync();
         }

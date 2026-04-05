@@ -29,23 +29,6 @@ namespace BookstoreProjectCore.Services
             user.Subscription = true;
             user.Address = address;
 
-            //var now = DateTime.UtcNow;
-
-            //var subscribed = await context.Subscriptions.AnyAsync(s => s.UserId == userId && s.Month == now.Month && s.Year == now.Year);
-
-            //if (subscribed) { throw new Exception("Already subscribed."); }
-
-            //var sub = new Subscription
-            //{
-            //    Id = Guid.NewGuid(),
-            //    UserId = userId,
-            //    Address = address,
-            //    Month = now.Month,
-            //    Year = now.Year,
-            //    CreatedOn = DateTime.UtcNow
-            //};
-
-            //context.Subscriptions.Add(sub);
             await context.SaveChangesAsync();
         }
 

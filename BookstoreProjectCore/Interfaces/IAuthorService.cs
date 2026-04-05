@@ -1,4 +1,5 @@
 ﻿using BookstoreProjectCore.Models.Authors;
+using BookstoreProjectData.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,6 @@ namespace BookstoreProjectCore.Contracts
     {
         Task<IEnumerable<AuthorsIndexViewModel>> Index();
 
-        Task<AuthorsIndexViewModel?> GetById(Guid id);
         Task<AuthorsEditViewModel?> GetEditById(Guid id);
 
         Task CreateAsync(AuthorsCreateViewModel dto);
@@ -20,5 +20,7 @@ namespace BookstoreProjectCore.Contracts
         Task EditAsync(AuthorsEditViewModel dto);
 
         Task DeleteAsync(Guid id);
+
+        Task<AuthorDetailsViewModel?> GetDetailsByIdAsync(Guid id);
     }
 }

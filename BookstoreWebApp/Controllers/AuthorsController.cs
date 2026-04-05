@@ -1,5 +1,4 @@
 ﻿using BookstoreProjectCore.Contracts;
-using BookstoreProjectCore.DTOs.Authors;
 using BookstoreProjectCore.Models.Authors;
 using BookstoreProjectData;
 using BookstoreProjectData.Entities;
@@ -8,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using BookstoreProjectCore.Services;
 
 namespace BookstoreWebApp.Controllers
 {
@@ -50,20 +50,13 @@ namespace BookstoreWebApp.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Delete(Guid id)
         {
             await service.DeleteAsync(id);
             return RedirectToAction("Index");
         }
-        //[Authorize(Roles = "Admin")]
-        //[HttpPost]
-        //public async Task<IActionResult> DeletePost (Guid id)
-        //{
-        //    await service.DeleteAsync(id);
-        //    return RedirectToAction("Index");
-        //}
-
+        
         [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
@@ -92,5 +85,16 @@ namespace BookstoreWebApp.Controllers
             return RedirectToAction("Index");
         }
 
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<IActionResult> AuthorPage(Guid id)
+        {
+            var viewModel = await service.GetDetailsByIdAsync(id);
+
+            if (viewModel == null)
+                return NotFound();
+
+            return View(viewModel);
+        }
     }
 }

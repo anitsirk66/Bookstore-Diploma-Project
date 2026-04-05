@@ -75,21 +75,7 @@ namespace BookstoreProjectCore.Services
             context.Authors.Remove(author);
             await context.SaveChangesAsync();
         }
-        public async Task<AuthorsIndexViewModel?> GetById(Guid id)
-        {
-            return await context.Authors
-           .Where(b => b.Id == id)
-           .Select(b => new AuthorsIndexViewModel
-           {
-               Id = b.Id,
-               FullName = b.FullName,
-               Biography = b.Biography,
-               Nationality = b.Nationality,
-               ImageUrl = b.CoverImageUrl
-           })
-           .FirstOrDefaultAsync();
-        }
-
+        
         public async Task<AuthorsEditViewModel?> GetEditById(Guid id)
         {
             return await context.Authors
@@ -103,6 +89,22 @@ namespace BookstoreProjectCore.Services
                ImageUrl = b.CoverImageUrl
            })
            .FirstOrDefaultAsync();
+        }
+
+        public async Task<AuthorDetailsViewModel?> GetDetailsByIdAsync(Guid id)
+        {
+            return await context.Authors
+                .Where(a => a.Id == id)
+                .Select(a => new AuthorDetailsViewModel
+                {
+                    Id = a.Id,
+                    FullName = a.FullName,
+                    Biography = a.Biography,
+                    Nationality = a.Nationality,
+                    ImageUrl = a.CoverImageUrl
+                   
+                })
+                .FirstOrDefaultAsync();
         }
     }
 }

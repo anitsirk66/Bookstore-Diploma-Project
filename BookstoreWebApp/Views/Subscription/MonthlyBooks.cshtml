@@ -1,0 +1,29 @@
+﻿@using BookstoreProjectCore.Models.Books
+@model IEnumerable<BooksIndexViewModel>
+
+<div class="container mt-4">
+
+    <h2 class="text-center mb-4">📚 Books of the Month</h2>
+
+    @if (!Model.Any())
+    {
+        <p class="text-center">No books selected this month.</p>
+    }
+    else
+    {
+        <div class="books-grid">
+            @foreach (var book in Model)
+            {
+                <div class="book-card text-center">
+                    <img src="@book.CoverImageUrl" class="book-img mb-2" />
+
+                    <h5>@book.Title</h5>
+                    <p class="text-muted">@book.AuthorName</p>
+
+                    <p class="text-danger">@book.Price €</p>
+                </div>
+            }
+        </div>
+    }
+
+</div>

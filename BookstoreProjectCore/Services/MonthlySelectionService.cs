@@ -2,6 +2,7 @@
 using BookstoreProjectCore.Models.Books;
 using BookstoreProjectData;
 using BookstoreProjectData.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace BookstoreProjectCore.Services
             context = _cont;
         }
 
-        public async Task<List<BooksIndexViewModel>> GetMonthlyBooks()
+        public async Task<List<BooksIndexViewModel>> MonthlyBooks()
         {
             var now = DateTime.Now;
 
@@ -37,6 +38,7 @@ namespace BookstoreProjectCore.Services
             .ToListAsync();
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task CreateMonthlySelection(List<Guid> bookIds)
         {
             if (bookIds.Count != 3)

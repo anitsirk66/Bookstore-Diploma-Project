@@ -9,7 +9,7 @@ namespace BookstoreProjectCore.Interfaces
 {
     public interface IMonthlySelectionService
     {
-        Task<List<BooksIndexViewModel>> GetMonthlyBooks();
+        Task<List<BooksIndexViewModel>> MonthlyBooks();
 
         Task CreateMonthlySelection(List<Guid> bookIds);
 
