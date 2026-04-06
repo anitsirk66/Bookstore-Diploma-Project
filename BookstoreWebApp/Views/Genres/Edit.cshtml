@@ -1,0 +1,25 @@
+﻿@using BookstoreProjectCore.Models.Genres;
+@model GenresEditViewModel
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<h1>Create Genre</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" required />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Desciption" class="form-label">Description</label>
+        <input asp-for="Desciption" class="form-control" required />
+        <span asp-validation-for="Desciption" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

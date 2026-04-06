@@ -1,41 +1,79 @@
-﻿@using BookstoreProjectCore.Models.Authors;
+﻿@using BookstoreProjectCore.Models.Authors
 @model IEnumerable<AuthorsIndexViewModel>
 
-@if (User.IsInRole("Admin"))
-{
-    <h1>List of all authors</h1>
-    <p>
-        <a class="btn btn-info" asp-action="Create">Add Author</a>
-    </p>
-}
-<table>
-    <thead>
-        <tr>
-            <th>Full Name</th>
-            <th>Nationality</th>
-            <th>Biography</th>
-            <th>Image</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var c in Model)
-        {
+<div class="container mt-4">
+
+    @if (User.IsInRole("Admin"))
+    {
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>List of All Authors</h2>
+            <a class="btn btn-primary" asp-action="Create">
+                + Add Author
+            </a>
+        </div>
+    }
+    else
+    {
+        <h2 class="mb-3">Authors</h2>
+    }
+
+    <table class="table table-bordered table-striped table-hover align-middle">
+        <thead class="table-dark text-center">
             <tr>
-                <td>@c.FullName</td>
-                <td>@c.Nationality</td>
-                <td>@c.Biography</td>
-                <td><img src="@c.ImageUrl" width="200" height="200" /></td>
+                <th>Full Name</th>
+                <th>Nationality</th>
+                <th>Biography</th>
+                <th>Image</th>
                 @if (User.IsInRole("Admin"))
                 {
-                    <td>
-                        <a class="btn btn-success" asp-action="Edit" asp-route-id="@c.Id">Edit</a>
-                        <form asp-action="Delete" method="get" asp-route-id="@c.Id">
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
-                    </td>
+                    <th style="width: 180px;">Actions</th>
                 }
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
 
+        <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.FullName</td>
+                    <td>@c.Nationality</td>
+                    <td style="max-width: 300px;">
+                        @c.Biography
+                    </td>
+                    <td class="text-center">
+                        <img src="@c.ImageUrl"
+                             class="img-thumbnail"
+                             style="width:120px; height:120px; object-fit:cover;" />
+                    </td>
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <td>
+                            <div class="d-flex gap-2 justify-content-center">
+
+                                <a class="btn btn-warning btn-sm"
+                                   asp-action="Edit"
+                                   asp-route-id="@c.Id">
+                                    Edit
+                                </a>
+
+                                <form asp-action="Delete"
+                                      method="post"
+                                      asp-route-id="@c.Id"
+                                      style="display:inline;">
+                                    <button type="submit"
+                                            class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure?');">
+                                        Delete
+                                    </button>
+                                </form>
+
+                            </div>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
