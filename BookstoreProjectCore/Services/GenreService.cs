@@ -26,7 +26,7 @@ namespace BookstoreProjectCore.Services
             {
                 Id = b.Id,
                 Name = b.Name,
-                Desciption = b.Desciption
+                Desciption = b.Description
             }).ToListAsync();
         }
 
@@ -36,7 +36,7 @@ namespace BookstoreProjectCore.Services
             {
                 Id = Guid.NewGuid(),
                 Name = model.Name,
-                Desciption = model.Desciption
+                Description = model.Desciption
             };
 
             await context.Genres.AddAsync(genre);
@@ -50,7 +50,7 @@ namespace BookstoreProjectCore.Services
                 throw new ArgumentException("Genre not found");
 
             genre.Name = model.Name;
-            genre.Desciption = model.Desciption;
+            genre.Description = model.Desciption;
 
             context.Update(genre);
             await context.SaveChangesAsync();
@@ -78,7 +78,7 @@ namespace BookstoreProjectCore.Services
            {
                Id = b.Id,
                Name = b.Name,
-               Desciption = b.Desciption
+               Desciption = b.Description
            })
            .FirstOrDefaultAsync();
         }

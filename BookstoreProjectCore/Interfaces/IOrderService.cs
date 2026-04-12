@@ -15,5 +15,6 @@ namespace BookstoreProjectCore.Contracts
 
         Task ChangeQuantity(string userid, Guid bookid, int quantity);
 
+        Task<string> PlaceOrder(string userId, string address);
     }
 }

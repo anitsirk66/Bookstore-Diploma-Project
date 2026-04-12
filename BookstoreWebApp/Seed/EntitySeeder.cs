@@ -17,43 +17,43 @@ namespace BookstoreWebApp.Seed
                     {
                          Id = Guid.NewGuid(),
                          Name = "Children's",
-                         Desciption = "Literary works created for children."
+                         Description = "Literary works created for children."
                     },
                     new Genre
                     {
                          Id = Guid.NewGuid(),
                          Name = "Historical",
-                         Desciption = "bla"
+                         Description = "bla"
                     },
                     new Genre
                     {
                          Id = Guid.NewGuid(),
                          Name = "Comedy",
-                         Desciption = "ant to entertain and sometimes c be contained in all genres."
+                         Description = "ant to entertain and sometimes c be contained in all genres."
                     },
                     new Genre
                     {
                          Id = Guid.NewGuid(),
                          Name = "Classic",
-                         Desciption = "rt of an accepted literary canon and widely taught in schools."
+                         Description = "rt of an accepted literary canon and widely taught in schools."
                     },
                     new Genre
                     {
                          Id = Guid.NewGuid(),
                          Name = "Fantasy",
-                         Desciption = "ften including magical elements, magical creatures, or the supernatural. "
+                         Description = "ften including magical elements, magical creatures, or the supernatural. "
                     },
                     new Genre
                     {
                          Id = Guid.NewGuid(),
                          Name = "Thriller",
-                         Desciption = "Tyts."
+                         Description = "Tyts."
                     },
                     new Genre
                     {
                          Id = Guid.NewGuid(),
                          Name = "Romance",
-                         Desciption = "Focmistic, emotionally satisfying ending."
+                         Description = "Focmistic, emotionally satisfying ending."
                     }
                 };
                 await context.Genres.AddRangeAsync(genres);

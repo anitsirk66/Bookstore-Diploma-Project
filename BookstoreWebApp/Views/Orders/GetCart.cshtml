@@ -54,5 +54,18 @@ else
             <h4>Total:</h4>
             <h4 class="text-success">@Model.TotalPrice.ToString("F2") €</h4>
         </div>
+
+
+        <form asp-controller="Orders" asp-action="PlaceOrder" method="post">
+            <button type="submit" class="btn btn-success">
+                Place Order
+            </button>
+        </form>
     </div>
+}
+@if (TempData["OrderMessage"] != null)
+{
+    <script>
+        alert("@TempData["OrderMessage"]");
+    </script>
 }

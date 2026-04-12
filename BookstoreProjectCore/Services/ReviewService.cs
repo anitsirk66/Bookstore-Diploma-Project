@@ -46,9 +46,11 @@ namespace BookstoreProjectCore.Services
                 {
                     Username = r.User.UserName,
                     Text = r.Text,
-                    CreatedOn = r.DateAndTime
+                    CreatedOn = r.DateAndTime,
+                    IsAnonymous = r.IsAnonymous
                 })
                 .ToListAsync();
+
             foreach (var review in reviews)
             {
                 if (review.IsAnonymous)

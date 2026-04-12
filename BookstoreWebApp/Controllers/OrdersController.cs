@@ -3,6 +3,7 @@ using BookstoreProjectCore.Models.Cart;
 using BookstoreProjectCore.Services;
 using BookstoreProjectData.Entities;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;
@@ -86,6 +87,25 @@ namespace BookstoreWebApp.Controllers
                 return Unauthorized();
 
             await service.ChangeQuantity(user.Id, bookId, quantity);
+
+            return RedirectToAction("GetCart");
+        }
+
+        [Authorize(Roles = "Client")]
+        [HttpPost]
+        public async Task<IActionResult> PlaceOrder()
+        {
+            var user = await userManager.GetUserAsync(User);
+
+            if (user == null)
+                return Unauthorized();
+
+            var address = user.Address;
+
+            var finalAddress = await service.PlaceOrder(user.Id, address);
+
+            TempData["OrderMessage"] =
+                $"Your order has been placed! It will arrive in 3 to 5 business days on this address: {finalAddress}.";
 
             return RedirectToAction("GetCart");
         }

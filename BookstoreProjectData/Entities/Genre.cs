@@ -19,7 +19,7 @@ namespace BookstoreProjectData.Entities
 
         [Required]
         [StringLength(300)]
-        public string Desciption { get; set; } = null!;
+        public string Description { get; set; } = null!;
 
         public List<Book> Books { get; set; } = new List<Book>();
     }

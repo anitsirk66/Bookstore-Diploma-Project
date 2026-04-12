@@ -43,11 +43,19 @@ namespace BookstoreWebApp.Controllers
             }
 
             var user = await userManager.GetUserAsync(User);
-            var userid = user.Id;
 
+            if (user == null)
+            {
+                TempData["Error"] = "User not found.";
+                return RedirectToAction("Details", "Books", new { id = model.BookId });
+            }
+
+            var userid = user.Id;
 
             if (await reviewService.UserAlreadyReviewed(model.BookId, userid))
             {
+                Console.WriteLine($"UserId: {userid}, BookId: {model.BookId}");
+
                 TempData["Error"] = "You have already reviewed this book.";
                 return RedirectToAction("Details", "Books", new { id = model.BookId });
             }

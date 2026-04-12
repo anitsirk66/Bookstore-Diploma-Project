@@ -19,14 +19,14 @@ namespace BookstoreProjectData.Configurations
                 .IsRequired()
                 .HasMaxLength(50);
 
-            builder.Property(g => g.Desciption)
+            builder.Property(g => g.Description)
                 .IsRequired()
                 .HasMaxLength(300);
 			builder.Property(g => g.Name)
 				.IsRequired()
 				.HasMaxLength(50);
 
-			builder.Property(g => g.Desciption)
+			builder.Property(g => g.Description)
 				.IsRequired()
 				.HasMaxLength(300);
 		}

@@ -47,7 +47,8 @@ namespace BookstoreProjectCore.Services
                     UserId = userId,
                     DateAndTime = DateTime.Now,
                     Address = "Pending",
-                    Status = "InCart"
+                    Status = "InCart",
+                    Orders_Books = new List<Order_Book>()
                 };
 
                 context.Orders.Add(order);
@@ -117,6 +118,24 @@ namespace BookstoreProjectCore.Services
             item.Quantity = quantity;
 
             await context.SaveChangesAsync();
+        }
+
+        public async Task<string> PlaceOrder(string userId, string address)
+        {
+            var order = await context.Orders
+                .Include(o => o.Orders_Books)
+                .FirstOrDefaultAsync(o => o.UserId == userId && o.Status == "InCart");
+
+            if (order == null || !order.Orders_Books.Any())
+                throw new Exception("Cart is empty.");
+
+            order.Status = "Placed";
+            order.Address = address;
+            order.DateAndTime = DateTime.Now;
+
+            await context.SaveChangesAsync();
+
+            return address;
         }
     }
 }
