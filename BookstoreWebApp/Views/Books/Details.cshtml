@@ -29,7 +29,12 @@
         <div class="col-md-8">
 
             <h1 class="fw-bold">@Model.Title</h1>
-            <a asp-action="AuthorPage" asp-controller="Authors" class="btn btn-link mb-3">@Model.AuthorName</a>
+            <a asp-action="AuthorPage"
+            asp-controller="Authors"
+            asp-route-id="@Model.AuthorId"
+            class="btn btn-link mb-3">
+                @Model.AuthorName
+            </a>
 
             <p><strong>Genre:</strong> @Model.GenreName</p>
 
@@ -43,16 +48,16 @@
             {
                 <div class="d-flex gap-3 mb-4">
                     <a asp-controller="Orders" asp-action="AddToCart"
-                   asp-route-id="@Model.Id"
-                   asp-route-bookId=""
-                   class="btn btn-danger">
-                    Add to Cart
-                </a>
-            </div>
+                    asp-route-id="@Model.Id"
+                    asp-route-bookId=""
+                    class="btn btn-danger">
+                        Add to Cart
+                    </a>
+                </div>
             }
             <div class="d-flex gap-3 mb-4">
                 <a asp-action="Index"
-                   class="btn btn-outline-dark btn-lg">
+                class="btn btn-outline-dark btn-lg">
                     Back
                 </a>
             </div>
@@ -65,15 +70,15 @@
         <ul class="nav nav-tabs" id="bookTabs" role="tablist">
             <li class="nav-item">
                 <button class="nav-link active"
-                        data-bs-toggle="tab"
-                        data-bs-target="#description">
+                data-bs-toggle="tab"
+                data-bs-target="#description">
                     Description
                 </button>
             </li>
             <li class="nav-item">
                 <button class="nav-link"
-                        data-bs-toggle="tab"
-                        data-bs-target="#reviews">
+                data-bs-toggle="tab"
+                data-bs-target="#reviews">
                     Reviews
                 </button>
             </li>
@@ -125,9 +130,9 @@
                             else
                             {
                                 <a asp-controller="Reviews"
-                                   asp-action="Edit"
-                                   asp-route-reviewId="@review.Id"
-                                   class="btn btn-warning btn-sm">
+                                asp-action="Edit"
+                                asp-route-reviewId="@review.Id"
+                                class="btn btn-warning btn-sm">
                                     Edit
                                 </a>
                             }
@@ -135,7 +140,7 @@
                     }
                 }
 
-                @if (User?.Identity?.IsAuthenticated ?? false && User.IsInRole("Client"))
+                @if (User.IsInRole("Client"))
                 {
                     <form asp-controller="Reviews" asp-action="Create" method="post" class="review-form">
                         <input type="hidden" name="BookId" value="@Model.Id" />
@@ -158,9 +163,16 @@
                         <button type="submit" class="btn btn-dark review-btn">Send review</button>
                     </form>
                 }
-                else
+                else 
                 {
-                    <p>Please log in to leave a review.</p>
+                    if (User.IsInRole("Admin"))
+                    {
+                        <p>Only users can leave a review.</p>
+                    }
+                    else if (User.Identity.IsAuthenticated == false)
+                    {
+                        <p>Please log in to leave a review.</p>
+                    }
                 }
             </div>
 

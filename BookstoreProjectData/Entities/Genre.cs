@@ -10,6 +10,7 @@ namespace BookstoreProjectData.Entities
 
     public class Genre
     {
+
         [Key]
         public Guid Id { get; set; }
 

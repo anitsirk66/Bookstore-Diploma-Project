@@ -10,6 +10,7 @@ namespace BookstoreProjectData.Entities
 {
     public class Book
     {
+
         [Key]
         public Guid Id { get; set; }
 
@@ -40,9 +41,9 @@ namespace BookstoreProjectData.Entities
         public Genre Genre { get; set; } = null!;
 
 
-        [ForeignKey(nameof(Promotion))]
-        public Guid? PromotionId { get; set; }
-        public Promotion? Promotion { get; set; }
+        //[ForeignKey(nameof(Promotion))]
+        //public Guid? PromotionId { get; set; }
+        //public Promotion? Promotion { get; set; }
 
 
         public List<Order_Book> Orders_Books { get; set; } = new List<Order_Book>();

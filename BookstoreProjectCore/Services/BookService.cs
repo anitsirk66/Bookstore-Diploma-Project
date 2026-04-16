@@ -18,7 +18,7 @@ namespace BookstoreProjectCore.Services
     public class BookService : IBookService
     {
         private readonly BookstoreContext context;
-        public BookService (BookstoreContext _context)
+        public BookService(BookstoreContext _context)
         {
             context = _context;
         }
@@ -79,12 +79,12 @@ namespace BookstoreProjectCore.Services
             {
                 Id = b.Id,
                 Title = b.Title,
+                AuthorId = b.AuthorId,
                 AuthorName = b.Author.FullName,
                 CoverImageUrl = b.CoverImageUrl,
                 Price = b.Price,
                 Synopsis = b.Synopsis,
                 GenreName = b.Genre.Name,
-                //PromotionPercent = b.Promotion,
 
                 Reviews = b.Reviews.Select(r => new ReviewsIndexViewModel
                 {
@@ -132,7 +132,7 @@ namespace BookstoreProjectCore.Services
             await context.Books.AddAsync(book);
             await context.SaveChangesAsync();
         }
-        
+
         public async Task DeleteAsync(Guid id)
         {
             var book = await context.Books.FindAsync(id);
@@ -156,13 +156,7 @@ namespace BookstoreProjectCore.Services
                                 .OrderBy(a => a.Id)
                                 .ToListAsync();
         }
-        public async Task<List<Promotion>> GetPromotions()
-        {
-            return await context.Promotions
-                                .OrderBy(a => a.Id)
-                                .ToListAsync();
-        }
-
+        
         public async Task<List<Publisher>> GetPublishers()
         {
             return await context.Publishers
@@ -188,16 +182,19 @@ namespace BookstoreProjectCore.Services
             {
                 query = query.Where(b => b.Publishers_Books.Any(pb => publisherIds.Contains(pb.PublisherId)));
             }
-            if(!string.IsNullOrEmpty(searchItem))
+            if (!string.IsNullOrEmpty(searchItem))
             {
                 query = query.Where(q => q.Title.ToLower().Contains(searchItem.ToLower()) || q.Author.FullName.Contains(searchItem));
             }
 
             return await query.Select(b => new BooksIndexViewModel
             {
-                Id = b.Id, Title = b.Title, AuthorName = b.Author.FullName, CoverImageUrl = b.CoverImageUrl, Price = b.Price
+                Id = b.Id,
+                Title = b.Title,
+                AuthorName = b.Author.FullName,
+                CoverImageUrl = b.CoverImageUrl,
+                Price = b.Price
             }).ToListAsync();
         }
-        
     }
 }

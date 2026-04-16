@@ -11,7 +11,7 @@ namespace BookstoreProjectData.Entities
     {
         [Key]
         public Guid Id { get; set; }
-        
+
         [Required]
         [StringLength(50)]
         public string FullName { get; set; } = null!;
@@ -24,12 +24,9 @@ namespace BookstoreProjectData.Entities
         [StringLength(50)]
         public string Nationality { get; set; } = null!;
 
-        [Required]
-        public string CoverImageUrl { get; set; } = null!;
+        public string? ImageUrl { get; set; }
 
-        public List<Book> Books { get; set;} = new List<Book>();
-        public List<Event> Events { get; set;} = new List<Event>();
-
-        //photo
+        public List<Book> Books { get; set; } = new List<Book>();
+        public List<Event> Events { get; set; } = new List<Event>();
     }
 }

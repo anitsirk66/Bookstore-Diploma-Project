@@ -93,16 +93,23 @@ namespace BookstoreWebApp.Controllers
 
         [Authorize(Roles = "Client")]
         [HttpPost]
-        public async Task<IActionResult> PlaceOrder()
+        public async Task<IActionResult> PlaceOrder(string address)
         {
+            if (string.IsNullOrWhiteSpace(address))
+            {
+                TempData["OrderMessage"] = "Address is required!";
+                return RedirectToAction("GetCart");
+            }
+
             var user = await userManager.GetUserAsync(User);
 
             if (user == null)
                 return Unauthorized();
 
-            var address = user.Address;
+            user.Address = address;
+            await userManager.UpdateAsync(user);
 
-            var finalAddress = await service.PlaceOrder(user.Id, address);
+            var finalAddress = await service.PlaceOrder(user.Id, user.Address);
 
             TempData["OrderMessage"] =
                 $"Your order has been placed! It will arrive in 3 to 5 business days on this address: {finalAddress}.";

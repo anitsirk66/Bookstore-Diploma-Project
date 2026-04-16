@@ -4,6 +4,7 @@ using BookstoreProjectData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookstoreProjectData.Migrations
 {
     [DbContext(typeof(BookstoreContext))]
-    partial class BookstoreContextModelSnapshot : ModelSnapshot
+    [Migration("20260414192914_ChangesInEntities")]
+    partial class ChangesInEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -72,6 +75,9 @@ namespace BookstoreProjectData.Migrations
                         .HasPrecision(10, 2)
                         .HasColumnType("decimal(10,2)");
 
+                    b.Property<Guid?>("PromotionId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Synopsis")
                         .IsRequired()
                         .HasMaxLength(1000)
@@ -87,6 +93,8 @@ namespace BookstoreProjectData.Migrations
                     b.HasIndex("AuthorId");
 
                     b.HasIndex("GenreId");
+
+                    b.HasIndex("PromotionId");
 
                     b.ToTable("Books");
                 });
@@ -225,6 +233,31 @@ namespace BookstoreProjectData.Migrations
                     b.ToTable("Orders_Books");
                 });
 
+            modelBuilder.Entity("BookstoreProjectData.Entities.Promotion", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateOnly>("From")
+                        .HasColumnType("date");
+
+                    b.Property<int>("Percent")
+                        .HasColumnType("int");
+
+                    b.Property<DateOnly>("To")
+                        .HasColumnType("date");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Promotions");
+                });
+
             modelBuilder.Entity("BookstoreProjectData.Entities.Publisher", b =>
                 {
                     b.Property<Guid>("Id")
@@ -315,9 +348,6 @@ namespace BookstoreProjectData.Migrations
                     b.Property<int>("Month")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("MonthlyBookSelection")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -339,6 +369,7 @@ namespace BookstoreProjectData.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -548,9 +579,16 @@ namespace BookstoreProjectData.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("BookstoreProjectData.Entities.Promotion", "Promotion")
+                        .WithMany("Books")
+                        .HasForeignKey("PromotionId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
                     b.Navigation("Author");
 
                     b.Navigation("Genre");
+
+                    b.Navigation("Promotion");
                 });
 
             modelBuilder.Entity("BookstoreProjectData.Entities.Event", b =>
@@ -731,6 +769,11 @@ namespace BookstoreProjectData.Migrations
             modelBuilder.Entity("BookstoreProjectData.Entities.Order", b =>
                 {
                     b.Navigation("Orders_Books");
+                });
+
+            modelBuilder.Entity("BookstoreProjectData.Entities.Promotion", b =>
+                {
+                    b.Navigation("Books");
                 });
 
             modelBuilder.Entity("BookstoreProjectData.Entities.Publisher", b =>

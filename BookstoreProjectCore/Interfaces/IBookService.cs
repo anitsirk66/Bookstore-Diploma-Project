@@ -26,7 +26,6 @@ namespace BookstoreProjectCore.Contracts
 
         Task<List<Author>> GetAuthors();
         Task<List<Genre>> GetGenres();
-        Task<List<Promotion>> GetPromotions();
 
         Task<List<Publisher>> GetPublishers();
 

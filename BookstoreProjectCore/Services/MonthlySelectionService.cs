@@ -15,7 +15,7 @@ namespace BookstoreProjectCore.Services
     public class MonthlySelectionService : IMonthlySelectionService
     {
         private readonly BookstoreContext context;
-        public MonthlySelectionService (BookstoreContext _cont)
+        public MonthlySelectionService(BookstoreContext _cont)
         {
             context = _cont;
         }

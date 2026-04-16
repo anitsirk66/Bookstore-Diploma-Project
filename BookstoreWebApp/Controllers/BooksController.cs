@@ -50,8 +50,8 @@ namespace BookstoreWebApp.Controllers
             var genres = await service.GetGenres();
             ViewBag.Genres = new SelectList(genres, "Id", "Name");
 
-            var promotions = await service.GetPromotions();
-            ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
+            //var promotions = await service.GetPromotions();
+            //ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
             return View();  
         }
@@ -71,9 +71,6 @@ namespace BookstoreWebApp.Controllers
 
                 var genres = await service.GetGenres();
                 ViewBag.Genres = new SelectList(genres, "Id", "Name");
-
-                var promotions = await service.GetPromotions();
-                ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
                 return View(model);
             }
@@ -99,9 +96,6 @@ namespace BookstoreWebApp.Controllers
 
             var genres = await service.GetGenres();
             ViewBag.Genres = new SelectList(genres, "Id", "Name");
-
-            var promotions = await service.GetPromotions();
-            ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
             var book = await service.GetByIdEdit(id);
             if (book == null) { return NotFound(); }

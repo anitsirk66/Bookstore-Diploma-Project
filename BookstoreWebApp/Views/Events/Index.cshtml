@@ -52,24 +52,24 @@
                                     {
                                         <div class="mt-3 d-flex justify-content-between">
                                             <a asp-controller="Events"
-                                            asp-action="Edit"
-                                            asp-route-id="@e.Id"
-                                            class="btn btn-warning">
+                                               asp-action="Edit"
+                                               asp-route-id="@e.Id"
+                                               class="btn btn-warning">
                                                 Edit
                                             </a>
 
                                             <form asp-action="Delete"
-                                            asp-controller="Events"
-                                            method="post"
-                                            asp-route-id="@e.Id">
+                                                  asp-controller="Events"
+                                                  method="post"
+                                                  asp-route-id="@e.Id">
                                                 <button type="submit"
-                                                class="btn btn-danger">
+                                                        class="btn btn-danger">
                                                     Delete
                                                 </button>
                                             </form>
                                         </div>
                                     }
-                                    else if(User.IsInRole("Client"))
+                                    else
                                     {
                                         <div class="order-now-container">
                                             <a href="@e.Link" target="_blank" class="order-now-link">

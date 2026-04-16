@@ -108,7 +108,7 @@ namespace BookstoreProjectCore.Services
 
         public async Task ChangeQuantity(string userid, Guid bookid, int quantity)
         {
-            var order = await context.Orders.Include(o => o.Orders_Books).FirstOrDefaultAsync(o=> o.UserId == userid && o.Status == "InCart"); //*
+            var order = await context.Orders.Include(o => o.Orders_Books).FirstOrDefaultAsync(o => o.UserId == userid && o.Status == "InCart"); //*
 
             if (order == null) { throw new ArgumentException("Not found"); }
 

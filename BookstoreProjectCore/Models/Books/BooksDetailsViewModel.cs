@@ -28,6 +28,8 @@ namespace BookstoreProjectCore.Models.Books
         [Url(ErrorMessage = "Invalid URL adress")]
         public string CoverImageUrl { get; set; } = null!;
 
+        public Guid AuthorId { get; set; }
+
         [Required(ErrorMessage = "This field is required.")]
         public string AuthorName { get; set; } = null!;
 

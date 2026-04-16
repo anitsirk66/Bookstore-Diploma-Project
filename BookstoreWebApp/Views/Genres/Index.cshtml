@@ -34,7 +34,7 @@
                             </a>
 
                             <form asp-action="Delete" asp-route-id="@g.Id" method="post"
-                                  onsubmit="return confirm('Are you sure you want to delete this genre?');">
+                                  onsubmit="return confirm('Are you sure you want to delete this genre? You will also delete all the books with this genre. This action cannot be undone.');">
                                 <button type="submit" class="btn btn-danger btn-sm">
                                     Delete
                                 </button>

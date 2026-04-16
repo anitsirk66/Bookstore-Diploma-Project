@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,9 @@ namespace BookstoreProjectData.Entities
 
         [Required]
         public DateTime CreatedOn { get; set; }
+
+        [ForeignKey(nameof(MonthlyBookSelection))]
+        public Guid MonthlyBookSelection { get; set; }
 
         //public DateTime? EndDate { get; set; }
     }

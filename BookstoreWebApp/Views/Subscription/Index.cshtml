@@ -10,13 +10,14 @@
     <div class="text-center mb-4">
         @if (User.Identity.IsAuthenticated && User.IsInRole("Client"))
         {
-            <form asp-controller="Subscription" asp-action="Subscribe" method="post">
-                <button class="btn btn-danger">Subscribe</button>
-            </form>
-        }
-        else if (!ViewBag.IsSubscribed)
-        {
-            <span class="btn btn-success">Subscribed</span>
+            @if (ViewBag.IsSubscribed == true)
+            {
+                <span class="btn btn-success">Subscribed</span>
+            }
+            else
+            {
+                <a asp-controller="Subscription" asp-action="Subscribe" class="btn btn-danger">Subscribe</a>
+            }
         }
     </div>
 

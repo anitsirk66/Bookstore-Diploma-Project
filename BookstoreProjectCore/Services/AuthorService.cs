@@ -14,6 +14,7 @@ namespace BookstoreProjectCore.Services
 {
     public class AuthorService : IAuthorService
     {
+
         private readonly BookstoreContext context;
         public AuthorService(BookstoreContext _context)
         {
@@ -28,10 +29,10 @@ namespace BookstoreProjectCore.Services
                 FullName = b.FullName,
                 Biography = b.Biography,
                 Nationality = b.Nationality,
-                ImageUrl = b.CoverImageUrl
+                ImageUrl = b.ImageUrl
             }).ToListAsync();
         }
-        
+
         public async Task CreateAsync(AuthorsCreateViewModel dto)
         {
             var author = new Author
@@ -40,7 +41,7 @@ namespace BookstoreProjectCore.Services
                 FullName = dto.FullName,
                 Biography = dto.Biography,
                 Nationality = dto.Nationality,
-                CoverImageUrl = dto.ImageUrl
+                ImageUrl = dto.ImageUrl
             };
 
             await context.Authors.AddAsync(author);
@@ -56,7 +57,7 @@ namespace BookstoreProjectCore.Services
             author.FullName = dto.FullName;
             author.Biography = dto.Biography;
             author.Nationality = dto.Nationality;
-            author.CoverImageUrl = dto.ImageUrl;
+            author.ImageUrl = dto.ImageUrl;
 
             context.Update(author);
             await context.SaveChangesAsync();
@@ -75,7 +76,7 @@ namespace BookstoreProjectCore.Services
             context.Authors.Remove(author);
             await context.SaveChangesAsync();
         }
-        
+
         public async Task<AuthorsEditViewModel?> GetEditById(Guid id)
         {
             return await context.Authors
@@ -86,7 +87,7 @@ namespace BookstoreProjectCore.Services
                FullName = b.FullName,
                Biography = b.Biography,
                Nationality = b.Nationality,
-               ImageUrl = b.CoverImageUrl
+               ImageUrl = b.ImageUrl
            })
            .FirstOrDefaultAsync();
         }
@@ -101,8 +102,8 @@ namespace BookstoreProjectCore.Services
                     FullName = a.FullName,
                     Biography = a.Biography,
                     Nationality = a.Nationality,
-                    ImageUrl = a.CoverImageUrl
-                   
+                    ImageUrl = a.ImageUrl
+
                 })
                 .FirstOrDefaultAsync();
         }

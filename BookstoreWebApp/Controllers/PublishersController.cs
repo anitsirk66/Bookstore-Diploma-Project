@@ -39,7 +39,6 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            // For dropdown / multi-select
             ViewBag.Books = await context.Books
                 .Select(b => new SelectListItem
                 {

@@ -33,7 +33,7 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View(); 
+            return View();
         }
 
         [Authorize(Roles = "Admin")]
@@ -56,7 +56,7 @@ namespace BookstoreWebApp.Controllers
             await service.DeleteAsync(id);
             return RedirectToAction("Index");
         }
-        
+
         [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)

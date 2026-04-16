@@ -27,7 +27,7 @@ namespace BookstoreProjectData.Configurations
                 .IsRequired()
                 .HasMaxLength(50);
 
-            builder.Property(a => a.CoverImageUrl)
+            builder.Property(a => a.ImageUrl)
                 .IsRequired();
         
 
@@ -43,7 +43,7 @@ namespace BookstoreProjectData.Configurations
 				.IsRequired()
 				.HasMaxLength(50);
 
-			builder.Property(a => a.CoverImageUrl)
+			builder.Property(a => a.ImageUrl)
 				.IsRequired();
 		}
     }
