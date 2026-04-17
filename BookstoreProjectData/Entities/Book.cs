@@ -45,6 +45,7 @@ namespace BookstoreProjectData.Entities
         //public Guid? PromotionId { get; set; }
         //public Promotion? Promotion { get; set; }
 
+        public bool IsInSubscription { get; set; }
 
         public List<Order_Book> Orders_Books { get; set; } = new List<Order_Book>();
         public List<Publisher_Book> Publishers_Books { get; set; } = new List<Publisher_Book>();

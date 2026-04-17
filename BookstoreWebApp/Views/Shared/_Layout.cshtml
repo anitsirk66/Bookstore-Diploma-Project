@@ -37,12 +37,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Books</a>
                         </li>
-                        @if (User.IsInRole("Client"))
-                        {
-                            <li class="nav-item">
+                        <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Subscription" asp-action="Index">Monthly Picks for You</a>
-                            </li>
-                        }
+                        </li>
+                        
                         @if (User.IsInRole("Admin"))
                         {
 

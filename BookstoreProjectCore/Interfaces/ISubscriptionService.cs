@@ -13,5 +13,10 @@ namespace BookstoreProjectCore.Interfaces
         Task Subscribe(string userId, string address);
 
         Task<bool> IsAlreadySubscribed(string userId);
+
+        Task<List<BookSelectionViewModel>> GetAllBooksForSelection();
+        Task<bool> UpdateSubscriptionBooks(List<BookSelectionViewModel> books);
+
+        Task<IEnumerable<BooksIndexViewModel>> GetSubscriptionBooks();
     }
 }

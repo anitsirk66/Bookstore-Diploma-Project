@@ -37,6 +37,7 @@
             </a>
 
             <p><strong>Genre:</strong> @Model.GenreName</p>
+            <p><strong>Publisher:</strong> @Model</p>
 
             <div class="price-box mt-3 mb-4">
                 <span class="book-price-large">
@@ -127,7 +128,7 @@
                                     <button class="btn btn-danger btn-sm">Delete</button>
                                 </form>
                             }
-                            else
+                            else if (User.IsInRole("Client"))
                             {
                                 <a asp-controller="Reviews"
                                 asp-action="Edit"

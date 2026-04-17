@@ -21,6 +21,15 @@
         }
     </div>
 
+    @if (User.IsInRole("Admin"))
+    {
+        <div class="text-center mb-4">
+            <a asp-controller="Subscription" asp-action="EditBooks" class="btn btn-warning">
+                Change Subscription Books
+            </a>
+        </div>
+    }
+
     @if (!Model.Any())
     {
         <p class="text-center">No books selected for this month.</p>

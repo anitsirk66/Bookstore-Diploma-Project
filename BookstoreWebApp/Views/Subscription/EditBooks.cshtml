@@ -1,0 +1,27 @@
+﻿@using BookstoreProjectCore.Models.Books
+@model EditSubscriptionBooksViewModel
+
+<h3 class="text-center mb-4">Select 3 Subscription Books</h3>
+
+<form method="post">
+    <div class="list-group">
+        @for (int i = 0; i < Model.Books.Count; i++)
+        {
+            <div class="list-group-item">
+                <input type="hidden" asp-for="Books[i].Id" />
+
+                <input asp-for="Books[i].IsSelected" />
+                <label>@Model.Books[i].Title</label>
+            </div>
+        }
+    </div>
+
+    <button class="btn btn-success mt-3">Save</button>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="text-danger mt-2">
+        @Html.ValidationSummary()
+    </div>
+}

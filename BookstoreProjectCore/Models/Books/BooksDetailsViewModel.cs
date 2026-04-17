@@ -33,9 +33,7 @@ namespace BookstoreProjectCore.Models.Books
         [Required(ErrorMessage = "This field is required.")]
         public string AuthorName { get; set; } = null!;
 
-        //*
-        public decimal PromotionPercent { get; set; }
-
+        
         //publisher
         public List<ReviewsIndexViewModel> Reviews { get; set; } = new List<ReviewsIndexViewModel>();
     }

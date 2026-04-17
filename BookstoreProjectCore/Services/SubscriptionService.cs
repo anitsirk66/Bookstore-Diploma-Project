@@ -38,5 +38,50 @@ namespace BookstoreProjectCore.Services
 
             return await context.Subscriptions.AnyAsync(s => s.UserId == userId && s.Month == now.Month && s.Year == now.Year);
         }
+
+        public async Task<List<BookSelectionViewModel>> GetAllBooksForSelection()
+        {
+            return await context.Books
+                .Select(b => new BookSelectionViewModel
+                {
+                    Id = b.Id,
+                    Title = b.Title,
+                    IsSelected = b.IsInSubscription
+                })
+                .ToListAsync();
+        }
+
+        public async Task<bool> UpdateSubscriptionBooks(List<BookSelectionViewModel> books)
+        {
+            var selected = books.Where(b => b.IsSelected).ToList();
+
+            if (selected.Count != 3)
+                return false;
+
+            var allBooks = await context.Books.ToListAsync();
+
+            foreach (var book in allBooks)
+            {
+                book.IsInSubscription = selected.Any(b => b.Id == book.Id);
+            }
+
+            await context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<IEnumerable<BooksIndexViewModel>> GetSubscriptionBooks()
+        {
+            return await context.Books
+                .Where(b => b.IsInSubscription)
+                .Select(b => new BooksIndexViewModel
+                {
+                    Id = b.Id,
+                    Title = b.Title,
+                    AuthorName = b.Author.FullName,
+                    Price = b.Price,
+                    CoverImageUrl = b.CoverImageUrl
+                })
+                .ToListAsync();
+        }
     }
 }

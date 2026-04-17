@@ -1,4 +1,5 @@
 ﻿using BookstoreProjectCore.Interfaces;
+using BookstoreProjectCore.Models.Books;
 using BookstoreProjectCore.Models.Subscription;
 using BookstoreProjectData;
 using BookstoreProjectData.Entities;
@@ -25,7 +26,7 @@ namespace BookstoreWebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var books = await monthlyService.MonthlyBooks();
+            var books = await service.GetSubscriptionBooks();
             return View(books);
         }
 
@@ -76,5 +77,34 @@ namespace BookstoreWebApp.Controllers
             return RedirectToAction("Index");  
         }
 
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> EditBooks()
+        {
+            var books = await service.GetAllBooksForSelection();
+
+            var model = new EditSubscriptionBooksViewModel
+            {
+                Books = books
+            };
+
+            return View("EditBooks", model);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> EditBooks(EditSubscriptionBooksViewModel model)
+        {
+            var success = await service.UpdateSubscriptionBooks(model.Books);
+
+            if (!success)
+            {
+                ModelState.AddModelError("", "You must select exactly 3 books.");
+                return View(model);
+            }
+
+            TempData["Success"] = "Subscription books updated!";
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
+

@@ -12,6 +12,7 @@ using BookstoreProjectCore.Contracts;
 using BookstoreProjectCore.Services;
 using System.Security.Claims;
 using BookstoreProjectCore.Models.Reviews;
+using BookstoreProjectCore.Interfaces;
 
 namespace BookstoreWebApp.Controllers
 {
@@ -19,10 +20,13 @@ namespace BookstoreWebApp.Controllers
     {
         private readonly IBookService service;
         private readonly IReviewService reviewService;
+        //private readonly ISubscriptionService subsService;
+
         public BooksController(IBookService _service, IReviewService _reviewService)
         {
             service = _service;
             reviewService = _reviewService;
+            //subsService = subS;
         }
 
         [AllowAnonymous]
@@ -53,7 +57,7 @@ namespace BookstoreWebApp.Controllers
             //var promotions = await service.GetPromotions();
             //ViewBag.Promotions = new SelectList(promotions, "Id", "Percent");
 
-            return View();  
+            return View();
         }
 
         [Authorize(Roles = "Admin")]
@@ -112,7 +116,7 @@ namespace BookstoreWebApp.Controllers
                 //var errors = ModelState.Select(x => x.Value.Errors)
                 //    .Where(y => y.Count > 0)
                 //    .ToList();
-                    
+
                 var authors = await service.GetAuthors();
                 ViewBag.Authors = new SelectList(authors, "Id", "FullName", model.AuthorId);
 
@@ -137,5 +141,6 @@ namespace BookstoreWebApp.Controllers
             if (book == null) { return NotFound(); };
             return View(book);
         }
+
     }
 }
