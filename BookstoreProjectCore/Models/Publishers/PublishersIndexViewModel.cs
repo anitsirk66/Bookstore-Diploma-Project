@@ -12,9 +12,11 @@ namespace BookstoreProjectCore.Models.Publishers
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "This field is required.")]
+        [StringLength(50)]
         public string Name { get; set; } = null!;
 
         [Required(ErrorMessage = "This field is required.")]
+        [StringLength(200)]
         public string Description { get; set; } = null!;
     }
 }

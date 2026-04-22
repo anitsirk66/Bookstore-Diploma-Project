@@ -21,7 +21,7 @@
     </div>
     <div class="mb-3">
         <label asp-for="Biography" class="form-label">New biography</label>
-        <input asp-for="Biography" class="form-control" required />
+        <textarea TextMode="multiline" asp-for="Biography" class="form-control" required rows="5"></textarea>        
         <span asp-validation-for="Biography" class="text-danger"></span>
 
     </div>

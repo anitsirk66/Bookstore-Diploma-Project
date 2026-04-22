@@ -88,7 +88,7 @@
                                         <a asp-action="Edit" asp-route-id="@book.Id"
                                            class="btn btn-warning btn-sm w-100">Edit</a>
 
-                                        <form asp-action="Delete" method="post" class="w-100">
+                                        <form asp-action="Delete" method="get" class="w-100">
                                             <input type="hidden" name="id" value="@book.Id" />
                                             <button class="btn btn-danger btn-sm w-100">Delete</button>
                                         </form>

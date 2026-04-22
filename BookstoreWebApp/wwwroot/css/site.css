@@ -160,16 +160,6 @@ body {
     color: inherit;
 }
 
-.event-card {
-    border: none;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-}
-
-    .event-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    }
 
 .card-title {
     font-size: 1.3rem;
@@ -178,10 +168,6 @@ body {
 .tm-popular-items-container {
     margin-top: 40px;
 }
-
-
-
-
 
 
 .book-cover-large {
@@ -296,7 +282,6 @@ body {
     gap: 30px;
 }
 
-/* SIDEBAR */
 .filter-sidebar {
     width: 250px;
     background: #fff;
@@ -313,7 +298,6 @@ body {
     margin: 10px 0 20px;
 }
 
-/* BOOK GRID */
 .books-section {
     flex: 1;
 }
@@ -387,4 +371,113 @@ body {
 .author-page {
     max-width: 600px;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .filter-sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.btn {
+    border-radius: 25px;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+.event-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+    .event-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+@media (max-width: 768px) {
+    .tm-welcome-content {
+        padding: 80px 0 120px 0;
+    }
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.contact-section {
+    background: #f8f9fa;
+    border-radius: 20px;
+}
+
+    .contact-section .form-control {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .contact-section button {
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+.footer {
+    background: #111;
+    color: #ddd;
+}
+
+    .footer a {
+        color: #bbb;
+        text-decoration: none;
+    }
+
+        .footer a:hover {
+            color: white;
+        }
+
+    .footer h5, .footer h6 {
+        color: white;
+    }
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.btn-brand {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 25px;
+    padding: 6px 18px;
+    transition: 0.3s;
+}
+
+    .btn-brand:hover {
+        background: white;
+        color: #FC466B;
+    }
+
+.tm-main-section {
+    padding-top: 20px !important;
+}
+
+.tm-section-header-container {
+    margin-top: 0 !important;
+}
+
+.tm-welcome-section {
+    padding-bottom: 100px !important;
 }

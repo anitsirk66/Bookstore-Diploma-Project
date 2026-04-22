@@ -1,4 +1,7 @@
+using BookstoreProjectCore.Interfaces;
+using BookstoreProjectCore.Services;
 using BookstoreWebApp.Models;
+using BookstoreWebApp.Models.Home;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -8,15 +11,22 @@ namespace BookstoreWebApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ISubscriptionService service;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ISubscriptionService _service)
         {
             _logger = logger;
+            this.service = _service;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var model = new HomeIndexViewModel
+            {
+                SubscriptionBooks = await service.GetSubscriptionBooks()
+            };
+
+            return View(model);
         }
 
         [AllowAnonymous]

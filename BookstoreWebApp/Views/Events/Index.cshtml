@@ -2,81 +2,76 @@
 @model IEnumerable<EventsIndexViewModel>
 
 
-<section class="tm-welcome-section">
-    <div class="container tm-position-relative">
-        <div class="tm-lights-container">
-            <img src="img/light.png" alt="Light" class="light light-1">
-            <img src="img/light.png" alt="Light" class="light light-2">
-            <img src="img/light.png" alt="Light" class="light light-3">
-        </div>
-        <div class="row tm-welcome-content">
-            <h4 class="white-text tm-handwriting-font tm-welcome-header"><img src="img/header-line.png" alt="Line" class="tm-header-line">&nbsp;Author-reader Events&nbsp;&nbsp;<img src="img/header-line.png" alt="Line" class="tm-header-line"></h4>
-            <h1 class="gold-text tm-welcome-header-2">Pink Sunrise</h1>
-            <p class="gray-text tm-welcome-description" style="color: black; font-size: 12px;">Paragraph with info about author-reader events</p>
-            <a href="#main" class="tm-more-button tm-more-button-welcome" style="display: none;">Read More</a>
-            @if (User.IsInRole("Admin"))
-            {
-                <p><a asp-controller="Events" asp-action="Create" class="btn btn-info">Add event</a></p>
-            }
-        </div>
+<div class="container my-5 text-center">
+    <h2 class="fw-bold">📅 Upcoming Events</h2>
+    <p class="text-muted">Meet your favorite authors</p>
 
-    </div>
-</section>
-<div class="tm-main-section light-gray-bg">
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Create" class="btn btn-primary mt-3">
+            + Add Event
+        </a>
+    }
+</div>
+
+<div class="tm-main-section light-gray-bg mt-2">
     <div class="container" id="main">
-        <section class="tm-section tm-section-margin-bottom-0 row">
+        <section class="tm-section tm-section-margin-bottom-0 row mt-2">
             <div class="col-lg-12 tm-section-header-container">
                 <h2 class="tm-section-header gold-text tm-handwriting-font"> Popular Events</h2>
                 <div class="tm-hr-container"><hr class="tm-hr"></div>
             </div>
             <div class="col-lg-12 tm-popular-items-container">
-                <div class="row">
+                <div class="row g-4">
                     @foreach (var e in Model)
                     {
-                        <div class="col-md-4 mb-4">
-                            <div class="card shadow-sm h-100 event-card">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card event-card h-100 shadow-sm">
+
                                 <div class="card-body d-flex flex-column">
 
-                                    <h4 class="card-title text-dark fw-bold">
-                                        @e.Name
-                                    </h4>
+                                    <h5 class="fw-bold mb-2">@e.Name</h5>
 
-                                    <p class="text-muted mb-2">
-                                        <i class="bi bi-calendar-event"></i>
-                                        @e.DateAndTime.ToString("dd MMMM yyyy, HH:mm")
+                                    <p class="text-muted small mb-2">
+                                        📅 @e.DateAndTime.ToString("dd MMM yyyy, HH:mm")
                                     </p>
-                                    <p>@e.AuthorName</p>
 
+                                    <p class="mb-3">
+                                        ✍️ @e.AuthorName
+                                    </p>
 
-                                    @if (User.IsInRole("Admin"))
-                                    {
-                                        <div class="mt-3 d-flex justify-content-between">
-                                            <a asp-controller="Events"
-                                               asp-action="Edit"
-                                               asp-route-id="@e.Id"
-                                               class="btn btn-warning">
-                                                Edit
+                                    <div class="mt-auto">
+
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <div class="d-flex gap-2">
+                                                <a asp-action="Edit"
+                                                   asp-route-id="@e.Id"
+                                                   class="btn btn-warning btn-sm w-100">
+                                                    Edit
+                                                </a>
+
+                                                <form asp-action="Delete"
+                                                      method="post"
+                                                      asp-route-id="@e.Id"
+                                                      class="w-100">
+                                                    <button class="btn btn-danger btn-sm w-100">
+                                                        Delete
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <a href="@e.Link"
+                                               target="_blank"
+                                               class="btn btn-dark w-100">
+                                                View Event
                                             </a>
+                                        }
 
-                                            <form asp-action="Delete"
-                                                  asp-controller="Events"
-                                                  method="post"
-                                                  asp-route-id="@e.Id">
-                                                <button type="submit"
-                                                        class="btn btn-danger">
-                                                    Delete
-                                                </button>
-                                            </form>
-                                        </div>
-                                    }
-                                    else
-                                    {
-                                        <div class="order-now-container">
-                                            <a href="@e.Link" target="_blank" class="order-now-link">
-                                                Link to event
-                                            </a>
-                                        </div>
-                                    }
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

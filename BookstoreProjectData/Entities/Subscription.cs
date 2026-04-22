@@ -15,6 +15,7 @@ namespace BookstoreProjectData.Entities
 
         [Required]
         public string UserId { get; set; } = null!;
+        public User User { get; set; } = null!; //*
 
         [Required]
         public string Address { get; set; } = null!;

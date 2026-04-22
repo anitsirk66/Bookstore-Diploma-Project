@@ -99,13 +99,6 @@ namespace BookstoreWebApp.Controllers
             return RedirectToAction("Index");
         }
 
-        //[Authorize(Roles = "Admin")]
-        //[HttpPost]
-        //public async Task<IActionResult> DeletePost (Guid id)
-        //{
-        //    await service.DeleteAsync(id);
-        //    return RedirectToAction("Index");
-        //}
     }
 
 } 

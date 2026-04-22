@@ -16,16 +16,16 @@
             <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><img src="~/img/user.png" alt="Alternate Text" width="20" height="20" /></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="User" asp-action="Logout"><img src="~/img/logout2.png" alt="Alternate Text" width="20" height="20" /></a>
+            <a class="nav-link text-dark" asp-controller="User" asp-action="Logout"><img src="~/img/logout.png" alt="Alternate Text" width="20" height="20" /></a>
         </li>
     }
     else
     {
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="User" asp-action="Register">Register</a>
+            <a class="nav-link text-white" asp-controller="User" asp-action="Register" >Register</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="User" asp-action="Login">Login</a>
+            <a class="nav-link text-white" asp-controller="User" asp-action="Login">Login</a>
         </li>
     }
 </ul>

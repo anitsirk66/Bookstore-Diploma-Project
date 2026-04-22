@@ -41,7 +41,6 @@ namespace BookstoreWebApp
               .AddDefaultUI();
 
             builder.Services.AddControllersWithViews();
-
             builder.Services.AddRazorPages();
 
             //builder.Services.AddDefaultIdentity<User>(options =>

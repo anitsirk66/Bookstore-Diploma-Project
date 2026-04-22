@@ -323,12 +323,14 @@ namespace BookstoreProjectData.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Year")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Subscriptions");
                 });
@@ -654,6 +656,17 @@ namespace BookstoreProjectData.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("BookstoreProjectData.Entities.Subscription", b =>
+                {
+                    b.HasOne("BookstoreProjectData.Entities.User", "User")
+                        .WithMany("Subscriptions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -746,6 +759,8 @@ namespace BookstoreProjectData.Migrations
                     b.Navigation("Orders");
 
                     b.Navigation("Reviews");
+
+                    b.Navigation("Subscriptions");
                 });
 #pragma warning restore 612, 618
         }

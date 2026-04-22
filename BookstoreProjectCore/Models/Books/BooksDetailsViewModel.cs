@@ -33,8 +33,9 @@ namespace BookstoreProjectCore.Models.Books
         [Required(ErrorMessage = "This field is required.")]
         public string AuthorName { get; set; } = null!;
 
-        
-        //publisher
+        [Required(ErrorMessage = "This field is required.")]
+        public string PublisherName { get; set; } = null!;
+
         public List<ReviewsIndexViewModel> Reviews { get; set; } = new List<ReviewsIndexViewModel>();
     }
 }

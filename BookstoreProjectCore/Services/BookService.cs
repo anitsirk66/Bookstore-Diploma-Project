@@ -85,6 +85,7 @@ namespace BookstoreProjectCore.Services
                 Price = b.Price,
                 Synopsis = b.Synopsis,
                 GenreName = b.Genre.Name,
+                PublisherName = b.Publishers_Books.Select(pb=>pb.Publisher.Name).FirstOrDefault() ?? "Unknown",
 
                 Reviews = b.Reviews.Select(r => new ReviewsIndexViewModel
                 {

@@ -18,5 +18,7 @@ namespace BookstoreProjectData.Entities
         public List<Review> Reviews { get; set; } = new List<Review>();
 
         public string? Address { get; set; } = null!;
+
+        public ICollection<Subscription> Subscriptions { get; set; } //*
     }
 }

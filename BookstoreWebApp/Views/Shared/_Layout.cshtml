@@ -14,90 +14,52 @@
     <link rel="stylesheet" href="~/css/templatemo-style.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BookstoreWebApp.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background:#FC466B;">
+            <div class="container">
 
-                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/img/whiteLogoSmall.png" alt="Logo" class="tm-site-logo" width="50" height="50">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/bookLogo.png" alt="Pink Sunrise" style="height:45px;" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav me-auto">
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-controller="Books" asp-action="Index">Books</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Index">Events</a>
+                            <a class="nav-link text-white" asp-controller="Events" asp-action="Index">Events</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Books</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Subscription" asp-action="Index">Monthly Picks for You</a>
-                        </li>
-                        
+
                         @if (User.IsInRole("Admin"))
                         {
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Authors" asp-action="Index">Authors</a>
+                            <li class="nav-item text-white">
+                                <a class="nav-link text-white" asp-controller="Authors" asp-action="Index">Authors</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Genres" asp-action="Index">Genres</a>
+                            <li class="nav-item text-white">
+                                <a class="nav-link text-white" asp-controller="Genres" asp-action="Index">Genres</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Publishers" asp-action="Index">Publishers</a>
+                            <li class="nav-item text-white">
+                                <a class="nav-link" asp-controller="Publishers" asp-action="Index">Publishers</a>
                             </li>
-
                         }
                     </ul>
-                    <span class="navbar-text"> <partial name="_LoginPartial" /> </span>
+
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
 
-    <header style="display:none">
-        <div class="tm-top-header">
-            <div class="container">
-                <div class="row">
-                    <div class="tm-top-header-inner">
-                        <div class="tm-logo-container">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
-                                <img src="~/img/booklogo.png" alt="Logo" class="tm-site-logo" width="50" height="50">
-                            </a>
-
-
-                            <h1 class="tm-site-name tm-handwriting-font">Pink Sunrise</h1>
-                        </div>
-                        <div class="mobile-menu-icon">
-                            <i class="fa fa-bars"></i>
-                        </div>
-                        <nav class="tm-nav">
-                            <ul class="navbar-nav flex-grow-1">
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Index">Events</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Books</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <partial name="_LoginPartial" />
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
     @if (TempData["SuccessMessage"] != null)
     {
@@ -140,11 +102,49 @@
     }
 
     <div class="">
-        <main role="main" class="pb-3">
+        <main class="flex-fill">
             @RenderBody()
         </main>
     </div>
+    @if (!User.Identity.IsAuthenticated || User.IsInRole("Client"))
+    {
+        <footer class="class=footer mt-auto pt-4 pb-3">
+            <div class="container">
 
+                <div class="row text-center text-md-start">
+
+                    <div class="col-md-4 mb-3">
+                        <h5 class="fw-bold">📚 Pink Sunrise</h5>
+                        <p class="small">
+                            Discover stories, meet authors, and enjoy curated monthly picks.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <h6 class="fw-bold">Quick Links</h6>
+                        <ul class="list-unstyled">
+                            <li><a asp-controller="Books" asp-action="Index">Books</a></li>
+                            <li><a asp-controller="Events" asp-action="Index">Events</a></li>
+                            <li><a asp-controller="Home" asp-action="Details">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <h6 class="fw-bold">Contact</h6>
+                        <p class="small mb-1">📧 contact@pinksunrise.com</p>
+                        <p class="small mb-0">📍 Kazanlak, Bulgaria</p>
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <div class="text-center small">
+                    © 2026 Pink Sunrise. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    }
     <script src="~/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/templatemo-script.js"></script>
     <script src="~/js/jquery-1.11.2.min.js"></script>

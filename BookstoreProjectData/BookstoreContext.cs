@@ -37,6 +37,7 @@ namespace BookstoreProjectData
             modelBuilder.ApplyConfiguration(new OrderBookConfiguration());
             modelBuilder.ApplyConfiguration(new PublisherBookConfiguration());
             modelBuilder.ApplyConfiguration(new MonthlyBookConfiguration());
+            modelBuilder.ApplyConfiguration(new SubscriptionConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

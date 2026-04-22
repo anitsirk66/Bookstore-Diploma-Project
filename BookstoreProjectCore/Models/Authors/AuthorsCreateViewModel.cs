@@ -10,7 +10,7 @@ namespace BookstoreProjectCore.Models.Authors
         public string FullName { get; set; } = null!;
 
         [Required(ErrorMessage = "This field is required.")]
-        [StringLength(800, ErrorMessage = "The biography can be a maximum of 800 characters.")]
+        [StringLength(1000, ErrorMessage = "The biography can be a maximum of 800 characters.")]
         public string Biography { get; set; } = null!;
 
         [Required(ErrorMessage = "This field is required.")]

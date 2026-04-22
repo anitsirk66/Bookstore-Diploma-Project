@@ -33,22 +33,7 @@ namespace BookstoreProjectCore.Services
                 .ToListAsync();
         }
 
-        //public async Task<PublisherDetailsViewModel?> GetDetailsAsync(Guid id)
-        //{
-        //    return await context.Publishers
-        //        .Where(p => p.Id == id)
-        //        .Select(p => new PublisherDetailsViewModel
-        //        {
-        //            Id = p.Id,
-        //            Name = p.Name,
-        //            Description = p.Description,
-        //            Books = p.PublisherBooks
-        //                .Select(pb => pb.Book.Title)
-        //                .ToList()
-        //        })
-        //        .FirstOrDefaultAsync();
-        //}
-
+        
         public async Task CreateAsync(PublishersCreateViewModel model)
         {
             var publisher = new Publisher
@@ -65,7 +50,8 @@ namespace BookstoreProjectCore.Services
                 context.Set<Publisher_Book>().Add(new Publisher_Book
                 {
                     PublisherId = publisher.Id,
-                    BookId = bookId
+                    BookId = bookId,
+                    Language = "EN"
                 });
             }
 

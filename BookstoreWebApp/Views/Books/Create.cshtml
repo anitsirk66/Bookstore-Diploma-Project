@@ -24,8 +24,8 @@
     </div>
     <div class="mb-3">
         <label asp-for="Synopsis" class="form-label">Synopsis: </label>
-        <input asp-for="Synopsis" class="form-control" required />
-        <span asp-validation-for="Synopsis" class="text-danger"></span>
+<textarea TextMode="multiline" asp-for="Synopsis" class="form-control" required rows="5"></textarea>        
+<span asp-validation-for="Synopsis" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label asp-for="AuthorId" class="form-label">Select author</label>

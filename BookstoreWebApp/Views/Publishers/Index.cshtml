@@ -14,6 +14,7 @@
         <thead class="table-dark">
             <tr>
                 <th>Name</th>
+                <th>Description</th>
                 <th style="width: 180px;">Actions</th>
             </tr>
         </thead>
@@ -22,6 +23,7 @@
             {
                 <tr>
                     <td>@g.Name</td>
+                    <td>@g.Description</td>
                     <td>
                         <div class="d-flex gap-2">
 
@@ -32,7 +34,7 @@
                             </a>
 
                             <form asp-action="Delete" asp-route-id="@g.Id" method="post"
-                                  onsubmit="return confirm('Are you sure you want to delete publisher? This will also delete all related books. This action cannot be undone.');">
+                                  onsubmit="return confirm('Are you sure you want to delete publisher? This will leave all related books with an unkown author. This action cannot be undone.');">
                                 <button type="submit" class="btn btn-danger btn-sm">
                                     Delete
                                 </button>
